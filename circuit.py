@@ -440,6 +440,8 @@ if __name__ == '__main__':
                         help="Scales the width of the edges in the circuit plot.")
     parser.add_argument('--nopair', default=False, action="store_true",
                         help="Use if your data does not contain contrastive (minimal) pairs.")
+    parser.add_argument('--nopair_reg', default=False, action="store_true",
+                        help="Like --nopair, but use regular loading function.")
     parser.add_argument('--plot_circuit', default=False, action='store_true',
                         help="Plot the circuit after discovering it.")
     parser.add_argument('--nodes_only', default=False, action='store_true',
@@ -493,12 +495,15 @@ if __name__ == '__main__':
         save_basename = os.path.splitext(os.path.basename(args.dataset))[0]
         examples = load_examples_nopair(args.dataset, args.num_examples, model, length=args.example_length)
     else:
+        ignore_patch = args.nopair_reg
         data_path = f"data/{args.dataset}.json"
         save_basename = args.dataset
         if args.aggregation == "sum":
-            examples = load_examples(data_path, args.num_examples, model, pad_to_length=args.example_length)
+            examples = load_examples(data_path, args.num_examples, model, pad_to_length=args.example_length,
+                                     ignore_patch=ignore_patch)
         else:
-            examples = load_examples(data_path, args.num_examples, model, length=args.example_length)
+            examples = load_examples(data_path, args.num_examples, model, length=args.example_length,
+                                     ignore_patch=ignore_patch)
     
     batch_size = args.batch_size
     num_examples = min([args.num_examples, len(examples)])
@@ -518,7 +523,7 @@ if __name__ == '__main__':
             clean_inputs = t.cat([e['clean_prefix'] for e in batch], dim=0).to(device)
             clean_answer_idxs = t.tensor([e['clean_answer'] for e in batch], dtype=t.long, device=device)
 
-            if args.nopair:
+            if args.nopair or args.nopair_reg:
                 patch_inputs = None
                 def metric_fn(model):
                     return (

@@ -1,0 +1,24 @@
+{"clean_prefix": "The suspect sent the file", "clean_answer": " deserved", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The corrupt politician handed the bill", "clean_answer": " received", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The woman brought the mail", "clean_answer": " disappeared", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The boy fed the chicken", "clean_answer": " stayed", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The new doctor offered the operation", "clean_answer": " appeared", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The professor awarded the grant", "clean_answer": " gained", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The technician refused the service", "clean_answer": " stopped", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The mechanic brought the truck", "clean_answer": " needed", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The guitarist assigned the song", "clean_answer": " failed", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The player paid the bonus", "clean_answer": " remained", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The recent hire offered the job", "clean_answer": " prepared", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The assistant manager assigned the training", "clean_answer": " seemed", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The mayor sent the document", "clean_answer": " provided", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The basketball player handed the contract", "clean_answer": " created", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The engineer brought the equipment", "clean_answer": " required", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The little girl fed the lamb", "clean_answer": " remained", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The yoga instructor offered the position", "clean_answer": " demanded", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The governor awarded the contract", "clean_answer": " received", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The patient refused the treatment", "clean_answer": " continued", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The operator brought the machine", "clean_answer": " started", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The dancer assigned the ballet", "clean_answer": " achieved", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The contestant paid the money", "clean_answer": " became", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The new chef offered the restaurant", "clean_answer": " separated", "patch_answer": ".", "patch_prefix": ""}
+{"clean_prefix": "The apprentice baker assigned the oven", "clean_answer": " produced", "patch_answer": ".", "patch_prefix": ""}
