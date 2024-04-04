@@ -16,4 +16,5 @@ python circuit.py \
 	--edge_threshold $EDGE \
 	--aggregation $AGG \
     --example_length $LENGTH \
+	--nopair_reg \
     --dict_id $DICT_ID

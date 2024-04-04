@@ -18,7 +18,8 @@ class DictionaryCfg():
         self.size = dictionary_size
 
 
-def load_examples(dataset, num_examples, model, seed=12, pad_to_length=None, length=None):
+def load_examples(dataset, num_examples, model, seed=12, pad_to_length=None, length=None,
+                  ignore_patch=False):
     examples = []
     dataset_items = open(dataset).readlines()
     random.seed(seed)
@@ -34,8 +35,9 @@ def load_examples(dataset, num_examples, model, seed=12, pad_to_length=None, len
         patch_answer = model.tokenizer(data["patch_answer"], return_tensors="pt",
                                         padding=False).input_ids
         # only keep examples where answers are single tokens
-        if clean_prefix.shape[1] != patch_prefix.shape[1]:
-            continue
+        if not ignore_patch:
+            if clean_prefix.shape[1] != patch_prefix.shape[1]:
+                continue
         # only keep examples where clean and patch inputs are the same length
         if clean_answer.shape[1] != 1 or patch_answer.shape[1] != 1:
             continue
