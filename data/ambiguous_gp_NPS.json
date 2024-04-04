@@ -1,0 +1,24 @@
+{"clean_prefix": "The suspect showed the file", "patch_prefix": "The suspect hid the file", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The corrupt politician mentioned the bill", "patch_prefix": "The corrupt politician signed the bill", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The woman maintained the mail", "patch_prefix": "The woman received the mail", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The boy found the chicken", "patch_prefix": "The boy rescued the chicken", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The new doctor demonstrated the operation", "patch_prefix": "The new doctor tried the operation", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The professor noticed the grant", "patch_prefix": "The professor won the grant", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The technician reported the service", "patch_prefix": "The technician reset the service", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The mechanic observed the truck", "patch_prefix": "The mechanic watched the truck", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The guitarist knew the song", "patch_prefix": "The guitarist wrote the song", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The player revealed the bonus", "patch_prefix": "The player said the bonus", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The recent hire claimed the job", "patch_prefix": "The recent hire did the job", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The assistant manager discovered the training", "patch_prefix": "The assistant manager hated the training", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The mayor showed the document", "patch_prefix": "The mayor displayed the document", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The basketball player mentioned the contract", "patch_prefix": "The basketball player signed the contract", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The engineer maintained the equipment", "patch_prefix": "The engineer monitored the equipment", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The little girl found the lamb", "patch_prefix": "The little girl adopted the lamb", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The yoga instructor demonstrated the position", "patch_prefix": "The yoga instructor performed the position", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The governor noticed the contract", "patch_prefix": "The governor approved the contract", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The patient reported the treatment", "patch_prefix": "The patient rejected the treatment", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The operator observed the machine", "patch_prefix": "The operator watched the machine", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The dancer knew the ballet", "patch_prefix": "The dancer danced the ballet", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The contestant revealed the money", "patch_prefix": "The contestant lost the money", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The new chef claimed the restaurant", "patch_prefix": "The new chef wanted the restaurant", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}
+{"clean_prefix": "The apprentice baker discovered the oven", "patch_prefix": "The apprentice baker opened the oven", "clean_answer": " was", "patch_answer": ".", "case": "NPS"}

@@ -1,0 +1,24 @@
+{"clean_prefix": "Because the suspect altered the file", "patch_prefix": "Because the suspect changed the file", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "After the corrupt politician rejected the bill", "patch_prefix": "After the corrupt politician signed the bill", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "After the woman shredded the mail", "patch_prefix": "After the woman moved the mail", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "Although the boy grabbed the chicken", "patch_prefix": "Although the boy attacked the chicken", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "After the new doctor abandoned the operation", "patch_prefix": "After the new doctor left the operation", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "After the professor won the grant", "patch_prefix": "After the professor read the grant", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "After the technician contacted the service", "patch_prefix": "After the technician called the service", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "Because the mechanic broke the truck", "patch_prefix": "Because the mechanic stopped the truck", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "After the guitarist ruined the song", "patch_prefix": "After the guitarist began the song", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "Although the player rejected the bonus", "patch_prefix": "Although the player lost the bonus", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "Once the recent hire got the job", "patch_prefix": "Once the recent hire started the job", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "While the assistant manager did the training", "patch_prefix": "While the assistant manager worked the training", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "Although the mayor forged the document", "patch_prefix": "Although the mayor changed the document", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "After the basketball player rejected the contract", "patch_prefix": "After the basketball player signed the contract", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "After the engineer broke the equipment", "patch_prefix": "After the engineer moved the equipment", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "When the little girl grabbed the lamb", "patch_prefix": "When the little girl attacked the lamb", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "Before the yoga instructor performed the position", "patch_prefix": "Before the yoga instructor left the position", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "While the governor denounced the contract", "patch_prefix": "While the governor read the contract", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "Before the patient received the treatment", "patch_prefix": "Before the patient called the treatment", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "Once the operator broke the machine", "patch_prefix": "Once the operator stopped the machine", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "Once the dancer loved the ballet", "patch_prefix": "Once the dancer began the ballet", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "After the contestant wasted the money", "patch_prefix": "After the contestant lost the money", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "Once the new chef opened the restaurant", "patch_prefix": "Once the new chef started the restaurant", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
+{"clean_prefix": "When the apprentice baker baked the oven", "patch_prefix": "When the apprentice baker worked the oven", "clean_answer": ",", "patch_answer": " was", "case": "NPZ"}
