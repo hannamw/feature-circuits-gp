@@ -269,7 +269,12 @@ def get_circuit(
                     weight_matrix = weight_matrix.sum(dim=(0, 3)) / bc
                 edges[child][parent] = weight_matrix
         for node in nodes:
-            nodes[node] = nodes[node].mean(dim=0)
+            try:
+                if node != 'y':
+                    nodes[node] = nodes[node].mean(dim=0)
+            except AttributeError as e:
+                print(node)
+                raise e
 
     else:
         raise ValueError(f"Unknown aggregation: {aggregation}")
