@@ -447,6 +447,9 @@ if __name__ == '__main__':
                         help="Use if your data does not contain contrastive (minimal) pairs.")
     parser.add_argument('--nopair_reg', default=False, action="store_true",
                         help="Like --nopair, but use regular loading function.")
+    parser.add_argument('--non_contrastive', action="store_true",
+                        help="Regardless of whether we use contrastive pairs, set metric_fn to " +
+                             "be negative log-prob of the clean answer.")
     parser.add_argument('--plot_circuit', default=False, action='store_true',
                         help="Plot the circuit after discovering it.")
     parser.add_argument('--nodes_only', default=False, action='store_true',
@@ -545,6 +548,15 @@ if __name__ == '__main__':
                         t.gather(model.embed_out.output[:,-1,:], dim=-1, index=clean_answer_idxs.view(-1, 1)).squeeze(-1)
                     )
             
+            # if --non_contrastive is True, override metric_fn to be negative log-prob of clean answer
+            if args.non_contrastive:
+                def metric_fn(model):
+                    return (
+                        -1 * t.gather(
+                            t.nn.functional.log_softmax(model.embed_out.output[:,-1,:], dim=-1), dim=-1, index=clean_answer_idxs.view(-1, 1)
+                        ).squeeze(-1)
+                    )
+            
             nodes, edges = get_circuit(
                 clean_inputs,
                 patch_inputs,
@@ -587,11 +599,24 @@ if __name__ == '__main__':
             "nodes": nodes,
             "edges": edges
         }
-        with open(f'{args.circuit_dir}/{save_basename}_dict{args.dict_id}_node{args.node_threshold}_edge{args.edge_threshold}_n{num_examples}_agg{args.aggregation}.pt', 'wb') as outfile:
+
+        save_filename = f"{save_basename}_dict{args.dict_id}_node{args.node_threshold}_edge{args.edge_threshold}_n{num_examples}_agg{args.aggregation}"
+        if args.non_contrastive:
+            save_filename += "_noncontrastive"
+        filename = f"{args.circuit_dir}/{save_filename}"
+        filename += ".pt"
+        with open(filename, 'wb') as outfile:
             t.save(save_dict, outfile)
 
     else:
-        with open(f'{args.circuit_dir}/{save_basename}_dict{args.dict_id}_node{args.node_threshold}_edge{args.edge_threshold}_n{num_examples}_agg{args.aggregation}.pt', 'rb') as infile:
+        save_filename = f"{save_basename}_dict{args.dict_id}_node{args.node_threshold}_edge{args.edge_threshold}_n{num_examples}_agg{args.aggregation}"
+        if args.non_contrastive:
+            save_filename += "_noncontrastive"
+        filename = f"{args.circuit_dir}/{save_filename}"
+
+        filename += ".pt"
+
+        with open(filename, 'rb') as infile:
             save_dict = t.load(infile)
         nodes = save_dict['nodes']
         edges = save_dict['edges']
@@ -618,7 +643,7 @@ if __name__ == '__main__':
             edge_threshold=args.edge_threshold, 
             pen_thickness=args.pen_thickness, 
             annotations=annotations, 
-            save_dir=f'{args.plot_dir}/{save_basename}_dict{args.dict_id}_node{args.node_threshold}_edge{args.edge_threshold}_n{num_examples}_agg{args.aggregation}'
+            save_dir=f'{args.plot_dir}/{save_filename}'
         )
     else:
         plot_circuit(
@@ -629,5 +654,5 @@ if __name__ == '__main__':
             edge_threshold=args.edge_threshold, 
             pen_thickness=args.pen_thickness, 
             annotations=annotations, 
-            save_dir=f'{args.plot_dir}/{save_basename}_dict{args.dict_id}_node{args.node_threshold}_edge{args.edge_threshold}_n{num_examples}_agg{args.aggregation}'
+            save_dir=f'{args.plot_dir}/{save_filename}'
         )
