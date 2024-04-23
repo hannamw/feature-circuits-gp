@@ -460,6 +460,8 @@ if __name__ == '__main__':
                         help="Directory to save/load circuits.")
     parser.add_argument("--plot_dir", type=str, default="circuits/figures/",
                         help="Directory to save figures.")
+    parser.add_argument("--annotations_file", type=str, default=None,
+                        help="Path to annotations .json file.")
     parser.add_argument('--seed', type=int, default=12)
     parser.add_argument('--device', type=str, default='cuda:0')
     args = parser.parse_args()
@@ -622,14 +624,21 @@ if __name__ == '__main__':
         edges = save_dict['edges']
 
     # feature annotations
-    try:
+    if args.annotations_file is not None:
         annotations = {}
-        with open(f"annotations/{args.dict_id}_{args.dict_size}.jsonl", 'r') as annotations_data:
+        with open(args.annotations_file, 'r') as annotations_data:
             for annotation_line in annotations_data:
                 annotation = json.loads(annotation_line)
                 annotations[annotation["Name"]] = annotation["Annotation"]
-    except:
-        annotations = None
+    else:
+        try:
+            annotations = {}
+            with open(f"annotations/{args.dict_id}_{args.dict_size}.jsonl", 'r') as annotations_data:
+                for annotation_line in annotations_data:
+                    annotation = json.loads(annotation_line)
+                    annotations[annotation["Name"]] = annotation["Annotation"]
+        except:
+            annotations = None
 
     if args.aggregation == "none":
         example = model.tokenizer.batch_decode(examples[0]["clean_prefix"])[0]
