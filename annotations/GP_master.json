@@ -1,0 +1,71 @@
+{"Name": "resid_5/30181", "Annotation": "(NPZ +post; NPS +post) acts: subject nouns | u/w: (present tense, aux) verbs; d/w punctuation"}
+{"Name": "resid_5/31283", "Annotation": "(NPZ +post; NPS +post) acts: subject nouns | u/w: (past tense, aux) verbs; d/w punctuation"}
+{"Name": "resid_4/31725", "Annotation": "(NPZ +post; MVRR +post; NPS +post) acts: (limited set of) subject nouns | u/w: 3S (present tense) verbs; d/w punctuation"}
+{"Name": "resid_3/10842", "Annotation": "(NPZ +post; MVRR +post; NPS +post) acts: nouns after \"The\" or \" the\""}
+{"Name": "resid_5/26622", "Annotation": "(NPZ +gp) u/w: subject pronouns"}
+{"Name": "resid_4/12317", "Annotation": "(NPZ +post) acts: subject nouns | u/w: 3rd-person verbs"}
+{"Name": "resid_4/3960", "Annotation": "(NPZ -post) u/w: various (including punctuation)"}
+{"Name": "resid_4/14907", "Annotation": "(NPZ +gp) u/w: things that could come after the end of a clause (a new subject pronoun, punctuation)"}
+{"Name": "resid_5/20284", "Annotation": "(NPZ +post; MVRR +post) acts: subjects after \"The\" or \" the\""}
+{"Name": "attn_5/6192", "Annotation": "(NPZ +gp) acts: text within subordinate clauses / prepositional phrases | u/w: unclear (commas I think)"}
+{"Name": "attn_3/8236", "Annotation": "(NPZ +gp) acts: text within subordinate clauses / prepositional phrases | u/w: unclear (commas I think)"}
+{"Name": "attn_3/17936", "Annotation": "(NPZ -post) acts: in/direct objects and nouns in prepositional phrases"}
+{"Name": "attn_3/19989", "Annotation": "(NPZ -post) acts: nouns in prepositional phrases"}
+{"Name": "attn_3/26745", "Annotation": "(NPZ +post) acts: nouns"}
+{"Name": "attn_3/8135", "Annotation": "(NPZ +post) acts: "}
+{"Name": "attn_3/10523", "Annotation": "(NPZ +post) acts: subject nouns after \"the\" | u/w: verbs, prepositions"}
+{"Name": "attn_5/19272", "Annotation": "(NPZ +post; NPS +post) acts: mostly subject nouns, also 't | u/w: verbs; d/w punctuation"}
+{"Name": "mlp_4/19356", "Annotation": "(NPZ +post) acts: nouns"}
+{"Name": "embed/22954", "Annotation": "(NPZ +gp) acts: \"After\""}
+{"Name": "attn_3/11367", "Annotation": "(NPZ +post) acts: stuff that comes after <|endoftext|>"}
+{"Name": "resid_1/25348", "Annotation": "(MVRR +; NPS +gp) acts: \"The\", \"Your\", \"Those\" | u/w: Final tokens in nouns"}
+{"Name": "attn_0/24688", "Annotation": "(MVRR +; NPS +gp) acts: \"The\""}
+{"Name": "resid_0/23497", "Annotation": "(MVRR -gp; NPS -gp) acts: "}
+{"Name": "resid_0/15177", "Annotation": "(MVRR -gp; NPS -post) acts: all tokens in NP after \"The\""}
+{"Name": "resid_2/506", "Annotation": "(MVRR -gp) acts: participles and infinitives | u/w: \"away\", \"birth\", \"precedence\", \"rise\""}
+{"Name": "resid_4/17478", "Annotation": "(MVRR -gp) acts: simple past and past participle verbs"}
+{"Name": "resid_0/6073", "Annotation": "(MVRR +gp) acts: \" the\" | u/w: adjectives"}
+{"Name": "resid_0/11082", "Annotation": "(MVRR +; NPS +) acts: all tokens in NP after \" the\""}
+{"Name": "resid_3/18008", "Annotation": "(MVRR +gp; NPS +gp) acts: objects inside RCs and PPs"}
+{"Name": "resid_4/8505", "Annotation": "(MVRR -gp; NPS -gp) acts: objects of verbs and PPs/RCs"}
+{"Name": "attn_0/1721", "Annotation": "(MVRR +post; NPS +gp) acts: \"The\""}
+{"Name": "resid_0/6863", "Annotation": "(MVRR +post) acts: \"The\" | u/w: newlines"}
+{"Name": "resid_2/17961", "Annotation": "(MVRR -post) acts: First token in sentence"}
+{"Name": "resid_2/45", "Annotation": "(MVRR +post) acts: \"The\""}
+{"Name": "resid_0/16112", "Annotation": "(MVRR +post) acts: past participles | u/w: nouns"}
+{"Name": "embed/19085", "Annotation": "(MVRR -post) acts: \" given\", \" forgiven\""}
+{"Name": "resid_0/20802", "Annotation": "(MVRR +post) acts: \" shown\""}
+{"Name": "resid_3/24438", "Annotation": "(MVRR -post) acts: inflections of \"give\""}
+{"Name": "resid_2/24003", "Annotation": "(MVRR +post; NPS +post) acts: nouns in PPs, RCs, and subordinate clauses"}
+{"Name": "resid_4/27015", "Annotation": "(MVRR +post; NPS -gp) acts: nouns after \"The\" | u/w: punctuation"}
+{"Name": "resid_5/5151", "Annotation": "(MVRR +post) acts: last token of subject NP"}
+{"Name": "attn_0/22726", "Annotation": "(NPS +gp) acts: NPs starting with \"The\""}
+{"Name": "embed/13487", "Annotation": "(NPS -gp) acts: \"The\" | u/w: adjectives and nouns"}
+{"Name": "resid_0/29334", "Annotation": "(NPS +gp) acts: NPs starting with \"The\""}
+{"Name": "resid_0/11999", "Annotation": "(NPS -gp) acts: \"The\", \"Your\", \"Those\""}
+{"Name": "mlp_1/25477", "Annotation": "(NPS +gp) acts: \"The\" and proper NPs"}
+{"Name": "mlp_1/18722", "Annotation": "(NPS +gp) acts: \"The\""}
+{"Name": "attn_0/23029", "Annotation": "(NPS -gp) acts: ?"}
+{"Name": "resid_0/14314", "Annotation": "(NPS -gp) acts: \"training\", \"recruiting\""}
+{"Name": "resid_5/31007", "Annotation": "(NPS +post) acts: (singular) subject nouns, words at ends of NPs | u/w: 3S verbs; d/w punctuation"}
+{"Name": "attn_3/15295", "Annotation": "(NPS +post) acts: text after \"said\", excluding material in quotes"}
+{"Name": "resid_1/1006", "Annotation": "(NPS +post) acts: prepositions"}
+{"Name": "resid_5/11189", "Annotation": "(NPS +post) acts: first subj + verb after \"said\" or similar | u/w: verbs"}
+{"Name": "resid_2/30888", "Annotation": "(NPS +post) acts: \"said\" and similar | u/w: d/w punctuation"}
+{"Name": "resid_3/23705", "Annotation": "(NPS +post) acts: \"said\" and text thereafter"}
+{"Name": "resid_2/28760", "Annotation": "(NPS +post) acts: \"thought\" | u/w: \"that\", \"about\", sometimes pronouns"}
+{"Name": "resid_3/125", "Annotation": "(NPS +post) acts: \"the\""}
+{"Name": "resid_4/16721", "Annotation": "(NPS +post) acts: \"said\" and similar | u/w: \"that\", pronouns"}
+{"Name": "resid_3/5862", "Annotation": "(NPS +post) acts: \"said\" and similar"}
+{"Name": "resid_1/10573", "Annotation": "(NPS +post) acts: \"said\" and similar"}
+{"Name": "resid_1/18815", "Annotation": "(NPS +post) acts: \"thought\""}
+{"Name": "resid_0/17000", "Annotation": "(NPS +post) acts: \"said\""}
+{"Name": "resid_0/13134", "Annotation": "(NPS +post) acts: \"thought\""}
+{"Name": "resid_0/6590", "Annotation": "(NPS +post) acts: \"complaint(s)\", \"criticism\", and related"}
+{"Name": "resid_0/30665", "Annotation": "(NPS -post) acts: opening brackets, code"}
+{"Name": "mlp_0/26776", "Annotation": "(NPS +post) acts: \"said\""}
+{"Name": "embed/18619", "Annotation": "(NPS +post) acts: \"said\""}
+{"Name": "embed/13847", "Annotation": "(NPS +post) acts: \"thought\""}
+{"Name": "resid_0/8234", "Annotation": "(NPS +post) acts: \"the\""}
+{"Name": "resid_3/835", "Annotation": "(NPS +post) acts: subjects of CPs"}
+{"Name": "resid_4/31262", "Annotation": "(NPS +post) acts: subjects after \"said (that)\", messily | u/w: verbs"}
