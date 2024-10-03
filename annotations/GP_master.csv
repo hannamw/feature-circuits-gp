@@ -1,0 +1,94 @@
+Position,Component,Layer,Feature,Name,Reading,Effect (+/-),Activates On,Upweights,Annotation,Notes,Structure,Name (No Pos.)
+5,resid,5,30181,"5, resid_5/30181",post,+,"subject nouns (mostly) after ""the""",3rd-person singular present verbs,,,NPZ,resid_5/30181
+5,resid,5,31283,"5, resid_5/31283",post,+,,auxiliary verbs,,,NPZ,resid_5/31283
+5,resid,4,31725,"5, resid_4/31725",post,+,"subject nouns (mostly) after ""the""",3rd-person verbs,,,NPZ,resid_4/31725
+5,resid,3,10842,"5, resid_3/10842",post,+,"subject nouns (mostly) after ""the""",3rd-person verbs,,,NPZ,resid_3/10842
+5,resid,5,26622,"5, resid_5/26622",gp,+,,subject pronouns,,,NPZ,resid_5/26622
+5,resid,4,12317,"5, resid_4/12317",post,+,subject nouns,3rd-person verbs,,,NPZ,resid_4/12317
+5,resid,4,3960,"5, resid_4/3960",post,-,,various (including punctuation),,,NPZ,resid_4/3960
+5,resid,4,14907,"5, resid_4/14907",gp,+,,"things that could come after the end of a clause (a new subject pronoun, punctuation)",,,NPZ,resid_4/14907
+5,resid,5,20284,"5, resid_5/20284",post,+,definite subject nouns,"3rd-person verbs, 's",,,NPZ,resid_5/20284
+5,attn,5,6192,"5, attn_5/6192",gp,+,text within subordinate clauses / prepositional phrases,unclear (commas I think),,,NPZ,attn_5/6192
+3,attn,3,8236,"3, attn_3/8236",gp,+,text within subordinate clauses / prepositional phrases,unclear (commas I think),,,NPZ,attn_3/8236
+5,attn,3,17936,"5, attn_3/17936",post,-,in/direct objects and nouns in prepositional phrases,,,,NPZ,attn_3/17936
+5,attn,3,19989,"5, attn_3/19989",post,-,nouns in prepositional phrases,,,,NPZ,attn_3/19989
+5,attn,3,26745,"5, attn_3/26745",post,+,nouns,,,,NPZ,attn_3/26745
+5,attn,3,8135,"5, attn_3/8135",post,+,,,,,NPZ,attn_3/8135
+5,attn,3,10523,"5, attn_3/10523",post,+,"subject nouns after ""the""","verbs, prepositions",,,NPZ,attn_3/10523
+5,attn,5,19272,"5, attn_5/19272",post,+,"subject nouns, auxiliary verbs thereafter",verbs,,,NPZ,attn_5/19272
+5,mlp,4,19356,"5, mlp_4/19356",post,+,nouns,,,,NPZ,mlp_4/19356
+0,embed,,22954,"0, embed/22954",gp,+,"""After""",,,"postive for GP, negative for post",NPZ,embed/22954
+5,attn,3,11367,"5, attn_3/11367",post,+,stuff that comes after <|endoftext|>,,,,NPZ,attn_3/11367
+0,resid,1,25348,"0, resid_1/25348",gp,+,"""The""",Final tokens in nouns,,,MVRR,resid_1/25348
+0,attn,0,24688,"0, attn_0/24688",gp,+,"""The""",,,,MVRR,attn_0/24688
+2,resid,0,23497,"2, resid_0/23497",gp,-,,,induction? copying?,activates on things that have already appeared,MVRR,resid_0/23497
+2,resid,0,15177,"2, resid_0/15177",gp,-,"all tokens in NP after ""The""",,,,MVRR,resid_0/15177
+2,resid,2,506,"2, resid_2/506",gp,-,participles and infinitives,"""away"", ""birth"", ""precedence"", ""rise""",,"mostly inflections of ""give""",MVRR,resid_2/506
+2,resid,4,17478,"2, resid_4/17478",gp,-,simple past and past participle verbs,,,,MVRR,resid_4/17478
+3,resid,0,6073,"3, resid_0/6073",gp,+,""" the""",adjectives,,,MVRR,resid_0/6073
+4,resid,0,11082,"4, resid_0/11082",gp,+,"all tokens in NP after "" the""",,,,MVRR,resid_0/11082
+4,resid,3,18008,"4, resid_3/18008",gp,+,objects inside RCs and PPs,,,,MVRR,resid_3/18008
+4,resid,4,8505,"4, resid_4/8505",gp,-,objects of verbs and PPs/RCs,,,"mostly after "" the"", but not always",MVRR,resid_4/8505
+0,attn,0,24688,"0, attn_0/24688",post,+,"""The""",,,,MVRR,attn_0/24688
+0,attn,0,1721,"0, attn_0/1721",post,+,"""The""",,,,MVRR,attn_0/1721
+0,resid,0,6863,"0, resid_0/6863",post,+,"""The""",newlines,,"Usually, newline-promoting features do induction",MVRR,resid_0/6863
+0,resid,1,25348,"0, resid_1/25348",post,+,"""The""",,,"Lots of proper nouns, but not always",MVRR,resid_1/25348
+0,resid,2,17961,"0, resid_2/17961",post,-,First token in sentence,,,,MVRR,resid_2/17961
+0,resid,2,45,"0, resid_2/45",post,+,"""The""",,,,MVRR,resid_2/45
+2,resid,0,16112,"2, resid_0/16112",post,+,past participles,nouns,,"Mostly ""given""",MVRR,resid_0/16112
+2,embed,,19085,"2, embed/19085",post,-,""" given"", "" forgiven""",,,,MVRR,embed/19085
+2,resid,0,20802,"2, resid_0/20802",post,+,""" shown""",,,,MVRR,resid_0/20802
+2,resid,3,24438,"2, resid_3/24438",post,-,"inflections of ""give""",,,,MVRR,resid_3/24438
+4,resid,0,11082,"4, resid_0/11082",post,+,"all tokens in NP after "" the""",,,,MVRR,resid_0/11082
+4,resid,2,24003,"4, resid_2/24003",post,+,"nouns in PPs, RCs, and subordinate clauses",,,,MVRR,resid_2/24003
+4,resid,3,10842,"4, resid_3/10842",post,+,"nouns after ""The"" or "" the""",,,,MVRR,resid_3/10842
+4,resid,4,31725,"4, resid_4/31725",post,+,"nouns after ""The"" or "" the""",,,,MVRR,resid_4/31725
+4,resid,4,27015,"4, resid_4/27015",post,+,"nouns after ""The""",punctuation,,,MVRR,resid_4/27015
+4,resid,5,5151,"4, resid_5/5151",post,+,last token of subject NP,,,,MVRR,resid_5/5151
+4,resid,5,20284,"4, resid_5/20284",post,+,"subjects after ""The"" or "" the""",,,,MVRR,resid_5/20284
+0,attn,0,1721,"0, attn_0/1721",gp,+,"""The""",,,,NPS,attn_0/1721
+0,attn,0,24688,"0, attn_0/24688",gp,+,"""The""",,,,NPS,attn_0/24688
+0,attn,0,22726,"0, attn_0/22726",gp,+,"NPs starting with ""The""",,,,NPS,attn_0/22726
+0,embed,,13487,"0, embed/13487",gp,-,"""The""",adjectives and nouns,,,NPS,embed/13487
+0,resid,0,29334,"0, resid_0/29334",gp,+,"NPs starting with ""The""",,,,NPS,resid_0/29334
+0,resid,0,11999,"0, resid_0/11999",gp,-,"""The"", ""Your"", ""Those""",,,,NPS,resid_0/11999
+0,mlp,1,25477,"0, mlp_1/25477",gp,+,"""The"" and proper NPs",,,,NPS,mlp_1/25477
+0,mlp,1,18722,"0, mlp_1/18722",gp,+,"""The""",,,,NPS,mlp_1/18722
+0,resid,1,25348,"0, resid_1/25348",gp,+,"""The"", ""Your"", ""Those""",Final tokens in nouns,,,NPS,resid_1/25348
+2,attn,0,23029,"2, attn_0/23029",gp,-,?,,,,NPS,attn_0/23029
+2,resid,0,23497,"2, resid_0/23497",gp,-,,,induction? copying?,activates on things that have already appeared,NPS,resid_0/23497
+4,resid,0,11082,"4, resid_0/11082",gp,+,"all tokens in NP after "" the""",,,,NPS,resid_0/11082
+4,resid,0,14314,"4, resid_0/14314",gp,-,"""training"", ""recruiting""",,,,NPS,resid_0/14314
+4,resid,3,18008,"4, resid_3/18008",gp,+,objects inside RCs and PPs,,,,NPS,resid_3/18008
+4,resid,4,8505,"4, resid_4/8505",gp,-,objects of verbs and PPs/RCs,,,"mostly after "" the"", but not always",NPS,resid_4/8505
+4,resid,4,27015,"4, resid_4/27015",gp,-,"nouns after ""The""",punctuation,,,NPS,resid_4/27015
+4,resid,5,31007,"4, resid_5/31007",post,+,"(singular) subject nouns, words at ends of NPs",3S verbs; d/w punctuation,,,NPS,resid_5/31007
+4,resid,5,31283,"4, resid_5/31283",post,+,subject nouns,"(past tense, aux) verbs; d/w punctuation",,,NPS,resid_5/31283
+4,resid,5,30181,"4, resid_5/30181",post,+,subject nouns,"(present tense, aux) verbs; d/w punctuation",,,NPS,resid_5/30181
+4,resid,4,31725,"4, resid_4/31725",post,+,(limited set of) subject nouns,3S (present tense) verbs; d/w punctuation,,,NPS,resid_4/31725
+4,attn,5,19272,"4, attn_5/19272",post,+,"mostly subject nouns, also 't",verbs; d/w punctuation,,,NPS,attn_5/19272
+4,resid,3,10842,"4, resid_3/10842",post,+,"nouns after ""The"" or "" the""",,,,NPS,resid_3/10842
+4,attn,3,15295,"4, attn_3/15295",post,+,"text after ""said"", excluding material in quotes",,,,NPS,attn_3/15295
+4,resid,2,24003,"4, resid_2/24003",post,+,"nouns in PPs, RCs, and subordinate clauses",,,"also just DO/IOs, and sometimes even subjects, if they were activated on earlier",NPS,resid_2/24003
+4,resid,1,1006,"4, resid_1/1006",post,+,prepositions,,,,NPS,resid_1/1006
+4,resid,0,11082,"4, resid_0/11082",post,+,"all tokens in NP after "" the""",,,,NPS,resid_0/11082
+4,resid,5,11189,"4, resid_5/11189",post,+,"first subj + verb after ""said"" or similar",verbs,,,NPS,resid_5/11189
+2,resid,2,30888,"2, resid_2/30888",post,+,"""said"" and similar",d/w punctuation,,,NPS,resid_2/30888
+4,resid,3,23705,"4, resid_3/23705",post,+,"""said"" and text thereafter",,,,NPS,resid_3/23705
+2,resid,2,28760,"2, resid_2/28760",post,+,"""thought""","""that"", ""about"", sometimes pronouns",,,NPS,resid_2/28760
+3,resid,3,125,"3, resid_3/125",post,+,"""the""",,,,NPS,resid_3/125
+2,resid,4,16721,"2, resid_4/16721",post,+,"""said"" and similar","""that"", pronouns",,,NPS,resid_4/16721
+2,resid,3,5862,"2, resid_3/5862",post,+,"""said"" and similar",,,,NPS,resid_3/5862
+2,resid,1,10573,"2, resid_1/10573",post,+,"""said"" and similar",,,,NPS,resid_1/10573
+2,resid,1,18815,"2, resid_1/18815",post,+,"""thought""",,,,NPS,resid_1/18815
+2,resid,0,17000,"2, resid_0/17000",post,+,"""said""",,,,NPS,resid_0/17000
+2,resid,0,13134,"2, resid_0/13134",post,+,"""thought""",,,,NPS,resid_0/13134
+2,resid,0,6590,"2, resid_0/6590",post,+,"""complaint(s)"", ""criticism"", and related",,,,NPS,resid_0/6590
+2,resid,0,30665,"2, resid_0/30665",post,-,"opening brackets, code",,,,NPS,resid_0/30665
+2,resid,0,15177,"2, resid_0/15177",post,-,"all tokens in NP after ""The""",,,,NPS,resid_0/15177
+2,mlp,0,26776,"2, mlp_0/26776",post,+,"""said""",,,,NPS,mlp_0/26776
+2,embed, ,18619,"2, embed/18619",post,+,"""said""",,,,NPS,embed/18619
+2,embed,,13847,"2, embed/13847",post,+,"""thought""",,,,NPS,embed/13847
+3,resid,0,8234,"3, resid_0/8234",post,+,"""the""",,,,NPS,resid_0/8234
+4,resid,3,835,"4, resid_3/835",post,+,subjects of CPs,,,,NPS,resid_3/835
+4,resid,4,31262,"4, resid_4/31262",post,+,"subjects after ""said (that)"", messily",verbs,,,NPS,resid_4/31262

@@ -6,78 +6,23 @@ import os
 from collections import defaultdict
 
 import torch as t
-from einops import rearrange
 from tqdm import tqdm
 
-from activation_utils import SparseAct
-from attribution import patching_effect, jvp
 from circuit_plotting import plot_circuit, plot_circuit_posaligned
 from dictionary_learning import AutoEncoder
 from loading_utils import load_examples, load_examples_nopair
+from dictionary_loading_utils import load_saes_and_submodules
+from attribution import patching_effect, jvp
 from nnsight import LanguageModel
 
+from coo_utils import sparse_reshape
 
-###### utilities for dealing with sparse COO tensors ######
-def flatten_index(idxs, shape):
-    """
-    index : a tensor of shape [n, len(shape)]
-    shape : a shape
-    return a tensor of shape [n] where each element is the flattened index
-    """
-    idxs = idxs.t()
-    # get strides from shape
-    strides = [1]
-    for i in range(len(shape)-1, 0, -1):
-        strides.append(strides[-1]*shape[i])
-    strides = list(reversed(strides))
-    strides = t.tensor(strides).to(idxs.device)
-    # flatten index
-    return (idxs * strides).sum(dim=1).unsqueeze(0)
+DEBUGGING = True
 
-def prod(l):
-    out = 1
-    for x in l: out *= x
-    return out
-
-def sparse_flatten(x):
-    x = x.coalesce()
-    return t.sparse_coo_tensor(
-        flatten_index(x.indices(), x.shape),
-        x.values(),
-        (prod(x.shape),)
-    )
-
-def reshape_index(index, shape):
-    """
-    index : a tensor of shape [n]
-    shape : a shape
-    return a tensor of shape [n, len(shape)] where each element is the reshaped index
-    """
-    multi_index = []
-    for dim in reversed(shape):
-        multi_index.append(index % dim)
-        index //= dim
-    multi_index.reverse()
-    return t.stack(multi_index, dim=-1)
-
-def sparse_reshape(x, shape):
-    """
-    x : a sparse COO tensor
-    shape : a shape
-    return x reshaped to shape
-    """
-    # first flatten x
-    x = sparse_flatten(x).coalesce()
-    new_indices = reshape_index(x.indices()[0], shape)
-    return t.sparse_coo_tensor(new_indices.t(), x.values(), shape)
-
-def sparse_mean(x, dim):
-    if isinstance(dim, int):
-        return x.sum(dim=dim) / x.shape[dim]
-    else:
-        return x.sum(dim=dim) / prod(x.shape[d] for d in dim)
-
-######## end sparse tensor utilities ########
+if DEBUGGING:
+    tracer_kwargs = {'validate' : True, 'scan' : True}
+else:
+    tracer_kwargs = {'validate' : False, 'scan' : False}
 
 
 def get_circuit(
@@ -93,10 +38,15 @@ def get_circuit(
         metric_kwargs=dict(),
         aggregation='sum', # or 'none' for not aggregating across sequence position
         nodes_only=False,
+        parallel_attn=False,
         node_threshold=0.1,
         edge_threshold=0.01,
 ):
-    all_submods = [embed] + [submod for layer_submods in zip(mlps, attns, resids) for submod in layer_submods]
+    all_submods = (
+        [embed] if embed is not None else []
+    ) + [
+        submod for layer_submods in zip(attns, mlps, resids) for submod in layer_submods
+    ]
     
     # first get the patching effect of everything on y
     effects, deltas, grads, total_effect = patching_effect(
@@ -110,19 +60,24 @@ def get_circuit(
         method='ig' # get better approximations for early layers by using ig
     )
 
-    def unflatten(tensor): # will break if dictionaries vary in size between layers
-        b, s, f = effects[resids[0]].act.shape
-        unflattened = rearrange(tensor, '(b s x) -> b s x', b=b, s=s)
-        return SparseAct(act=unflattened[...,:f], res=unflattened[...,f:])
+    # def unflatten(tensor): # will break if dictionaries vary in size between layers
+    #     b, s, f = effects[resids[0]].act.shape
+    #     unflattened = rearrange(tensor, '(b s x) -> b s x', b=b, s=s)
+    #     return SparseAct(act=unflattened[...,:f], res=unflattened[...,f:])
     
+    # features_by_submod = {
+    #     submod : (effects[submod].to_tensor().flatten().abs() > node_threshold).nonzero().flatten().tolist() for submod in all_submods
+    # }
+
     features_by_submod = {
-        submod : (effects[submod].to_tensor().flatten().abs() > node_threshold).nonzero().flatten().tolist() for submod in all_submods
+        submod : effects[submod].abs() > node_threshold for submod in all_submods
     }
 
     n_layers = len(resids)
 
     nodes = {'y' : total_effect}
-    nodes['embed'] = effects[embed]
+    if embed is not None:
+        nodes['embed'] = effects[embed]
     for i in range(n_layers):
         nodes[f'attn_{i}'] = effects[attns[i]]
         nodes[f'mlp_{i}'] = effects[mlps[i]]
@@ -139,7 +94,7 @@ def get_circuit(
     edges = defaultdict(lambda:{})
     edges[f'resid_{len(resids)-1}'] = { 'y' : effects[resids[-1]].to_tensor().flatten().to_sparse() }
 
-    def N(upstream, downstream):
+    def N(upstream, downstream, midstream=[]):
         return jvp(
             clean,
             model,
@@ -149,9 +104,8 @@ def get_circuit(
             upstream,
             grads[downstream],
             deltas[upstream],
-            return_without_right=True,
+            intermediate_stopgrads=midstream,
         )
-
 
     # now we work backward through the model to get the edges
     for layer in reversed(range(len(resids))):
@@ -159,53 +113,106 @@ def get_circuit(
         mlp = mlps[layer]
         attn = attns[layer]
 
-        MR_effect, MR_grad = N(mlp, resid)
-        AR_effect, AR_grad = N(attn, resid)
-
+        MR_effect = N(mlp, resid)
+        AR_effect = N(attn, resid, [mlp])
         edges[f'mlp_{layer}'][f'resid_{layer}'] = MR_effect
         edges[f'attn_{layer}'][f'resid_{layer}'] = AR_effect
 
+        if parallel_attn:
+            AM_effect = N(attn, mlp)
+            edges[f'attn_{layer}'][f'mlp_{layer}'] = AM_effect
+        
         if layer > 0:
             prev_resid = resids[layer-1]
         else:
             prev_resid = embed
+        
+        if prev_resid is not None:
+            RM_effect = N(prev_resid, mlp, [attn])
+            RA_effect = N(prev_resid, attn)
+            RR_effect = N(prev_resid, resid, [mlp, attn])
+            
+            if layer > 0:
+                edges[f'resid_{layer-1}'][f'mlp_{layer}'] = RM_effect
+                edges[f'resid_{layer-1}'][f'attn_{layer}'] = RA_effect
+                edges[f'resid_{layer-1}'][f'resid_{layer}'] = RR_effect
+            else:
+                edges['embed'][f'mlp_{layer}'] = RM_effect
+                edges['embed'][f'attn_{layer}'] = RA_effect
+                edges['embed'][f'resid_0'] = RR_effect
 
-        RM_effect, _ = N(prev_resid, mlp)
-        RA_effect, _ = N(prev_resid, attn)
+        # RM_effect = N(prev_resid, mlp)
+        # RA_effect = N(prev_resid, attn)
+        # RR_effect = N(prev_resid, resid, [mlp, attn])
 
-        MR_grad = MR_grad.coalesce()
-        AR_grad = AR_grad.coalesce()
+        # # get RR effect
+        # # W_E = dictionaries[resid].encoder.weight
+        # # W_D = dictionaries[resid].decoder.weight
+        # # W_D_prev = dictionaries[prev_resid].decoder.weight
+        # # downstream_grad = grads[resid]
+        # # downstream_idxs = features_by_submod[resid].act.nonzero()
+        # # upstream_delta = deltas[prev_resid]
+        # # upstream_idxs = features_by_submod[prev_resid].act.nonzero()
 
-        RMR_effect = jvp(
-            clean,
-            model,
-            dictionaries,
-            mlp,
-            features_by_submod[resid],
-            prev_resid,
-            {feat_idx : unflatten(MR_grad[feat_idx].to_dense()) for feat_idx in features_by_submod[resid]},
-            deltas[prev_resid],
-        )
-        RAR_effect = jvp(
-            clean,
-            model,
-            dictionaries,
-            attn,
-            features_by_submod[resid],
-            prev_resid,
-            {feat_idx : unflatten(AR_grad[feat_idx].to_dense()) for feat_idx in features_by_submod[resid]},
-            deltas[prev_resid],
-        )
-        RR_effect, _ = N(prev_resid, resid)
+        # # # define some shapes
+        # # assert (b := downstream_grad.act.shape[0]) == upstream_delta.act.shape[0]
+        # # assert (s := downstream_grad.act.shape[1]) == upstream_delta.act.shape[1]
+        # # assert (f := downstream_grad.act.shape[2]) == upstream_delta.act.shape[2] and f == W_E.shape[0] and f == W_D_prev.shape[1]
+        # # assert (d := W_E.shape[1]) == W_D_prev.shape[0]
 
-        if layer > 0: 
-            edges[f'resid_{layer-1}'][f'mlp_{layer}'] = RM_effect
-            edges[f'resid_{layer-1}'][f'attn_{layer}'] = RA_effect
-            edges[f'resid_{layer-1}'][f'resid_{layer}'] = RR_effect - RMR_effect - RAR_effect
-        else:
-            edges['embed'][f'mlp_{layer}'] = RM_effect
-            edges['embed'][f'attn_{layer}'] = RA_effect
-            edges['embed'][f'resid_0'] = RR_effect - RMR_effect - RAR_effect
+        # # mask = t.zeros(b, s, f, device=model.device, dtype=t.bool)
+        # # mask[tuple(downstream_idxs.T)] = True
+        # # downstream_grad.act[~mask] = 0
+        # # downstream_grad.act = downstream_grad.act.to_sparse_coo()
+
+        # # mask = t.zeros(b, s, f, device=model.device, dtype=t.bool)
+        # # mask[tuple(upstream_idxs.T)] = True
+        # # upstream_delta.act[~mask] = 0
+        # # upstream_delta.act = upstream_delta.act.to_sparse_coo()
+
+        # # with t.no_grad():
+
+        # #     # ffm_effect
+        # #     rfm_grad = sparsely_batched_outer_prod(
+        # #         downstream_grad.act, W_E
+        # #     ) # [b, s, f | d]
+        # #     fr_delta = sparsely_batched_outer_prod(
+        # #         upstream_delta.act, W_D_prev.T
+        # #     ) # [b, s, f | d]
+        # #     ffm_effect = doubly_batched_inner_prod(rfm_grad, fr_delta) # [b, s, f, b, s, f]
+
+        # #     # efm_effect
+        # #     efm_effect = doubly_batched_inner_prod(rfm_grad, upstream_delta.res.to_sparse(sparse_dim=2))
+        # #     efm_effect = efm_effect.unsqueeze(-1)
+
+        # #     # fem_effect
+        # #     frm_grad = (downstream_grad.res.unsqueeze(-2) @ W_D_prev).squeeze(-2) # [b, s, f]
+        # #     frm_effect = frm_grad * upstream_delta.act # [b, s, f]
+        # #     fem_effect = frm_effect - ffm_effect.sum(dim=(0, 1, 2))
+        # #     fem_effect = sparse_reshape(fem_effect, (b, s, 1, b, s, f))
+
+        # #     # eem_effect
+        # #     eem_effect = (downstream_grad.res.view(b, s, 1, 1, d) * \
+        # #         upstream_delta.res.view(1, 1, b, s, d)).sum(dim=-1)
+        # #     eem_effect =  eem_effect.unsqueeze(2).unsqueeze(-1).to_sparse()
+
+        # #     # aggregate into RR_effect
+        # #     RR_effect = t.cat(
+        # #         [
+        # #             t.cat([ffm_effect, efm_effect], dim=-1),
+        # #             t.cat([fem_effect, eem_effect], dim=-1)
+        # #         ],
+        # #         dim=2
+        # #     )
+
+        # if layer > 0: 
+        #     edges[f'resid_{layer-1}'][f'mlp_{layer}'] = RM_effect
+        #     edges[f'resid_{layer-1}'][f'attn_{layer}'] = RA_effect
+        #     edges[f'resid_{layer-1}'][f'resid_{layer}'] = RR_effect
+        # else:
+        #     edges['embed'][f'mlp_{layer}'] = RM_effect
+        #     edges['embed'][f'attn_{layer}'] = RA_effect
+        #     edges['embed'][f'resid_0'] = RR_effect
 
     # rearrange weight matrices
     for child in edges:
@@ -216,9 +223,13 @@ def get_circuit(
             if parent == 'y':
                 weight_matrix = sparse_reshape(weight_matrix, (bc, sc, fc+1))
             else:
-                bp, sp, fp = nodes[parent].act.shape
-                assert bp == bc
-                weight_matrix = sparse_reshape(weight_matrix, (bp, sp, fp+1, bc, sc, fc+1))
+                continue
+                # bp, sp, fp = nodes[parent].act.shape
+                # assert bp == bc
+                # try:
+                #     weight_matrix = sparse_reshape(weight_matrix, (bp, sp, fp+1, bc, sc, fc+1))
+                # except:
+                #     breakpoint()
             edges[child][parent] = weight_matrix
     
     if aggregation == 'sum':
@@ -265,16 +276,12 @@ def get_circuit(
                 else:
                     bp, sp, fp = nodes[parent].act.shape
                     assert bp == bc
-                    weight_matrix = sparse_reshape(weight_matrix, (bp, sp, fp+1, bc, sc, fc+1))
+                    # weight_matrix = sparse_reshape(weight_matrix, (bp, sp, fp+1, bc, sc, fc+1))
                     weight_matrix = weight_matrix.sum(dim=(0, 3)) / bc
                 edges[child][parent] = weight_matrix
         for node in nodes:
-            try:
-                if node != 'y':
-                    nodes[node] = nodes[node].mean(dim=0)
-            except AttributeError as e:
-                print(node)
-                raise e
+            if node != 'y':
+                nodes[node] = nodes[node].mean(dim=0)
 
     else:
         raise ValueError(f"Unknown aggregation: {aggregation}")
@@ -307,22 +314,23 @@ def get_circuit_cluster(dataset,
     mlps = [layer.mlp for layer in model.gpt_neox.layers]
     resids = [layer for layer in model.gpt_neox.layers]
     dictionaries = {}
+    dictionaries[embed] = AutoEncoder.from_pretrained(
+        os.path.join(dict_path, f'embed/{dict_id}_{dict_size}/ae.pt'),
+        device=device
+    )
     for i in range(len(model.gpt_neox.layers)):
-        ae = AutoEncoder(d_model, dict_size).to(device)
-        ae.load_state_dict(t.load(os.path.join(dict_path, f'embed/{dict_id}_{dict_size}/ae.pt')))
-        dictionaries[embed] = ae
-
-        ae = AutoEncoder(d_model, dict_size).to(device)
-        ae.load_state_dict(t.load(os.path.join(dict_path, f'attn_out_layer{i}/{dict_id}_{dict_size}/ae.pt')))
-        dictionaries[attns[i]] = ae
-
-        ae = AutoEncoder(d_model, dict_size).to(device)
-        ae.load_state_dict(t.load(os.path.join(dict_path, f'mlp_out_layer{i}/{dict_id}_{dict_size}/ae.pt')))
-        dictionaries[mlps[i]] = ae
-
-        ae = AutoEncoder(d_model, dict_size).to(device)
-        ae.load_state_dict(t.load(os.path.join(dict_path, f'resid_out_layer{i}/{dict_id}_{dict_size}/ae.pt')))
-        dictionaries[resids[i]] = ae
+        dictionaries[attns[i]] = AutoEncoder.from_pretrained(
+            os.path.join(dict_path, f'attn_out_layer{i}/{dict_id}_{dict_size}/ae.pt'),
+            device=device
+        )
+        dictionaries[mlps[i]] = AutoEncoder.from_pretrained(
+            os.path.join(dict_path, f'mlp_out_layer{i}/{dict_id}_{dict_size}/ae.pt'),
+            device=device
+        )
+        dictionaries[resids[i]] = AutoEncoder.from_pretrained(
+            os.path.join(dict_path, f'resid_out_layer{i}/{dict_id}_{dict_size}/ae.pt'),
+            device=device
+        )
 
     examples = load_examples_nopair(dataset, max_examples, model, length=max_length)
 
@@ -395,13 +403,13 @@ def get_circuit_cluster(dataset,
     edges = save_dict['edges']
 
     # feature annotations
-    try:
-        annotations = {}
-        with open(f'annotations/{dict_id}_{dict_size}.jsonl', 'r') as f:
+    if os.path.exists(f"annotations/{args.model}.jsonl"):
+        print("Loading feature annotations")
+        with open(f'annotations/{args.model}.jsonl', 'r') as f:
             for line in f:
                 line = json.loads(line)
                 annotations[line['Name']] = line['Annotation']
-    except:
+    else:
         annotations = None
 
     plot_circuit(
@@ -429,10 +437,8 @@ if __name__ == '__main__':
                         help="Path to all dictionaries for your language model.")
     parser.add_argument('--d_model', type=int, default=512,
                         help="Hidden size of the language model.")
-    parser.add_argument('--dict_id', type=str, default=10,
-                        help="ID of the dictionaries. Use `id` to obtain circuits on neurons/heads directly.")
-    parser.add_argument('--dict_size', type=int, default=32768,
-                        help="The width of the dictionary encoder.")
+    parser.add_argument('--use_neurons', default=False, action="store_true",
+                        help="Use neurons instead of features.")
     parser.add_argument('--batch_size', type=int, default=32,
                         help="Number of examples to process at once when running circuit discovery.")
     parser.add_argument('--aggregation', type=str, default='sum',
@@ -454,125 +460,162 @@ if __name__ == '__main__':
                         help="Plot the circuit after discovering it.")
     parser.add_argument('--nodes_only', default=False, action='store_true',
                         help="Only search for causally implicated features; do not draw edges.")
-    parser.add_argument('--plot_only', action="store_true",
+    parser.add_argument('--plot_only', default=False, action="store_true",
                         help="Do not run circuit discovery; just plot an existing circuit.")
-    parser.add_argument("--circuit_dir", type=str, default="circuits/",
+    parser.add_argument("--circuit_dir", type=str, default="circuits",
                         help="Directory to save/load circuits.")
     parser.add_argument("--plot_dir", type=str, default="circuits/figures/",
                         help="Directory to save figures.")
-    parser.add_argument("--annotations_file", type=str, default=None,
-                        help="Path to annotations .json file.")
     parser.add_argument('--seed', type=int, default=12)
     parser.add_argument('--device', type=str, default='cuda:0')
     args = parser.parse_args()
 
+    device = t.device(args.device)
 
-    device = args.device
+    n_layers = {
+        "EleutherAI/pythia-70m-deduped" : 6,
+        "google/gemma-2-2b" : 26,
+    }[args.model]
+    parallel_attn = {
+        "EleutherAI/pythia-70m-deduped" : False,
+        "google/gemma-2-2b" : True,
+    }[args.model]
+    include_embed = {
+        "EleutherAI/pythia-70m-deduped" : True,
+        "google/gemma-2-2b" : False,
+    }[args.model]
+    dtype = {
+        "EleutherAI/pythia-70m-deduped" : t.float32,
+        "google/gemma-2-2b" : t.bfloat16,
+    }[args.model]
 
-    model = LanguageModel(args.model, device_map=device, dispatch=True)
-
-    embed = model.gpt_neox.embed_in
-    attns = [layer.attention for layer in model.gpt_neox.layers]
-    mlps = [layer.mlp for layer in model.gpt_neox.layers]
-    resids = [layer for layer in model.gpt_neox.layers]
-
-    dictionaries = {}
-    if args.dict_id == 'id':
-        from dictionary_learning.dictionary import IdentityDict
-        dictionaries[embed] = IdentityDict(args.d_model)
-        for i in range(len(model.gpt_neox.layers)):
-            dictionaries[attns[i]] = IdentityDict(args.d_model)
-            dictionaries[mlps[i]] = IdentityDict(args.d_model)
-            dictionaries[resids[i]] = IdentityDict(args.d_model)
-    else:
-        ae = AutoEncoder(args.d_model, args.dict_size).to(device)
-        ae.load_state_dict(t.load(f'{args.dict_path}/embed/{args.dict_id}_{args.dict_size}/ae.pt'))
-        dictionaries[embed] = ae
-        for i in range(len(model.gpt_neox.layers)):
-            ae = AutoEncoder(args.d_model, args.dict_size).to(device)
-            ae.load_state_dict(t.load(f'{args.dict_path}/attn_out_layer{i}/{args.dict_id}_{args.dict_size}/ae.pt'))
-            dictionaries[attns[i]] = ae
-
-            ae = AutoEncoder(args.d_model, args.dict_size).to(device)
-            ae.load_state_dict(t.load(f'{args.dict_path}/mlp_out_layer{i}/{args.dict_id}_{args.dict_size}/ae.pt'))
-            dictionaries[mlps[i]] = ae
-
-            ae = AutoEncoder(args.d_model, args.dict_size).to(device)
-            ae.load_state_dict(t.load(f'{args.dict_path}/resid_out_layer{i}/{args.dict_id}_{args.dict_size}/ae.pt'))
-            dictionaries[resids[i]] = ae
+    if args.model == "EleutherAI/pythia-70m-deduped":
+        model = LanguageModel(args.model, device_map=device, dispatch=True)
+    elif args.model == "google/gemma-2-2b":
+        model = LanguageModel(args.model, device_map=device, dispatch=True, attn_implementation="eager", torch_dtype=dtype)
     
     if args.nopair:
+        raise NotImplementedError("No-pair mode is not yet implemented for new data loading.")
         save_basename = os.path.splitext(os.path.basename(args.dataset))[0]
         examples = load_examples_nopair(args.dataset, args.num_examples, model, length=args.example_length)
     else:
-        ignore_patch = args.nopair_reg
         data_path = f"data/{args.dataset}.json"
-        save_basename = args.dataset
         if args.aggregation == "sum":
-            examples = load_examples(data_path, args.num_examples, model, pad_to_length=args.example_length,
-                                     ignore_patch=ignore_patch)
+            raise NotImplementedError("Sum aggregation is not yet implemented for new data loading.")
+            examples = load_examples(data_path, args.num_examples, model, pad_to_length=args.example_length)
         else:
-            examples = load_examples(data_path, args.num_examples, model, length=args.example_length,
-                                     ignore_patch=ignore_patch)
+            examples = load_examples(data_path, args.num_examples, model, use_min_length_only=True,
+                ignore_patch=args.nopair_reg)
+    
+    num_examples = min([args.num_examples, len(examples)])
+    if num_examples < args.num_examples: # warn the user
+        print(f"Total number of examples is less than {args.num_examples}. Using {num_examples} examples instead.")
     
     batch_size = args.batch_size
-    num_examples = min([args.num_examples, len(examples)])
     n_batches = math.ceil(num_examples / batch_size)
     batches = [
         examples[batch*batch_size:(batch+1)*batch_size] for batch in range(n_batches)
     ]
-    if num_examples < args.num_examples: # warn the user
-        print(f"Total number of examples is less than {args.num_examples}. Using {num_examples} examples instead.")
 
-    if not args.plot_only:
+    loaded_from_disk = False
+    save_base = f"{args.model.split('/')[-1]}_{args.dataset}_n{num_examples}_agg{args.aggregation}" + (
+        "_neurons" if args.use_neurons else ""
+    )
+    node_suffix = f"node{args.node_threshold}" if not args.nodes_only else "nodeall"
+    if os.path.exists(
+        save_path := f"{args.circuit_dir}/{save_base}_{node_suffix}.pt"
+    ):
+        print(f"Loading circuit from {save_path}")
+        with open(save_path, 'rb') as infile:
+            save_dict = t.load(infile)
+        nodes = save_dict['nodes']
+        edges = save_dict['edges']
+        loaded_from_disk = True
+    elif not args.nodes_only:
+        for f in os.listdir(args.circuit_dir):
+            if "nodeall" in f: continue
+            if f.startswith(save_base):
+                node_thresh = float(f.split(".")[0].split("_node")[-1])
+                if node_thresh < args.node_threshold:
+                    print(f"Loading circuit from {args.circuit_dir}/{f}")
+                    with open(f"{args.circuit_dir}/{f}", 'rb') as infile:
+                        save_dict = t.load(infile)
+                    nodes = save_dict['nodes']
+                    edges = save_dict['edges']
+                    loaded_from_disk = True
+                    break
+
+    if not loaded_from_disk:
+        print("computing circuit")
+        submodules, dictionaries = load_saes_and_submodules(
+            model,
+            separate_by_type=True,
+            include_embed=include_embed,
+            neurons=args.use_neurons,
+            device=device,
+            dtype=dtype,
+        )
+
+
         running_nodes = None
         running_edges = None
 
         for batch in tqdm(batches, desc="Batches"):
                 
-            clean_inputs = t.cat([e['clean_prefix'] for e in batch], dim=0).to(device)
-            clean_answer_idxs = t.tensor([e['clean_answer'] for e in batch], dtype=t.long, device=device)
+            clean_inputs = [
+                e['clean_prefix'] for e in batch
+            ]
+            clean_answer_idxs = t.tensor(
+                [
+                    model.tokenizer(e['clean_answer']).input_ids[-1] for e in batch
+                ],
+                dtype=t.long,
+                device=device
+            )
 
             if args.nopair or args.nopair_reg:
+                # raise NotImplementedError("No-pair mode is not yet implemented for new data loading.")
                 patch_inputs = None
                 def metric_fn(model):
+                    logits = model.output.logits[:,-1,:]
                     return (
                         -1 * t.gather(
-                            t.nn.functional.log_softmax(model.embed_out.output[:,-1,:], dim=-1), dim=-1, index=clean_answer_idxs.view(-1, 1)
+                            t.nn.functional.log_softmax(logits, dim=-1), dim=-1, index=clean_answer_idxs.view(-1, 1)
                         ).squeeze(-1)
                     )
             else:
-                patch_inputs = t.cat([e['patch_prefix'] for e in batch], dim=0).to(device)
-                patch_answer_idxs = t.tensor([e['patch_answer'] for e in batch], dtype=t.long, device=device)
+                patch_inputs = [
+                    e['patch_prefix'] for e in batch
+                ]
+                patch_answer_idxs = t.tensor(
+                    [
+                        model.tokenizer(e['patch_answer']).input_ids[-1] for e in batch
+                    ],
+                    dtype=t.long,
+                    device=device
+                )
                 def metric_fn(model):
+                    logits = model.output.logits[:,-1,:]
                     return (
-                        t.gather(model.embed_out.output[:,-1,:], dim=-1, index=patch_answer_idxs.view(-1, 1)).squeeze(-1) - \
-                        t.gather(model.embed_out.output[:,-1,:], dim=-1, index=clean_answer_idxs.view(-1, 1)).squeeze(-1)
-                    )
-            
-            # if --non_contrastive is True, override metric_fn to be negative log-prob of clean answer
-            if args.non_contrastive:
-                def metric_fn(model):
-                    return (
-                        -1 * t.gather(
-                            t.nn.functional.log_softmax(model.embed_out.output[:,-1,:], dim=-1), dim=-1, index=clean_answer_idxs.view(-1, 1)
-                        ).squeeze(-1)
+                        t.gather(logits, dim=-1, index=patch_answer_idxs.view(-1, 1)).squeeze(-1) - \
+                        t.gather(logits, dim=-1, index=clean_answer_idxs.view(-1, 1)).squeeze(-1)
                     )
             
             nodes, edges = get_circuit(
                 clean_inputs,
                 patch_inputs,
                 model,
-                embed,
-                attns,
-                mlps,
-                resids,
+                submodules.embed,
+                submodules.attns,
+                submodules.mlps,
+                submodules.resids,
                 dictionaries,
                 metric_fn,
                 nodes_only=args.nodes_only,
                 aggregation=args.aggregation,
                 node_threshold=args.node_threshold,
                 edge_threshold=args.edge_threshold,
+                parallel_attn=parallel_attn,
             )
 
             if running_nodes is None:
@@ -601,67 +644,44 @@ if __name__ == '__main__':
             "nodes": nodes,
             "edges": edges
         }
-
-        save_filename = f"{save_basename}_dict{args.dict_id}_node{args.node_threshold}_edge{args.edge_threshold}_n{num_examples}_agg{args.aggregation}"
-        if args.non_contrastive:
-            save_filename += "_noncontrastive"
-        filename = f"{args.circuit_dir}/{save_filename}"
-        filename += ".pt"
-        with open(filename, 'wb') as outfile:
+        with open(save_path, 'wb') as outfile:
             t.save(save_dict, outfile)
 
-    else:
-        save_filename = f"{save_basename}_dict{args.dict_id}_node{args.node_threshold}_edge{args.edge_threshold}_n{num_examples}_agg{args.aggregation}"
-        if args.non_contrastive:
-            save_filename += "_noncontrastive"
-        filename = f"{args.circuit_dir}/{save_filename}"
-
-        filename += ".pt"
-
-        with open(filename, 'rb') as infile:
-            save_dict = t.load(infile)
-        nodes = save_dict['nodes']
-        edges = save_dict['edges']
-
     # feature annotations
-    if args.annotations_file is not None:
+    if os.path.exists(annotations_path := f"annotations/{args.model.split('/')[-1]}.jsonl"):
+        print(f"Loading feature annotations from {annotations_path}")
         annotations = {}
-        with open(args.annotations_file, 'r') as annotations_data:
-            for annotation_line in annotations_data:
-                annotation = json.loads(annotation_line)
-                annotations[annotation["Name"]] = annotation["Annotation"]
+        with open(annotations_path, 'r') as f:
+            for line in f:
+                line = json.loads(line)
+                if "Annotation" in line:
+                    annotations[line['Name']] = line['Annotation']
     else:
-        try:
-            annotations = {}
-            with open(f"annotations/{args.dict_id}_{args.dict_size}.jsonl", 'r') as annotations_data:
-                for annotation_line in annotations_data:
-                    annotation = json.loads(annotation_line)
-                    annotations[annotation["Name"]] = annotation["Annotation"]
-        except:
-            annotations = None
+        annotations = None
 
     if args.aggregation == "none":
-        example = model.tokenizer.batch_decode(examples[0]["clean_prefix"])[0]
+        example = examples[0]["clean_prefix"]
         plot_circuit_posaligned(
             nodes, 
             edges,
-            layers=len(model.gpt_neox.layers), 
-            length=args.example_length,
+            layers=n_layers,
             example_text=example,
             node_threshold=args.node_threshold, 
             edge_threshold=args.edge_threshold, 
-            pen_thickness=args.pen_thickness, 
+            pen_thickness=args.pen_thickness,
             annotations=annotations, 
-            save_dir=f'{args.plot_dir}/{save_filename}'
+            save_dir=f'{args.plot_dir}/{save_base}_node{args.node_threshold}_edge{args.edge_threshold}',
+            gemma_mode=(args.model == "google/gemma-2-2b"),
         )
     else:
+        raise NotImplementedError("Sum aggregation is not yet implemented for new data loading.")
         plot_circuit(
             nodes, 
             edges, 
-            layers=len(model.gpt_neox.layers), 
+            layers=n_layers,
             node_threshold=args.node_threshold, 
             edge_threshold=args.edge_threshold, 
             pen_thickness=args.pen_thickness, 
             annotations=annotations, 
-            save_dir=f'{args.plot_dir}/{save_filename}'
+            save_dir=f'{args.plot_dir}/{save_base}_node{args.node_threshold}_edge{args.edge_threshold}_aggsum'
         )
