@@ -140,6 +140,7 @@ def _load_gemma_saes_and_submodules(
     separate_by_type: bool = False,
     include_embed: bool = True,
     neurons: bool = False,
+    width: str = "16k",
     dtype: t.dtype = t.float32,
     device: t.device = t.device("cpu"),
 ):
@@ -167,14 +168,14 @@ def _load_gemma_saes_and_submodules(
                 use_input=True
             )
         )
-        dictionaries[attn] = load_gemma_sae("attn", i, neurons=neurons, dtype=dtype, device=device)
+        dictionaries[attn] = load_gemma_sae("attn", i, neurons=neurons, width=width, dtype=dtype, device=device)
         mlps.append(
             mlp := Submodule(
                 name=f"mlp_{i}",
                 submodule=layer.post_feedforward_layernorm,
             )
         )
-        dictionaries[mlp] = load_gemma_sae("mlp", i, neurons=neurons, dtype=dtype, device=device)
+        dictionaries[mlp] = load_gemma_sae("mlp", i, neurons=neurons, width=width, dtype=dtype, device=device)
         resids.append(
             resid := Submodule(
                 name=f"resid_{i}",
@@ -182,7 +183,7 @@ def _load_gemma_saes_and_submodules(
                 is_tuple=True,
             )
         )
-        dictionaries[resid] = load_gemma_sae("resid", i, neurons=neurons, dtype=dtype, device=device)
+        dictionaries[resid] = load_gemma_sae("resid", i, neurons=neurons, width=width, dtype=dtype, device=device)
 
     if separate_by_type:
         return DictionaryStash(embed, attns, mlps, resids), dictionaries
@@ -201,6 +202,7 @@ def load_saes_and_submodules(
     separate_by_type: bool = False,
     include_embed: bool = True,
     neurons: bool = False,
+    width: str = "16k",
     dtype: t.dtype = t.float32,
     device: t.device = t.device("cpu"),
 ):
@@ -209,6 +211,7 @@ def load_saes_and_submodules(
     if model_name == "EleutherAI/pythia-70m-deduped":
         return _load_pythia_saes_and_submodules(model, thru_layer=thru_layer, separate_by_type=separate_by_type, include_embed=include_embed, neurons=neurons, dtype=dtype, device=device)
     elif model_name == "google/gemma-2-2b":
-        return _load_gemma_saes_and_submodules(model, thru_layer=thru_layer, separate_by_type=separate_by_type, include_embed=include_embed, neurons=neurons, dtype=dtype, device=device)
+        return _load_gemma_saes_and_submodules(model, thru_layer=thru_layer, separate_by_type=separate_by_type, include_embed=include_embed, neurons=neurons,
+                                               width=width, dtype=dtype, device=device)
     else:
         raise ValueError(f"Model {model_name} not supported")

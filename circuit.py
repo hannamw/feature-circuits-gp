@@ -447,6 +447,8 @@ if __name__ == '__main__':
                         help="Indirect effect threshold for keeping circuit nodes.")
     parser.add_argument('--edge_threshold', type=float, default=0.02,
                         help="Indirect effect threshold for keeping edges.")
+    parser.add_argument('--width', type=str, default="16k",
+                        help="Width of Gemma SAEs. Valid values: ['16k', '65k']")
     parser.add_argument('--pen_thickness', type=float, default=1,
                         help="Scales the width of the edges in the circuit plot.")
     parser.add_argument('--nopair', default=False, action="store_true",
@@ -552,6 +554,7 @@ if __name__ == '__main__':
             separate_by_type=True,
             include_embed=include_embed,
             neurons=args.use_neurons,
+            width=args.width,
             device=device,
             dtype=dtype,
         )
