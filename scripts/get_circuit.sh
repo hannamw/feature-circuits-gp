@@ -1,20 +1,17 @@
 #!/bin/bash
 
-DATA=$1
-NODE=$2
-EDGE=$3
-AGG=$4
-LENGTH=$5
-DICT_ID=$6
+MODEL=$1
+DATA=$2
+NODE=$3
+EDGE=$4
+AGG=$5
 
 python circuit.py \
-    --model EleutherAI/pythia-70m-deduped \
+    --model $MODEL \
     --num_examples 100 \
-    --batch_size 10 \
+    --batch_size 1 \
     --dataset $DATA \
 	--node_threshold $NODE \
 	--edge_threshold $EDGE \
 	--aggregation $AGG \
-    --example_length $LENGTH \
-	--nopair_reg \
-    --dict_id $DICT_ID
+    --nopair_reg
