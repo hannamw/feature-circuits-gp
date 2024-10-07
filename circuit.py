@@ -483,7 +483,7 @@ if __name__ == '__main__':
         "google/gemma-2-2b" : True,
     }[args.model]
     include_embed = {
-        "EleutherAI/pythia-70m-deduped" : True,
+        "EleutherAI/pythia-70m-deduped" : False,
         "google/gemma-2-2b" : False,
     }[args.model]
     dtype = {
@@ -492,7 +492,7 @@ if __name__ == '__main__':
     }[args.model]
 
     if args.model == "EleutherAI/pythia-70m-deduped":
-        model = LanguageModel(args.model, device_map=device, dispatch=True)
+        model = LanguageModel(args.model, device_map=device, dispatch=True, torch_dtype=dtype)
     elif args.model == "google/gemma-2-2b":
         model = LanguageModel(args.model, device_map=device, dispatch=True, attn_implementation="eager", torch_dtype=dtype)
     
@@ -537,7 +537,7 @@ if __name__ == '__main__':
         for f in os.listdir(args.circuit_dir):
             if "nodeall" in f: continue
             if f.startswith(save_base):
-                node_thresh = float(f.split(".")[0].split("_node")[-1])
+                node_thresh = float(".".join(f.split(".")[:-1]).split("_node")[-1])
                 if node_thresh < args.node_threshold:
                     print(f"Loading circuit from {args.circuit_dir}/{f}")
                     with open(f"{args.circuit_dir}/{f}", 'rb') as infile:
@@ -588,9 +588,10 @@ if __name__ == '__main__':
                         ).squeeze(-1)
                     )
             else:
-                patch_inputs = [
-                    e['patch_prefix'] for e in batch
-                ]
+                if not args.nopair_reg:
+                    patch_inputs = [
+                        e['patch_prefix'] for e in batch
+                    ]
                 patch_answer_idxs = t.tensor(
                     [
                         model.tokenizer(e['patch_answer']).input_ids[-1] for e in batch
