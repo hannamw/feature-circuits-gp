@@ -576,10 +576,10 @@ if __name__ == '__main__':
                 device=device
             )
 
-            if args.nopair or args.nopair_reg:
-                # raise NotImplementedError("No-pair mode is not yet implemented for new data loading.")
-                patch_inputs = None
+
+            # raise NotImplementedError("No-pair mode is not yet implemented for new data loading.")
             if args.nopair:
+                patch_inputs = None
                 def metric_fn(model):
                     logits = model.output.logits[:,-1,:]
                     return (
@@ -588,9 +588,13 @@ if __name__ == '__main__':
                         ).squeeze(-1)
                     )
             else:
-                patch_inputs = [
-                    e['patch_prefix'] for e in batch
-                ]
+                if args.nopair_reg:
+                    patch_inputs = None
+                else:
+                    patch_inputs = [
+                        e['patch_prefix'] for e in batch
+                    ]
+                    
                 patch_answer_idxs = t.tensor(
                     [
                         model.tokenizer(e['patch_answer']).input_ids[-1] for e in batch
