@@ -1,0 +1,691 @@
+{"Name": "resid_5/3036", "Annotation": "promotes singular verb forms"}
+{"Name": "resid_5/4264", "Annotation": "end of singular NP, promotes singular verbs"}
+{"Name": "resid_5/7468", "Annotation": "promotes 3rd person plural verb forms"}
+{"Name": "resid_5/8919", "Annotation": "promotes plural verb forms"}
+{"Name": "resid_5/19066", "Annotation": "promotes plural verb forms"}
+{"Name": "resid_5/28507", "Annotation": "predicts unmarked verb forms"}
+{"Name": "resid_5/30107", "Annotation": "plural NP subjects, promotes plural verbs"}
+{"Name": "resid_5/4729", "Annotation": "singular subjects preceded by \"The\""}
+{"Name": "resid_5/554", "Annotation": "promotes plural verb forms"}
+{"Name": "attn_5/7447", "Annotation": "promotes plural verb forms"}
+{"Name": "attn_5/9376", "Annotation": "promotes singular verb forms"}
+{"Name": "attn_5/19313", "Annotation": "promotes plural verb forms"}
+{"Name": "attn_5/25516", "Annotation": "predicts unmarked verb forms"}
+{"Name": "attn_5/29643", "Annotation": "promotes singular verb forms"}
+{"Name": "resid_4/8913", "Annotation": "plural subjects"}
+{"Name": "resid_4/13081", "Annotation": "singular animate nouns"}
+{"Name": "resid_4/11586", "Annotation": "Inanimate plural nouns"}
+{"Name": "resid_4/14719", "Annotation": "End of plural NPs, promotes plural verbs"}
+{"Name": "resid_4/16089", "Annotation": "\"government/court/state/department\" as subject"}
+{"Name": "resid_4/26914", "Annotation": "Plural nouns"}
+{"Name": "mlp_4/15560", "Annotation": "animate plural nouns"}
+{"Name": "attn_4/3982", "Annotation": "End of plural NPs, promotes plural verbs"}
+{"Name": "resid_3/8437", "Annotation": "plural nouns"}
+{"Name": "resid_3/11981", "Annotation": "plural animate nouns"}
+{"Name": "resid_3/10761", "Annotation": "legal words"}
+{"Name": "resid_3/4607", "Annotation": "plural animate nouns"}
+{"Name": "resid_3/18529", "Annotation": "relative pronouns"}
+{"Name": "mlp_3/17671", "Annotation": "prepositions and relative pronouns"}
+{"Name": "mlp_3/6782", "Annotation": "relative pronouns"}
+{"Name": "resid_2/10995", "Annotation": "plural nouns"}
+{"Name": "resid_2/14779", "Annotation": "plural nouns"}
+{"Name": "resid_2/7651", "Annotation": "plural nouns"}
+{"Name": "resid_2/29363", "Annotation": "\"men\""}
+{"Name": "resid_2/9960", "Annotation": "plural nouns"}
+{"Name": "resid_2/18529", "Annotation": "relative pronouns"}
+{"Name": "resid_2/18769", "Annotation": "legal-related professions / positions"}
+{"Name": "resid_2/30677", "Annotation": "tokens after plural nouns"}
+{"Name": "attn_2/32044", "Annotation": "plural nouns and attached VPs"}
+{"Name": "resid_1/7749", "Annotation": "plural nouns"}
+{"Name": "resid_1/10524", "Annotation": "plural nouns"}
+{"Name": "resid_1/12037", "Annotation": "plural nouns"}
+{"Name": "resid_1/11543", "Annotation": "\"men\""}
+{"Name": "resid_1/1255", "Annotation": "plural nouns"}
+{"Name": "resid_1/15769", "Annotation": "plural nouns with \"the\""}
+{"Name": "resid_1/18001", "Annotation": "plural professions"}
+{"Name": "mlp_1/22854", "Annotation": "animate plural nouns"}
+{"Name": "mlp_1/10410", "Annotation": "plural nouns"}
+{"Name": "resid_0/2494", "Annotation": "plural professions"}
+{"Name": "resid_0/10590", "Annotation": "singular professions"}
+{"Name": "resid_0/16037", "Annotation": "plural animate nouns"}
+{"Name": "resid_0/21085", "Annotation": "plural nouns"}
+{"Name": "resid_0/30136", "Annotation": "singular nouns"}
+{"Name": "resid_0/23953", "Annotation": "plural noun objects"}
+{"Name": "resid_0/24693", "Annotation": "animate plural nouns"}
+{"Name": "resid_0/22005", "Annotation": "plural nouns"}
+{"Name": "resid_0/4102", "Annotation": "\"executive\""}
+{"Name": "mlp_0/13247", "Annotation": "\"teachers\""}
+{"Name": "mlp_0/28984", "Annotation": "\"driver\""}
+{"Name": "mlp_0/10136", "Annotation": "\"executive\""}
+{"Name": "mlp_0/16150", "Annotation": "\"doctors\""}
+{"Name": "mlp_0/16663", "Annotation": "\"peers\", \"kids\""}
+{"Name": "mlp_0/17834", "Annotation": "animate plural nouns"}
+{"Name": "mlp_0/23899", "Annotation": "\"boys\", \"girls\""}
+{"Name": "mlp_0/30990", "Annotation": "\"mothers\""}
+{"Name": "mlp_0/16934", "Annotation": "\"men\""}
+{"Name": "embed/293", "Annotation": "plural nouns"}
+{"Name": "embed/25562", "Annotation": "\"kids\", \"kid\""}
+{"Name": "embed/11249", "Annotation": "\"Ladies\""}
+{"Name": "embed/27790", "Annotation": "\"friend\""}
+{"Name": "embed/10189", "Annotation": "\"man\""}
+{"Name": "embed/2243", "Annotation": "\"architect\""}
+{"Name": "embed/1635", "Annotation": "\"designers\""}
+{"Name": "embed/1565", "Annotation": "\"driver\""}
+{"Name": "embed/4285", "Annotation": "\"doctor\""}
+{"Name": "embed/4555", "Annotation": "\"assistant\""}
+{"Name": "embed/31094", "Annotation": "singular nouns"}
+{"Name": "embed/23568", "Annotation": "(no activations)"}
+{"Name": "embed/21125", "Annotation": "plural nouns"}
+{"Name": "embed/17947", "Annotation": "plural nouns"}
+{"Name": "embed/8208", "Annotation": "guard"}
+{"Name": "embed/19485", "Annotation": "\"men\""}
+{"Name": "embed/29610", "Annotation": "\"mother\""}
+{"Name": "embed/31565", "Annotation": "\"wives\", \"mothers\""}
+{"Name": "embed/1319", "Annotation": "\"guy\", \"kid\""}
+{"Name": "embed/6220", "Annotation": "\"girl\""}
+{"Name": "embed/22499", "Annotation": "\"youths\""}
+{"Name": "embed/23425", "Annotation": "\"victims\""}
+{"Name": "mlp_0/5536", "Annotation": "\"boys\""}
+{"Name": "resid_0/1807", "Annotation": "objects"}
+{"Name": "resid_0/15075", "Annotation": "\"women\""}
+{"Name": "resid_3/17192", "Annotation": "prepositions"}
+{"Name": "attn_4/31148", "Annotation": "promotes singular verb forms"}
+{"Name": "resid_5/295", "Annotation": "promotes plural verb forms"}
+{"Name": "embed/10941", "Annotation": "\"doctors\""}
+{"Name": "embed/13524", "Annotation": "\"victim\""}
+{"Name": "embed/26494", "Annotation": "\"woman\""}
+{"Name": "embed/15970", "Annotation": "\"boy\""}
+{"Name": "mlp_0/18064", "Annotation": "singular animate nouns"}
+{"Name": "mlp_0/28637", "Annotation": "plural animate nouns"}
+{"Name": "mlp_0/24139", "Annotation": "\"athletes\""}
+{"Name": "mlp_0/19216", "Annotation": "\"women\""}
+{"Name": "resid_3/20009", "Annotation": "singular nouns"}
+{"Name": "mlp_4/4523", "Annotation": "promotes singular verb forms"}
+{"Name": "resid_4/5798", "Annotation": "singular proper nouns and pronouns"}
+{"Name": "resid_4/15313", "Annotation": "singular animate nouns"}
+{"Name": "resid_4/22614", "Annotation": "plural nouns"}
+{"Name": "resid_5/1840", "Annotation": "promotes singular and past verb forms"}
+{"Name": "resid_5/8855", "Annotation": "promotes singular verb forms"}
+{"Name": "resid_5/9340", "Annotation": "promotes plural verb forms"}
+{"Name": "resid_5/18629", "Annotation": "promotes singular verb forms"}
+{"Name": "resid_5/25173", "Annotation": "promotes plural verb forms"}
+{"Name": "Name", "Annotation": "Annotation"}
+{"Name": "embed/11649", "Annotation": "\"parent\""}
+{"Name": "embed/17003", "Annotation": "\"executive\""}
+{"Name": "embed/27441", "Annotation": "\"parents\""}
+{"Name": "mlp_0/1901", "Annotation": "\"parents\""}
+{"Name": "mlp_0/10355", "Annotation": "\"parent\""}
+{"Name": "mlp_0/18502", "Annotation": "\"drivers\""}
+{"Name": "resid_0/10630", "Annotation": "plural animate nouns"}
+{"Name": "resid_0/23760", "Annotation": "singular animate nouns"}
+{"Name": "resid_1/4678", "Annotation": "singular nouns"}
+{"Name": "resid_1/17151", "Annotation": "plural professions"}
+{"Name": "resid_1/32616", "Annotation": "plural animate nouns"}
+{"Name": "resid_5/11839", "Annotation": "promotes plural verb forms"}
+{"Name": "embed/2886", "Annotation": "newlines"}
+{"Name": "embed/9394", "Annotation": "newlines"}
+{"Name": "embed/9491", "Annotation": "\"3\""}
+{"Name": "embed/13979", "Annotation": "\"CR\". promotes numbers"}
+{"Name": "embed/24081", "Annotation": "\"sp\""}
+{"Name": "embed/16130", "Annotation": "\"7\""}
+{"Name": "embed/23101", "Annotation": "\"2\""}
+{"Name": "embed/28282", "Annotation": "\"poet\""}
+{"Name": "mlp_0/12107", "Annotation": "\"3\""}
+{"Name": "mlp_0/12228", "Annotation": "\"3\""}
+{"Name": "mlp_0/4995", "Annotation": "\"CR\""}
+{"Name": "mlp_0/28747", "Annotation": "\"7\""}
+{"Name": "mlp_0/28953", "Annotation": "\"2\""}
+{"Name": "mlp_0/12282", "Annotation": "\"4\""}
+{"Name": "mlp_0/16595", "Annotation": "\"3\""}
+{"Name": "mlp_0/23395", "Annotation": "\"6\""}
+{"Name": "resid_0/8729", "Annotation": "\"3\""}
+{"Name": "resid_0/25899", "Annotation": "\"men\""}
+{"Name": "resid_0/11657", "Annotation": "\"CR\""}
+{"Name": "resid_0/30086", "Annotation": "\" \\[[@\""}
+{"Name": "resid_0/15527", "Annotation": "\"sp\""}
+{"Name": "resid_0/12983", "Annotation": "\"7\", \"007\""}
+{"Name": "resid_0/9765", "Annotation": "\"boy\", \"girl\""}
+{"Name": "resid_0/4893", "Annotation": "\"2\""}
+{"Name": "resid_1/18376", "Annotation": "\"3\", \"Three\", \"03\""}
+{"Name": "resid_1/20098", "Annotation": "\"CR\". promotes numbers"}
+{"Name": "resid_1/19708", "Annotation": "\"sp\""}
+{"Name": "resid_1/7542", "Annotation": "\"3\"/\"iii\" and multiples of 3"}
+{"Name": "resid_2/26688", "Annotation": "\"CR\""}
+{"Name": "resid_2/31615", "Annotation": "\"B\""}
+{"Name": "resid_2/21572", "Annotation": "\"B\"/\"CR\" before numbers"}
+{"Name": "resid_2/6749", "Annotation": "promotes newlines"}
+{"Name": "resid_2/25123", "Annotation": "\"2\" or \"3\" (or text versions)"}
+{"Name": "attn_3/14579", "Annotation": "succession: promotes y+1 given xy ... x"}
+{"Name": "attn_2/27384", "Annotation": "promotes plural nouns"}
+{"Name": "attn_3/26353", "Annotation": "induction: second x in x3 ... x"}
+{"Name": "resid_3/11408", "Annotation": "tokens after \"@\" and before numbers"}
+{"Name": "resid_3/8590", "Annotation": "prepositions"}
+{"Name": "resid_3/5357", "Annotation": "tokens after \"@\" and before numbers"}
+{"Name": "resid_3/25644", "Annotation": "promotes groups of newlines"}
+{"Name": "resid_3/27675", "Annotation": "induction: second y in #yz ... #y, where z is a number"}
+{"Name": "resid_3/26633", "Annotation": "induction: second x in x3... x"}
+{"Name": "resid_4/26222", "Annotation": "\"CR\""}
+{"Name": "resid_4/23831", "Annotation": "\"B\", \"ref\""}
+{"Name": "resid_4/19577", "Annotation": "promotes groups of newlines"}
+{"Name": "resid_4/4340", "Annotation": "induction: second x in x3 ... x"}
+{"Name": "resid_4/8908", "Annotation": "promotes newlines"}
+{"Name": "resid_4/12046", "Annotation": "promotes \"4\""}
+{"Name": "resid_5/899", "Annotation": "gibberish"}
+{"Name": "resid_5/26851", "Annotation": "induction: second y in xy... xy"}
+{"Name": "resid_5/27843", "Annotation": "induction: second y in xyz... xy"}
+{"Name": "resid_5/21625", "Annotation": "induction: second x in x2 ... x"}
+{"Name": "embed/8233", "Annotation": "\"required\""}
+{"Name": "mlp_0/26732", "Annotation": "\"required\""}
+{"Name": "mlp_0/11764", "Annotation": "\"woman\""}
+{"Name": "mlp_0/10429", "Annotation": "\"girl\""}
+{"Name": "resid_0/30147", "Annotation": "past participles before prepositions"}
+{"Name": "resid_0/4926", "Annotation": "\"woman\""}
+{"Name": "resid_1/32358", "Annotation": "past participles and adjectives before prepositions"}
+{"Name": "resid_1/8194", "Annotation": "singular female-associated nouns"}
+{"Name": "resid_2/22653", "Annotation": "past participles, adjectives, and nouns before prepositions"}
+{"Name": "resid_2/20421", "Annotation": "verbs before prepositions"}
+{"Name": "resid_3/10364", "Annotation": "past participles, adjectives, and nouns before prepositions"}
+{"Name": "resid_3/31728", "Annotation": "predicates before prepositions"}
+{"Name": "resid_3/11794", "Annotation": "verbs before prepositions"}
+{"Name": "resid_4/25089", "Annotation": "past participles and nouns promoting prepositons"}
+{"Name": "resid_4/31158", "Annotation": "singular nouns and pronouns"}
+{"Name": "resid_4/6798", "Annotation": "verbs, nouns, and participles promoting prepositions"}
+{"Name": "resid_4/1620", "Annotation": "participle, nouns, and adjective predicates"}
+{"Name": "resid_4/10570", "Annotation": "objects before infinitives"}
+{"Name": "resid_5/7552", "Annotation": "words often followed by \"to\""}
+{"Name": "resid_5/308", "Annotation": "noun predicates promoting \"to\""}
+{"Name": "attn_5/974", "Annotation": "promotes singular verb forms"}
+{"Name": "embed/10859", "Annotation": "\"asked\""}
+{"Name": "embed/26841", "Annotation": "singular animate nouns"}
+{"Name": "embed/7068", "Annotation": "singular animate nouns"}
+{"Name": "embed/1215", "Annotation": "\"teacher\""}
+{"Name": "embed/478", "Annotation": "plural animate nouns"}
+{"Name": "embed/13807", "Annotation": "\"Britain\", \"Brexit\""}
+{"Name": "embed/16937", "Annotation": "\"require\""}
+{"Name": "embed/31875", "Annotation": "\"allowed\""}
+{"Name": "mlp_0/10665", "Annotation": "past and past participle verbs"}
+{"Name": "mlp_0/29209", "Annotation": "proper nouns relating to the UK"}
+{"Name": "mlp_0/15008", "Annotation": "\"require\""}
+{"Name": "mlp_0/20713", "Annotation": "\"allowed\", \"permitted\", \"rules\""}
+{"Name": "resid_0/12292", "Annotation": "verbs and participles that take infinitive objects"}
+{"Name": "embed/946", "Annotation": "'his'"}
+{"Name": "embed/5719", "Annotation": "'research'"}
+{"Name": "embed/7392", "Annotation": "'He'"}
+{"Name": "embed/10784", "Annotation": "'Nursing'"}
+{"Name": "embed/17846", "Annotation": "'He'"}
+{"Name": "embed/22068", "Annotation": "'His'"}
+{"Name": "embed/23079", "Annotation": "'tastes'"}
+{"Name": "embed/25904", "Annotation": "'nursing'"}
+{"Name": "embed/28533", "Annotation": "'She'"}
+{"Name": "embed/29476", "Annotation": "'he'"}
+{"Name": "embed/31461", "Annotation": "'His'"}
+{"Name": "embed/31467", "Annotation": "'she'"}
+{"Name": "embed/32081", "Annotation": "'her'"}
+{"Name": "embed/32469", "Annotation": "'She'"}
+{"Name": "attn_0/23752", "Annotation": "capitalized words, especially pronouns"}
+{"Name": "mlp_0/2995", "Annotation": "'he'"}
+{"Name": "mlp_0/3842", "Annotation": "'She'"}
+{"Name": "mlp_0/10258", "Annotation": "female names"}
+{"Name": "mlp_0/13387", "Annotation": "'she'"}
+{"Name": "mlp_0/13968", "Annotation": "'He'"}
+{"Name": "mlp_0/18382", "Annotation": "'her'"}
+{"Name": "mlp_0/19369", "Annotation": "'His'"}
+{"Name": "mlp_0/28127", "Annotation": "'She'"}
+{"Name": "mlp_0/30518", "Annotation": "'He'"}
+{"Name": "resid_0/1022", "Annotation": "'she'"}
+{"Name": "resid_0/9651", "Annotation": "female names"}
+{"Name": "resid_0/10060", "Annotation": "'She'"}
+{"Name": "resid_0/18967", "Annotation": "'He'"}
+{"Name": "resid_0/22084", "Annotation": "'he'"}
+{"Name": "resid_0/23898", "Annotation": "'His'"}
+{"Name": "resid_0/24799", "Annotation": "promotes surnames"}
+{"Name": "resid_0/26504", "Annotation": "'her'"}
+{"Name": "resid_0/29626", "Annotation": "'his'"}
+{"Name": "resid_0/31201", "Annotation": "'nursing'"}
+{"Name": "attn_1/8147", "Annotation": "unclear, something with names"}
+{"Name": "mlp_1/24159", "Annotation": "'She', 'she'"}
+{"Name": "mlp_1/25018", "Annotation": "female names"}
+{"Name": "resid_1/4592", "Annotation": "'her'"}
+{"Name": "resid_1/8920", "Annotation": "'he'"}
+{"Name": "resid_1/9877", "Annotation": "female names"}
+{"Name": "resid_1/12128", "Annotation": "'his'"}
+{"Name": "resid_1/15017", "Annotation": "'she'"}
+{"Name": "resid_1/17369", "Annotation": "contact info"}
+{"Name": "resid_1/26969", "Annotation": "related to nursing"}
+{"Name": "resid_1/30248", "Annotation": "female names"}
+{"Name": "attn_2/13570", "Annotation": "promotes male-related words"}
+{"Name": "attn_2/27472", "Annotation": "female names, promotes female-related words"}
+{"Name": "resid_2/1995", "Annotation": "promotes female-associated words"}
+{"Name": "resid_2/9128", "Annotation": "feminine pronouns"}
+{"Name": "resid_2/11656", "Annotation": "promotes male-associated words"}
+{"Name": "resid_2/12440", "Annotation": "promotes female-associated words"}
+{"Name": "resid_2/14638", "Annotation": "related to contact information?"}
+{"Name": "resid_2/29206", "Annotation": "gendered pronouns"}
+{"Name": "resid_2/29295", "Annotation": "female names"}
+{"Name": "resid_2/31098", "Annotation": "nursing-related words"}
+{"Name": "attn_3/2959", "Annotation": "promotes female-associated words"}
+{"Name": "attn_3/19128", "Annotation": "promotes male-associated words"}
+{"Name": "attn_3/22029", "Annotation": "promotes female-associated words"}
+{"Name": "resid_3/19558", "Annotation": "promotes female-associated words"}
+{"Name": "resid_3/23545", "Annotation": "'she'"}
+{"Name": "resid_3/24806", "Annotation": "'her'"}
+{"Name": "resid_3/27334", "Annotation": "promotes male-associated words"}
+{"Name": "resid_3/31453", "Annotation": "female names"}
+{"Name": "attn_4/31101", "Annotation": "promotes female-associated words"}
+{"Name": "resid_4/9766", "Annotation": "promotes female-associated words"}
+{"Name": "resid_4/12420", "Annotation": "promotes female pronouns"}
+{"Name": "resid_4/30220", "Annotation": "promotes male pronouns"}
+{"Name": "embed/5944", "Annotation": "the word \"treatment\""}
+{"Name": "attn_0/14747", "Annotation": "\"the\" and words that follow (decreasing intensity)"}
+{"Name": "mlp_0/28281", "Annotation": "the word \"started\""}
+{"Name": "embed/30316", "Annotation": "the word \"file\""}
+{"Name": "resid_3/3314", "Annotation": "in/direct objects and nouns in prepositional phrases"}
+{"Name": "attn_0/2447", "Annotation": "the word \"After\""}
+{"Name": "mlp_2/16984", "Annotation": "spaces"}
+{"Name": "resid_1/18354", "Annotation": "\" the\""}
+{"Name": "resid_0/28531", "Annotation": "years and nouns after \" the\"/\"The\""}
+{"Name": "attn_3/8236", "Annotation": "activates in adverbial phrases"}
+{"Name": "resid_2/24943", "Annotation": "the word \"began\""}
+{"Name": "resid_2/32364", "Annotation": "the word \"file\""}
+{"Name": "resid_4/3960", "Annotation": "nouns in prepositional phrases"}
+{"Name": "resid_1/21641", "Annotation": "Capitalized words at start of sentence"}
+{"Name": "embed/5528", "Annotation": "the word \"song\""}
+{"Name": "resid_2/17961", "Annotation": "First token in sentence"}
+{"Name": "resid_3/10842", "Annotation": "subject detector"}
+{"Name": "embed/17920", "Annotation": "the word \"machine\""}
+{"Name": "mlp_2/31640", "Annotation": "<EOT> and spaces"}
+{"Name": "embed/29782", "Annotation": "the word \"job\""}
+{"Name": "mlp_0/1899", "Annotation": "(no activations)"}
+{"Name": "embed/3347", "Annotation": "the word \"read\""}
+{"Name": "resid_1/17748", "Annotation": "the word \"defendant\""}
+{"Name": "resid_1/25962", "Annotation": "(unclear)"}
+{"Name": "mlp_0/28735", "Annotation": "the word \"stopped\""}
+{"Name": "resid_2/19140", "Annotation": "the word \"the\" in if/when clauses"}
+{"Name": "resid_1/27020", "Annotation": "commas that end subordinate clauses"}
+{"Name": "resid_5/26622", "Annotation": "end of clause detector"}
+{"Name": "embed/8178", "Annotation": "the word \"called\""}
+{"Name": "embed/25173", "Annotation": "the word \"moved\""}
+{"Name": "attn_0/22199", "Annotation": "the word \"the\" after the word \"after\""}
+{"Name": "embed/10878", "Annotation": "(no activations)"}
+{"Name": "resid_0/2610", "Annotation": "the word \"When\""}
+{"Name": "resid_1/16725", "Annotation": "the word \"the\""}
+{"Name": "embed/21701", "Annotation": "the word \"service\""}
+{"Name": "resid_0/7836", "Annotation": "the word \"bill\" (politics)"}
+{"Name": "resid_2/24003", "Annotation": "nouns in PPs, RCs, and subordinate clauses"}
+{"Name": "resid_2/20513", "Annotation": "subjects after capital words"}
+{"Name": "resid_1/18996", "Annotation": "Words after \"after\""}
+{"Name": "resid_0/2497", "Annotation": "the word \"lost\""}
+{"Name": "resid_4/31725", "Annotation": "(limited set of) subject nouns"}
+{"Name": "resid_2/30264", "Annotation": "the word \"the\" before objects"}
+{"Name": "attn_0/81", "Annotation": "(unclear - preposition detector?)"}
+{"Name": "resid_0/9149", "Annotation": "the word \"While\""}
+{"Name": "embed/32375", "Annotation": "the word \"the\""}
+{"Name": "resid_1/1247", "Annotation": "the word \"called\" as a past participle"}
+{"Name": "resid_3/3536", "Annotation": "end of noun detector"}
+{"Name": "resid_1/3839", "Annotation": "the word \"changed\" as a past participle"}
+{"Name": "mlp_0/25411", "Annotation": "the word \"oven\" "}
+{"Name": "resid_2/26246", "Annotation": "capitalized words"}
+{"Name": "mlp_0/17131", "Annotation": "the word \"lost\""}
+{"Name": "resid_1/23536", "Annotation": "\"When\", \"Why\""}
+{"Name": "mlp_2/18115", "Annotation": "<EOT> and spaces"}
+{"Name": "resid_3/2734", "Annotation": "past tense verbs"}
+{"Name": "embed/17685", "Annotation": "the word \"Once\""}
+{"Name": "embed/10179", "Annotation": "the word \"attacked\""}
+{"Name": "mlp_4/32102", "Annotation": "end of clause detector"}
+{"Name": "resid_0/8843", "Annotation": "the word \"stopped\""}
+{"Name": "attn_3/19989", "Annotation": "nouns in prepositional phrases"}
+{"Name": "embed/4305", "Annotation": "the word \"worked\""}
+{"Name": "attn_0/6052", "Annotation": "the word \"world\" and \"first\""}
+{"Name": "embed/24369", "Annotation": "the word \"began\""}
+{"Name": "attn_0/6623", "Annotation": "tokens following \"after\", including non-new-words"}
+{"Name": "mlp_3/18112", "Annotation": "object nouns"}
+{"Name": "mlp_0/6097", "Annotation": "the word \"changed\""}
+{"Name": "resid_4/17478", "Annotation": "simple past and past participle verbs"}
+{"Name": "embed/22954", "Annotation": "the word \"After\""}
+{"Name": "embed/4108", "Annotation": "the word \"changed\""}
+{"Name": "resid_4/27648", "Annotation": "text after <|endoftext|>"}
+{"Name": "embed/19747", "Annotation": "the token \"lamb\""}
+{"Name": "resid_1/157", "Annotation": "past-tense verbs"}
+{"Name": "resid_4/19445", "Annotation": "(object) nouns, often in PPs"}
+{"Name": "resid_1/10710", "Annotation": "text in PPs/subordinate clauses"}
+{"Name": "resid_0/8234", "Annotation": "\"the\""}
+{"Name": "resid_4/3987", "Annotation": "object nouns"}
+{"Name": "resid_1/8444", "Annotation": "commas and the word after"}
+{"Name": "embed/1162", "Annotation": "the word \"money\""}
+{"Name": "resid_1/30575", "Annotation": "the word \"treatment\""}
+{"Name": "mlp_0/11181", "Annotation": "the word \"signed\""}
+{"Name": "resid_2/19897", "Annotation": "the word \"The\", especially at the start of a sentence"}
+{"Name": "resid_0/27154", "Annotation": "the word \"If\" and some following words"}
+{"Name": "embed/20658", "Annotation": "the word \"left\""}
+{"Name": "resid_0/3176", "Annotation": "Final token of PPs"}
+{"Name": "mlp_0/28372", "Annotation": "the word \"worked\""}
+{"Name": "mlp_1/9123", "Annotation": "last tokens of verbs"}
+{"Name": "attn_0/30386", "Annotation": "The token after \"Before\""}
+{"Name": "resid_2/4554", "Annotation": "\"After\", \" after\""}
+{"Name": "resid_2/27894", "Annotation": "past-tense verbs"}
+{"Name": "resid_3/32513", "Annotation": "<EOT> and the following word or two"}
+{"Name": "attn_0/30299", "Annotation": "the word \"the\""}
+{"Name": "embed/22082", "Annotation": "the word \"restaurant\""}
+{"Name": "embed/14209", "Annotation": "the word \"started\""}
+{"Name": "resid_0/6073", "Annotation": "\" the\""}
+{"Name": "resid_0/2538", "Annotation": "(unclear)"}
+{"Name": "resid_2/23827", "Annotation": "<EOT> and the next couple of words"}
+{"Name": "resid_0/24725", "Annotation": "prepositions"}
+{"Name": "embed/1376", "Annotation": "the word \"document\""}
+{"Name": "embed/3030", "Annotation": "the word \"bonus\""}
+{"Name": "embed/25145", "Annotation": "the word \"bill\" (politics)"}
+{"Name": "resid_0/23452", "Annotation": "the word \"oven\""}
+{"Name": "resid_3/22016", "Annotation": "detects subject nouns"}
+{"Name": "resid_1/20275", "Annotation": "the word \"the\" before object nouns"}
+{"Name": "attn_0/7447", "Annotation": "(unclear)"}
+{"Name": "resid_0/1782", "Annotation": "the word \"contract\""}
+{"Name": "attn_2/20678", "Annotation": "past-tense verbs"}
+{"Name": "resid_4/14907", "Annotation": "ends of various clauses"}
+{"Name": "resid_4/9746", "Annotation": "medical text / reports?"}
+{"Name": "resid_2/27585", "Annotation": "object detector"}
+{"Name": "resid_2/7957", "Annotation": "noun detector, after BOS tokens in middle of text?"}
+{"Name": "resid_2/24554", "Annotation": "the word \"operation\""}
+{"Name": "resid_2/16389", "Annotation": "the word \"machine\""}
+{"Name": "resid_2/5300", "Annotation": "the word \"money\""}
+{"Name": "resid_2/8144", "Annotation": "messy - seems to activate after BOS tokens which are in the middle of texts?"}
+{"Name": "resid_2/5912", "Annotation": "noun detector?"}
+{"Name": "resid_2/22223", "Annotation": "the word \"burger/dinner/lunch\""}
+{"Name": "resid_2/4085", "Annotation": "the word \"question/topic\""}
+{"Name": "resid_3/28627", "Annotation": "money, finance, payment"}
+{"Name": "resid_3/23035", "Annotation": "locations: across..., in/to..., nearby..."}
+{"Name": "resid_4/2510", "Annotation": "objects, also verbs if they act as complements"}
+{"Name": "resid_4/6319", "Annotation": "nouns in general"}
+{"Name": "resid_3/7623", "Annotation": "the word \"operating\""}
+{"Name": "resid_4/24646", "Annotation": "VPs related to law"}
+{"Name": "resid_4/24871", "Annotation": "letter / writing words"}
+{"Name": "resid_5/8693", "Annotation": "words often followed by \"to\"/prepositions"}
+{"Name": "resid_5/23355", "Annotation": "\"send\" + its object (IO only if pronoun)"}
+{"Name": "resid_5/26099", "Annotation": "object of \"send\" and similar verbs"}
+{"Name": "resid_5/27664", "Annotation": "VPs of movement?"}
+{"Name": "mlp_4/12712", "Annotation": "verbs that take RC objects"}
+{"Name": "attn_3/9195", "Annotation": "all tokens in RCs"}
+{"Name": "mlp_0/13719", "Annotation": "\"thought\""}
+{"Name": "resid_2/7904", "Annotation": "verbs that take RC objects"}
+{"Name": "resid_2/18979", "Annotation": "verbs that take RC objects"}
+{"Name": "mlp_5/9445", "Annotation": "subjects preceded by \"the\""}
+{"Name": "resid_1/18111", "Annotation": "inflections of \"realize\""}
+{"Name": "attn_2/6175", "Annotation": "in/direct objects and nouns in prepositional phrases"}
+{"Name": "mlp_0/21033", "Annotation": "past and participial verbs"}
+{"Name": "resid_2/23097", "Annotation": "\"After\""}
+{"Name": "resid_4/3978", "Annotation": "expected last token of nouns"}
+{"Name": "attn_3/4809", "Annotation": "VPs until the end of sentence"}
+{"Name": "resid_3/12614", "Annotation": "objects, nouns in PPs"}
+{"Name": "resid_3/11047", "Annotation": "no clear pattern"}
+{"Name": "resid_3/13372", "Annotation": "\"treatment\" detector"}
+{"Name": "resid_3/21236", "Annotation": "objects of verbs with prepositions"}
+{"Name": "resid_3/10923", "Annotation": "ucnclear"}
+{"Name": "resid_3/7315", "Annotation": "VP detector"}
+{"Name": "resid_3/14578", "Annotation": "\"machine\" detector"}
+{"Name": "resid_3/10538", "Annotation": "(object) nouns, often in PPs"}
+{"Name": "resid_3/8521", "Annotation": "cooking vocab detector"}
+{"Name": "resid_3/16392", "Annotation": "unclear"}
+{"Name": "resid_3/7506", "Annotation": "unclear"}
+{"Name": "resid_4/15988", "Annotation": "\"it\" and other objects of phrasal verbs"}
+{"Name": "resid_4/15801", "Annotation": "object nouns"}
+{"Name": "resid_4/30178", "Annotation": "unclear word detector"}
+{"Name": "resid_4/27686", "Annotation": "complement phrases?"}
+{"Name": "resid_5/24088", "Annotation": "objects of phrasal verbs"}
+{"Name": "resid_2/18575", "Annotation": "NPs starting with \"The\""}
+{"Name": "resid_3/32409", "Annotation": "\"The\""}
+{"Name": "resid_4/26813", "Annotation": "\"The\""}
+{"Name": "resid_5/31040", "Annotation": "objects of verbs"}
+{"Name": "resid_0/10757", "Annotation": "years and nouns after determiners"}
+{"Name": "resid_0/23097", "Annotation": "\"After\", \"Upon\""}
+{"Name": "resid_1/3664", "Annotation": "Capitalized words at start of sentence; main verb"}
+{"Name": "resid_2/31070", "Annotation": "subordinate conjunctions (mostly capitalized)"}
+{"Name": "resid_1/1066", "Annotation": "singular nouns after \" the\""}
+{"Name": "resid_2/9205", "Annotation": "\" the\" after prepositions, \"that\", or commas"}
+{"Name": "attn_5/6192", "Annotation": "text within subordinate clauses / prepositional phrases"}
+{"Name": "attn_3/17936", "Annotation": "in/direct objects and nouns in prepositional phrases"}
+{"Name": "attn_3/26745", "Annotation": "nouns"}
+{"Name": "attn_3/8135", "Annotation": "u/w nan"}
+{"Name": "mlp_4/19356", "Annotation": "nouns"}
+{"Name": "attn_3/11367", "Annotation": "stuff that comes after <|endoftext|>"}
+{"Name": "attn_0/22726", "Annotation": "NPs starting with \"The\""}
+{"Name": "resid_0/29334", "Annotation": "NPs starting with \"The\""}
+{"Name": "resid_0/11999", "Annotation": "\"The\", \"Your\", \"Those\""}
+{"Name": "mlp_1/25477", "Annotation": "\"The\" and proper NPs"}
+{"Name": "mlp_1/18722", "Annotation": "\"The\""}
+{"Name": "attn_0/23029", "Annotation": "?"}
+{"Name": "resid_0/14314", "Annotation": "\"training\", \"recruiting\""}
+{"Name": "attn_5/19272", "Annotation": "mostly subject nouns, also 't"}
+{"Name": "resid_1/1006", "Annotation": "prepositions"}
+{"Name": "resid_2/30888", "Annotation": "\"said\" and similar"}
+{"Name": "resid_2/28760", "Annotation": "\"thought\""}
+{"Name": "resid_3/125", "Annotation": "\"the\""}
+{"Name": "resid_4/16721", "Annotation": "\"said\" and similar"}
+{"Name": "resid_3/5862", "Annotation": "\"said\" and similar"}
+{"Name": "resid_1/10573", "Annotation": "\"said\" and similar"}
+{"Name": "resid_1/18815", "Annotation": "\"thought\""}
+{"Name": "resid_0/17000", "Annotation": "\"said\""}
+{"Name": "resid_0/13134", "Annotation": "\"thought\""}
+{"Name": "resid_0/6590", "Annotation": "\"complaint(s)\", \"criticism\", and related"}
+{"Name": "resid_0/30665", "Annotation": "opening brackets, code"}
+{"Name": "mlp_0/26776", "Annotation": "\"said\""}
+{"Name": "embed/18619", "Annotation": "\"said\""}
+{"Name": "resid_3/835", "Annotation": "subjects of CPs"}
+{"Name": "resid_4/32454", "Annotation": "\"started/began\""}
+{"Name": "resid_4/24657", "Annotation": "unclear: verbs + complements?"}
+{"Name": "resid_4/29824", "Annotation": "\"change/changed\""}
+{"Name": "resid_4/2539", "Annotation": "text in when-clauses (but not the end?)"}
+{"Name": "resid_4/32476", "Annotation": "\"leave/left\""}
+{"Name": "resid_4/22539", "Annotation": "unclear: verbs + complements?"}
+{"Name": "resid_4/21612", "Annotation": "unclear"}
+{"Name": "resid_4/3173", "Annotation": "\"stop/stopped\""}
+{"Name": "resid_4/19443", "Annotation": "text in subordinate clauses (but not the end?)"}
+{"Name": "resid_0/23497", "Annotation": "u/w nan"}
+{"Name": "resid_0/15177", "Annotation": "all tokens in NP after \"The\""}
+{"Name": "resid_0/6863", "Annotation": "\"The\""}
+{"Name": "resid_0/16112", "Annotation": "past participles"}
+{"Name": "resid_0/20802", "Annotation": "\" shown\""}
+{"Name": "resid_0/11082", "Annotation": "all tokens in NP after \" the\""}
+{"Name": "attn_0/24688", "Annotation": "\"The\""}
+{"Name": "attn_0/1721", "Annotation": "\"The\""}
+{"Name": "resid_1/25348", "Annotation": "\"The\""}
+{"Name": "resid_2/506", "Annotation": "participles and infinitives"}
+{"Name": "resid_2/45", "Annotation": "\"The\""}
+{"Name": "resid_3/24438", "Annotation": "inflections of \"give\""}
+{"Name": "resid_4/8505", "Annotation": "objects of verbs and PPs/RCs"}
+{"Name": "resid_5/5151", "Annotation": "last token of subject NP"}
+{"Name": "resid_5/20284", "Annotation": "subjects after \"The\" or \" the\""}
+{"Name": "attn_2/1737", "Annotation": "activates on NPs that directly abut across clauses (NP NP pairs that occur due to a reduced relative clause, missing comma)"}
+{"Name": "attn_3/15295", "Annotation": "activates on \"said\" and text following it"}
+{"Name": "resid_4/18350", "Annotation": "activates at potential ends of clauses that come between subjects and the verb that follows them; upweights (mostly) singular verbs"}
+{"Name": "attn_3/10523", "Annotation": "activates on the sentence's subject, from \"the\" to the token it must agree with"}
+{"Name": "attn_3/20546", "Annotation": "activates in reduced relative clauses, upweights singular verbs"}
+{"Name": "attn_3/4033", "Annotation": "activates within relative clauses, upweights singular verbs"}
+{"Name": "resid_4/2808", "Annotation": "final token of past participle VPs"}
+{"Name": "resid_3/18923", "Annotation": "text within subordinate clauses / prepositional phrases"}
+{"Name": "resid_3/28124", "Annotation": "clause detector"}
+{"Name": "resid_4/460", "Annotation": "weak end of clause detector"}
+{"Name": "resid_4/2438", "Annotation": "in/direct objects and nouns in prepositional phrases (messily)"}
+{"Name": "resid_4/6454", "Annotation": "geography word detector"}
+{"Name": "resid_4/8305", "Annotation": "the prepositional part of phrasal verbs, or make/get X Y, or other set verb + Y phrases"}
+{"Name": "resid_4/13931", "Annotation": "after/before/other temporal conjunctions and the last word of the associated clause"}
+{"Name": "resid_4/22588", "Annotation": "music word detector"}
+{"Name": "resid_5/984", "Annotation": "nouns in PPs"}
+{"Name": "resid_5/1857", "Annotation": "after-clause detector; activates in clauses"}
+{"Name": "resid_5/12428", "Annotation": "end of clause detector"}
+{"Name": "resid_5/32325", "Annotation": "end of clause detector"}
+{"Name": "resid_3/2575", "Annotation": "contract word detector"}
+{"Name": "resid_3/11480", "Annotation": "noun detector"}
+{"Name": "resid_3/17846", "Annotation": "subject detector"}
+{"Name": "resid_3/18008", "Annotation": "objects inside RCs and PPs"}
+{"Name": "resid_3/23705", "Annotation": "\"said\" and text thereafter"}
+{"Name": "resid_3/31569", "Annotation": "text in CP"}
+{"Name": "resid_4/274", "Annotation": "full noun detector"}
+{"Name": "resid_4/4365", "Annotation": "unclear (things followed by verbs, very messily)"}
+{"Name": "resid_4/12317", "Annotation": "subject nouns"}
+{"Name": "resid_4/19256", "Annotation": "X in \", with X Ying...\""}
+{"Name": "resid_4/27015", "Annotation": "spans after \"The\""}
+{"Name": "resid_4/28873", "Annotation": "\"it\" and others as objects"}
+{"Name": "resid_4/31262", "Annotation": "subjects after \"said (that)\", messily"}
+{"Name": "resid_5/31262", "Annotation": "subjects in CPs"}
+{"Name": "resid_5/10906", "Annotation": "\"question\", \"answer\", \"issue\", \"point\", \"claim\""}
+{"Name": "resid_5/11189", "Annotation": "first subj + verb after \"said\" or similar"}
+{"Name": "resid_5/30181", "Annotation": "subject nouns"}
+{"Name": "resid_5/31007", "Annotation": "(singular) subject nouns, words at ends of NPs"}
+{"Name": "resid_5/31283", "Annotation": "subject nouns"}
+{"Name": "resid_5/32531", "Annotation": "subject nouns"}
+{"Name": "attn_0/6485", "Annotation": "(unclear - \"the\"?)"}
+{"Name": "resid_2/283", "Annotation": "past-tense verbs"}
+{"Name": "embed/32402", "Annotation": "the word \"oven\""}
+{"Name": "embed/12572", "Annotation": "the word \"stopped\""}
+{"Name": "mlp_1/10271", "Annotation": "(unclear)"}
+{"Name": "embed/31657", "Annotation": "the word \"lost\""}
+{"Name": "resid_2/17896", "Annotation": "verb detector"}
+{"Name": "attn_0/24888", "Annotation": "Words in a PP headed by \"in\""}
+{"Name": "mlp_2/26316", "Annotation": "<EOT> and words coming after"}
+{"Name": "resid_0/26139", "Annotation": "\"all\" after \"After\""}
+{"Name": "resid_0/23187", "Annotation": "the word \"it\" after \"when\""}
+{"Name": "mlp_2/24608", "Annotation": "<EOT> and spaces"}
+{"Name": "embed/30022", "Annotation": "the word \"signed\""}
+{"Name": "embed/11773", "Annotation": "the word \"grant\""}
+{"Name": "resid_1/19890", "Annotation": "the word \"if\""}
+{"Name": "attn_0/18577", "Annotation": "\"After\" and words following\""}
+{"Name": "embed/5526", "Annotation": "the word \"contract\""}
+{"Name": "mlp_2/7002", "Annotation": "<EOT> and words following"}
+{"Name": "resid_0/27114", "Annotation": "the word \"Because\", starting a sentence"}
+{"Name": "resid_0/12301", "Annotation": "the word \"Once\", starting a sentence"}
+{"Name": "mlp_1/22661", "Annotation": "(unclear)"}
+{"Name": "mlp_1/30502", "Annotation": "(unclear)"}
+{"Name": "embed/12877", "Annotation": "the word \"the\""}
+{"Name": "embed/24494", "Annotation": "the word \"training\""}
+{"Name": "mlp_0/25216", "Annotation": "the word \"began\""}
+{"Name": "attn_0/18677", "Annotation": "Sentences starting with a preposition / subordinating conjunction"}
+{"Name": "resid_0/13462", "Annotation": "(unclear)"}
+{"Name": "mlp_1/3037", "Annotation": "(unclear)"}
+{"Name": "resid_0/2711", "Annotation": "the word \"Since\" or \"Despite\" or \"Following"}
+{"Name": "mlp_2/20558", "Annotation": "<EOT> and following words"}
+{"Name": "mlp_0/26862", "Annotation": "the word \"the\""}
+{"Name": "resid_1/13307", "Annotation": "the word \"the\""}
+{"Name": "mlp_0/19142", "Annotation": "the word \"truck\""}
+{"Name": "mlp_0/5448", "Annotation": "(no activations)"}
+{"Name": "mlp_1/3068", "Annotation": "the word \"if\""}
+{"Name": "resid_0/32149", "Annotation": "words after \"after\""}
+{"Name": "embed/13138", "Annotation": "the word \"While\""}
+{"Name": "attn_0/1457", "Annotation": "the word \"the\""}
+{"Name": "resid_4/27354", "Annotation": "last token of main subject noun detector"}
+{"Name": "resid_1/1672", "Annotation": "the word \"showed\""}
+{"Name": "attn_0/16448", "Annotation": "the word \"the\" before object nouns"}
+{"Name": "resid_0/22185", "Annotation": "the word \"alleged\""}
+{"Name": "resid_3/32687", "Annotation": "the word \"the\""}
+{"Name": "embed/17378", "Annotation": "the word \"discovered\""}
+{"Name": "resid_1/8436", "Annotation": "the word \"the\""}
+{"Name": "embed/16953", "Annotation": "(no activations)"}
+{"Name": "resid_1/10043", "Annotation": "the word \"know(s)/knew\""}
+{"Name": "mlp_0/10392", "Annotation": "the word \"demonstrated\""}
+{"Name": "attn_3/28453", "Annotation": "final token of PPs"}
+{"Name": "mlp_0/8852", "Annotation": "the word \"knew\""}
+{"Name": "resid_0/14872", "Annotation": "the word \"mentioned\""}
+{"Name": "attn_3/15500", "Annotation": "\"said\" and other reported-speech words, and surrounding text"}
+{"Name": "resid_2/4508", "Annotation": "subjects of sentential clauses"}
+{"Name": "resid_4/14654", "Annotation": "periods"}
+{"Name": "resid_0/11901", "Annotation": "the word \"found\""}
+{"Name": "mlp_0/23110", "Annotation": "the word \"the\""}
+{"Name": "mlp_0/3932", "Annotation": "the word \"grant\""}
+{"Name": "resid_0/13600", "Annotation": "the word \"truck\""}
+{"Name": "resid_2/17334", "Annotation": "the word \"claim(s)\""}
+{"Name": "mlp_0/22854", "Annotation": "the word \"contract\""}
+{"Name": "resid_0/9877", "Annotation": "the word \"reported\""}
+{"Name": "resid_1/16366", "Annotation": "the word \"found\""}
+{"Name": "mlp_1/14367", "Annotation": "(unclear)"}
+{"Name": "mlp_4/25636", "Annotation": "words that could precede sentential clauses "}
+{"Name": "resid_1/8099", "Annotation": "(unclear)"}
+{"Name": "resid_0/30862", "Annotation": "the word \"claim(s)\""}
+{"Name": "resid_1/29267", "Annotation": "nouns (mostly subjects)"}
+{"Name": "mlp_0/2702", "Annotation": "the word \"money\""}
+{"Name": "resid_0/13777", "Annotation": "the word \"noticed\""}
+{"Name": "mlp_1/14583", "Annotation": "nouns (mostly subjects)"}
+{"Name": "resid_1/30674", "Annotation": "past-tense verbs (policy-related)"}
+{"Name": "embed/26238", "Annotation": "the word \"operation\""}
+{"Name": "resid_0/25245", "Annotation": "the word \"observed\""}
+{"Name": "mlp_0/10909", "Annotation": "the word \"document\""}
+{"Name": "resid_2/28624", "Annotation": "the words \"present, probative\"?"}
+{"Name": "resid_3/1297", "Annotation": "(unclear)"}
+{"Name": "embed/4503", "Annotation": "the word \"knew\""}
+{"Name": "mlp_0/5202", "Annotation": "the word \"operation\""}
+{"Name": "resid_2/22620", "Annotation": "the word after past-tense verbs (especially \"did\" or \"made\")"}
+{"Name": "resid_0/29226", "Annotation": "the word \"chicken\""}
+{"Name": "mlp_0/23598", "Annotation": "the word \"showed\""}
+{"Name": "mlp_0/1892", "Annotation": "the word \"claimed\""}
+{"Name": "resid_0/13645", "Annotation": "subject nouns"}
+{"Name": "attn_3/9859", "Annotation": "\"indicate\", \"showed\", \"suggests\", and following sentential complements"}
+{"Name": "mlp_0/599", "Annotation": "the word \"song\""}
+{"Name": "mlp_1/11172", "Annotation": "the word \"treatment\""}
+{"Name": "resid_1/21201", "Annotation": "the word \"claim\""}
+{"Name": "embed/1186", "Annotation": "the word \"truck\""}
+{"Name": "attn_1/26422", "Annotation": "the word \"disclose\" + preposition"}
+{"Name": "mlp_0/25816", "Annotation": "the word \"the\""}
+{"Name": "resid_3/24386", "Annotation": "the word \"point out\", \"aware\", \"argue\""}
+{"Name": "embed/13487", "Annotation": "the word \"The\""}
+{"Name": "embed/3112", "Annotation": "the word \"reported\""}
+{"Name": "resid_0/27221", "Annotation": "verbs?"}
+{"Name": "resid_0/435", "Annotation": "the word \"machine\""}
+{"Name": "resid_1/7405", "Annotation": "the word \"the\""}
+{"Name": "attn_2/17555", "Annotation": "verbs and their object NPs"}
+{"Name": "resid_4/26449", "Annotation": "the words \"appears\", \"assume\", \"suggests\" (take sentential complements\""}
+{"Name": "mlp_3/678", "Annotation": "(unclear)"}
+{"Name": "attn_2/4468", "Annotation": "(unclear)"}
+{"Name": "mlp_1/26575", "Annotation": "the word \"the\""}
+{"Name": "resid_0/29671", "Annotation": "the word \"maintained\""}
+{"Name": "attn_5/27722", "Annotation": "(unclear)"}
+{"Name": "resid_2/4770", "Annotation": "<EOT> and spaces"}
+{"Name": "resid_0/20216", "Annotation": "the word \"politician\" or \"businessman\""}
+{"Name": "mlp_0/21469", "Annotation": "the word \"the\""}
+{"Name": "attn_1/11958", "Annotation": "<EOT> and following text"}
+{"Name": "mlp_0/19918", "Annotation": "the word \"bill\""}
+{"Name": "resid_0/19093", "Annotation": "the word \"revealed\""}
+{"Name": "resid_2/10757", "Annotation": "<EOT> and spaces"}
+{"Name": "attn_2/26801", "Annotation": "(unclear)"}
+{"Name": "mlp_2/5952", "Annotation": "the word \"the\""}
+{"Name": "resid_0/10952", "Annotation": "the word \"the\""}
+{"Name": "embed/31806", "Annotation": "(no activations)"}
+{"Name": "resid_2/2807", "Annotation": "the word \"find\""}
+{"Name": "resid_1/11047", "Annotation": "the word \"reported\""}
+{"Name": "mlp_0/4440", "Annotation": "the word \"the\""}
+{"Name": "resid_0/32458", "Annotation": "the word \"discovered\""}
+{"Name": "resid_0/28550", "Annotation": "the word after \"say\""}
+{"Name": "mlp_0/24015", "Annotation": "the word \"file\""}
+{"Name": "attn_0/7454", "Annotation": "first token of subject nouns (after \"The\", start of sentence)"}
+{"Name": "resid_0/27199", "Annotation": "the word \"showed\""}
+{"Name": "resid_0/21667", "Annotation": "the word \"money\""}
+{"Name": "mlp_3/6185", "Annotation": "object nouns / nouns in PPs?"}
+{"Name": "resid_1/3151", "Annotation": "(unclear - highest on VPs?)"}
+{"Name": "attn_1/604", "Annotation": "\"you (how)\" after \"show\""}
+{"Name": "attn_0/27546", "Annotation": "(unclear)"}
+{"Name": "resid_0/31885", "Annotation": "the words \"gonna\", \"will\", \"would\", \"shall\""}
+{"Name": "mlp_1/14345", "Annotation": "(unclear)"}
+{"Name": "mlp_0/10", "Annotation": "the word \"reported\""}
+{"Name": "mlp_0/3068", "Annotation": "the word \"service\""}
+{"Name": "resid_0/7095", "Annotation": "the word \"treatment\""}
+{"Name": "resid_0/29491", "Annotation": "(unclear)"}
+{"Name": "resid_1/32230", "Annotation": "the word \"file\""}
+{"Name": "resid_0/29663", "Annotation": "the word \"demonstrate\""}
+{"Name": "embed/25133", "Annotation": "(no activations)"}
+{"Name": "resid_0/22802", "Annotation": "the words \"a(n)\", \"the\""}
+{"Name": "resid_0/16341", "Annotation": "the word \"professor\""}
+{"Name": "mlp_4/2373", "Annotation": "subject nouns (start of sentence after \"The\")"}
+{"Name": "embed/31877", "Annotation": "(no activations)"}
+{"Name": "resid_1/27898", "Annotation": "object pronouns (and the following word) after \"show\""}
+{"Name": "resid_0/10218", "Annotation": "the word \"knew\""}
+{"Name": "resid_0/10384", "Annotation": "the word \"and\""}
+{"Name": "resid_2/13050", "Annotation": "the word \"the\""}
+{"Name": "embed/18257", "Annotation": "(no activations)"}
+{"Name": "mlp_3/22504", "Annotation": "(unclear - subject nouns?)"}
+{"Name": "attn_2/10442", "Annotation": "the word \"the\" and \"and the\""}
+{"Name": "resid_0/20113", "Annotation": "the word \"service\""}
+{"Name": "resid_0/20528", "Annotation": "(unclear - object nouns/nouns in PPs)"}
+{"Name": "resid_0/13931", "Annotation": "(unclear - articles and pronouns?)"}
+{"Name": "resid_1/1599", "Annotation": "the word \"the\" after \"that\""}
+{"Name": "attn_0/25526", "Annotation": "(unclear)"}
+{"Name": "resid_1/475", "Annotation": "(unclear)"}
+{"Name": "resid_5/19665", "Annotation": "(unclear)"}
+{"Name": "embed/32401", "Annotation": "(no activations)"}
+{"Name": "resid_0/87", "Annotation": "the word \"indicated\""}
+{"Name": "embed/18024", "Annotation": "the word \"revealed\""}
