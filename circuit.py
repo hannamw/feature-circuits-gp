@@ -579,6 +579,7 @@ if __name__ == '__main__':
             if args.nopair or args.nopair_reg:
                 # raise NotImplementedError("No-pair mode is not yet implemented for new data loading.")
                 patch_inputs = None
+            if args.nopair:
                 def metric_fn(model):
                     logits = model.output.logits[:,-1,:]
                     return (
