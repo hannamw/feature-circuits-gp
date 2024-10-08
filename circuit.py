@@ -483,7 +483,7 @@ if __name__ == '__main__':
         "google/gemma-2-2b" : True,
     }[args.model]
     include_embed = {
-        "EleutherAI/pythia-70m-deduped" : False,
+        "EleutherAI/pythia-70m-deduped" : True,
         "google/gemma-2-2b" : False,
     }[args.model]
     dtype = {
@@ -670,7 +670,7 @@ if __name__ == '__main__':
     if args.aggregation == "none":
         example = examples[0]["clean_prefix"]
         plot_circuit_posaligned(
-            nodes, 
+            nodes,
             edges,
             layers=n_layers,
             example_text=example,
