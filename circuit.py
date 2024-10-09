@@ -492,7 +492,7 @@ if __name__ == '__main__':
     }[args.model]
 
     if args.model == "EleutherAI/pythia-70m-deduped":
-        model = LanguageModel(args.model, device_map=device, dispatch=True)
+        model = LanguageModel(args.model, device_map=device, dispatch=True, torch_dtype=dtype)
     elif args.model == "google/gemma-2-2b":
         model = LanguageModel(args.model, device_map=device, dispatch=True, attn_implementation="eager", torch_dtype=dtype)
     
@@ -537,7 +537,11 @@ if __name__ == '__main__':
         for f in os.listdir(args.circuit_dir):
             if "nodeall" in f: continue
             if f.startswith(save_base):
+<<<<<<< HEAD
                 node_thresh = float(f.split(".pt")[0].split("_node")[-1])
+=======
+                node_thresh = float(".".join(f.split(".")[:-1]).split("_node")[-1])
+>>>>>>> 6b22522c249334f3bcae00c0f626d73154e5aad7
                 if node_thresh < args.node_threshold:
                     print(f, node_thresh, args.node_threshold, node_thresh < args.node_threshold)
                     print(f"Loading circuit from {args.circuit_dir}/{f}")
@@ -671,7 +675,7 @@ if __name__ == '__main__':
     if args.aggregation == "none":
         example = examples[0]["clean_prefix"]
         plot_circuit_posaligned(
-            nodes, 
+            nodes,
             edges,
             layers=n_layers,
             example_text=example,

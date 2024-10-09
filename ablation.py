@@ -22,6 +22,7 @@ def run_with_ablations(
         complement=False, # if True, then use the complement of nodes
         ablation_fn=lambda x: x.mean(dim=0).expand_as(x), # what to do to the patch hidden states to produce values for ablation, default mean ablation
         handle_errors='default', # or 'remove' to zero ablate all; 'keep' to keep all
+        start_position=0, # token position from which to ablate features/neurons
     ):
 
     if patch is None: patch = clean
@@ -46,11 +47,13 @@ def run_with_ablations(
 
             # ablate features
             if complement: submod_nodes = ~submod_nodes
+            submod_nodes.resc[:start_position] = t.ones_like(submod_nodes.resc[:start_position])
             submod_nodes.resc = submod_nodes.resc.expand(*submod_nodes.resc.shape[:-1], res.shape[-1])
             if handle_errors == 'remove':
-                submod_nodes.resc = t.zeros_like(submod_nodes.resc).to(t.bool)
+                submod_nodes.resc[:start_position] = t.zeros_like(submod_nodes.resc[:start_position]).to(t.bool)
             if handle_errors == 'keep':
-                submod_nodes.resc = t.ones_like(submod_nodes.resc).to(t.bool)
+                submod_nodes.resc[:start_position] = t.ones_like(submod_nodes.resc[:start_position]).to(t.bool)
+            submod_nodes.act[:start_position] = t.ones_like(submod_nodes.act[:start_position])
 
             f[...,~submod_nodes.act] = patch_states[submodule].act[...,~submod_nodes.act]
             res[...,~submod_nodes.resc] = patch_states[submodule].res[...,~submod_nodes.resc]
@@ -81,6 +84,10 @@ if __name__ == '__main__':
                         help="How to treat SAE error terms. Can be `default`, `keep`, or `remove`.")
     parser.add_argument('--start_layer', type=int, default=-1,
                         help="Layer to evaluate the circuit from. Layers below --start_layer are given to the model for free.")
+    parser.add_argument('--complement', action="store_true",
+                        help="Whether to evaluate completeness (by ablating the circuit itself) instead of faithfulness.")
+    parser.add_argument('--start_position', type=int, default=0,
+                        help="Position to evaluate the circuit from. Token positions before --start_position are given to the model for free.")
     parser.add_argument('--device', default='cuda:0')
     args = parser.parse_args()
 
@@ -90,6 +97,7 @@ if __name__ == '__main__':
     }[args.model]
 
     model = LanguageModel(args.model, attn_implementation="eager", torch_dtype=dtype, device_map=args.device, dispatch=True)
+    # model = LanguageModel(args.model, torch_dtype=dtype, device_map=args.device, dispatch=True)
 
     submodules, dictionaries = load_saes_and_submodules(model, include_embed=False, dtype=dtype, device=args.device)
 
@@ -99,6 +107,7 @@ if __name__ == '__main__':
     circuit = t.load(args.circuit)['nodes']
     nodes = {
         submod: circuit[submod.name].abs() > args.threshold for submod in submodules
+        # submod: circuit[submod.name] > args.threshold for submod in submodules
     }
 
     # Load examples
@@ -165,8 +174,10 @@ if __name__ == '__main__':
             dictionaries,
             nodes,
             metric_fn,
+            complement=args.complement,
             ablation_fn=ablation_fn,
-            handle_errors=args.handle_errors
+            handle_errors=args.handle_errors,
+            start_position=args.start_position
         ).mean().item()
 
         # Compute F(∅)
