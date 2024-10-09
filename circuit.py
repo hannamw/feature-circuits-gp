@@ -537,11 +537,7 @@ if __name__ == '__main__':
         for f in os.listdir(args.circuit_dir):
             if "nodeall" in f: continue
             if f.startswith(save_base):
-<<<<<<< HEAD
-                node_thresh = float(f.split(".pt")[0].split("_node")[-1])
-=======
                 node_thresh = float(".".join(f.split(".")[:-1]).split("_node")[-1])
->>>>>>> 6b22522c249334f3bcae00c0f626d73154e5aad7
                 if node_thresh < args.node_threshold:
                     print(f, node_thresh, args.node_threshold, node_thresh < args.node_threshold)
                     print(f"Loading circuit from {args.circuit_dir}/{f}")
