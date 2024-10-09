@@ -537,8 +537,9 @@ if __name__ == '__main__':
         for f in os.listdir(args.circuit_dir):
             if "nodeall" in f: continue
             if f.startswith(save_base):
-                node_thresh = float(f.split(".")[0].split("_node")[-1])
+                node_thresh = float(f.split(".pt")[0].split("_node")[-1])
                 if node_thresh < args.node_threshold:
+                    print(f, node_thresh, args.node_threshold, node_thresh < args.node_threshold)
                     print(f"Loading circuit from {args.circuit_dir}/{f}")
                     with open(f"{args.circuit_dir}/{f}", 'rb') as infile:
                         save_dict = t.load(infile)
