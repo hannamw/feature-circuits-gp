@@ -5,6 +5,7 @@ DATA=$2
 NODE=$3
 EDGE=$4
 AGG=$5
+WIDTH=$6
 
 python circuit.py \
     --model $MODEL \
@@ -14,4 +15,5 @@ python circuit.py \
 	--node_threshold $NODE \
 	--edge_threshold $EDGE \
 	--aggregation $AGG \
+    --width $WIDTH \
     --nopair_reg

@@ -11,8 +11,8 @@ python ablation.py \
 --circuit $CIRCUIT \
 --data ${EVAL_DATA} \
 --threshold $THRESHOLD \
---ablation mean \
+--ablation zero \
 --handle_errors 'default' \
---start_layer 6 \
+--start_layer 2 \
 --nopair_reg \
 --device cuda:0
