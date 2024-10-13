@@ -1,6 +1,7 @@
 import os
 from collections import defaultdict
 from graphviz import Digraph
+from nltk.tokenize import word_tokenize
 import math
 
 # Constants
@@ -44,8 +45,17 @@ def plot_circuit_posaligned(
     annotations=None, 
     save_dir='circuit',
     gemma_mode=False,
+    start_pos=0,
 ):
+    example_text = " ".join(word_tokenize(example_text))
     get_name = get_name_gemma if gemma_mode else get_name_pythia
+    if gemma_mode and start_pos == 0:
+        start_pos = 1
+
+    # remove nodes before `start_pos`
+    for submod in nodes:
+        nodes[submod].act = nodes[submod].act[start_pos:,:]
+        nodes[submod].resc = nodes[submod].resc[start_pos:,:]
 
     def to_hex(number):
         scale = max(abs(min([v.to_tensor().min() for n, v in nodes.items() if n != 'y'])),
@@ -90,10 +100,12 @@ def plot_circuit_posaligned(
     G = Digraph(name='Feature circuit')
     G.graph_attr.update(rankdir='BT', newrank='true')
     G.node_attr.update(shape="box", style="rounded")
+    
 
     words = example_text.split()
     if gemma_mode:
         words = ["<BOS>"] + words
+    words = words[start_pos:]
     seq_len = nodes[list(nodes.keys())[0]].act.shape[0]
     assert (length := len(words)) == seq_len, "The number of words in example_text should match the sequence length"
 

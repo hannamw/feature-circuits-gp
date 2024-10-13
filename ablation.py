@@ -50,9 +50,9 @@ def run_with_ablations(
             submod_nodes.resc[:start_position] = t.ones_like(submod_nodes.resc[:start_position])
             submod_nodes.resc = submod_nodes.resc.expand(*submod_nodes.resc.shape[:-1], res.shape[-1])
             if handle_errors == 'remove':
-                submod_nodes.resc[:start_position] = t.zeros_like(submod_nodes.resc[:start_position]).to(t.bool)
+                submod_nodes.resc[start_position:] = t.zeros_like(submod_nodes.resc[start_position:]).to(t.bool)
             if handle_errors == 'keep':
-                submod_nodes.resc[:start_position] = t.ones_like(submod_nodes.resc[:start_position]).to(t.bool)
+                submod_nodes.resc[start_position:] = t.ones_like(submod_nodes.resc[start_position:]).to(t.bool)
             submod_nodes.act[:start_position] = t.ones_like(submod_nodes.act[:start_position])
 
             f[...,~submod_nodes.act] = patch_states[submodule].act[...,~submod_nodes.act]
@@ -106,9 +106,13 @@ if __name__ == '__main__':
     # Load circuit
     circuit = t.load(args.circuit)['nodes']
     nodes = {
-        submod: circuit[submod.name].abs() > args.threshold for submod in submodules
-        # submod: circuit[submod.name] > args.threshold for submod in submodules
+        # submod: circuit[submod.name].abs() > args.threshold for submod in submodules
+        submod: circuit[submod.name] > args.threshold for submod in submodules
     }
+    num_nodes = sum([nodes[s].act[args.start_position:,:].sum().item() for s in nodes])
+    num_err = sum([nodes[s].resc[args.start_position:,:].sum().item() for s in nodes])
+    print("# nodes:", num_nodes)
+    print("# error:", num_err)
 
     # Load examples
     ignore_patch = args.nopair_reg
