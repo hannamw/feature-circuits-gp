@@ -1,0 +1,895 @@
+{"Name": "embed/1425", "Annotation": "", "Notes": ""}
+{"Name": "embed/3734", "Annotation": "", "Notes": ""}
+{"Name": "resid_0/3974", "Annotation": "plural nouns", "Notes": "algebra contexts"}
+{"Name": "resid_1/134", "Annotation": "plural nouns", "Notes": "scientific contexts"}
+{"Name": "resid_2/13449", "Annotation": "plural nouns", "Notes": "scientific and coding contexts"}
+{"Name": "attn_3/12117", "Annotation": "plural nouns", "Notes": "any syntactic position"}
+{"Name": "resid_3/12382", "Annotation": "participial modifier phrases", "Notes": "past and present participles"}
+{"Name": "resid_3/15191", "Annotation": "plural nouns", "Notes": "includes variable names in code"}
+{"Name": "resid_4/6820", "Annotation": "plural nouns in PPs", "Notes": "mainly in PPs, but not always"}
+{"Name": "resid_4/8420", "Annotation": "plural nouns in RCs", "Notes": ""}
+{"Name": "resid_4/13534", "Annotation": "prepositional phrase boundaries", "Notes": "preposition and final word in PP (or punctuation if at EOS)"}
+{"Name": "resid_5/3069", "Annotation": "plural nouns", "Notes": "mainly in PPs, object position. not sure if spurious"}
+{"Name": "resid_5/8641", "Annotation": "participles and prepositions", "Notes": ""}
+{"Name": "resid_6/428", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_6/11417", "Annotation": "plural nouns", "Notes": "multiple languages"}
+{"Name": "resid_6/16050", "Annotation": "prepositions and relative pronouns on plural NPs", "Notes": ""}
+{"Name": "resid_7/1041", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "resid_7/5663", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_8/4254", "Annotation": "tokens between plural nouns and next noun", "Notes": "activates on everything between a plural noun and the next noun in the sentence"}
+{"Name": "resid_8/9828", "Annotation": "plural nouns, numbers, and prepositions after plural nouns", "Notes": ""}
+{"Name": "resid_8/10678", "Annotation": "plural nouns, usually in PPs", "Notes": ""}
+{"Name": "resid_9/3552", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_9/8717", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_10/6875", "Annotation": "predicates, RCs, and PPs after plural nouns", "Notes": ""}
+{"Name": "resid_10/10757", "Annotation": "plural nouns, often in RCs/PPs", "Notes": ""}
+{"Name": "resid_11/1570", "Annotation": "plural nouns, often in PPs/RCs", "Notes": ""}
+{"Name": "resid_11/5663", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_12/10678", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_12/13561", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_13/3606", "Annotation": "prepositions and conjunctions", "Notes": ""}
+{"Name": "resid_13/10166", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_14/437", "Annotation": "verbs and RCs after plural NPs", "Notes": ""}
+{"Name": "resid_14/14070", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_15/8805", "Annotation": "verbs after pl. nouns that take PP/RC complements", "Notes": ""}
+{"Name": "resid_15/13449", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "attn_16/15036", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_16/5679", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_16/14177", "Annotation": "RCs and VPs after plural nouns", "Notes": ""}
+{"Name": "mlp_17/2535", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "resid_17/4938", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "resid_17/11590", "Annotation": "relative clauses on plural NPs. promotes plural verbs", "Notes": ""}
+{"Name": "resid_17/12129", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_18/1506", "Annotation": "plural objects and nouns in PPs", "Notes": ""}
+{"Name": "resid_18/10665", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "mlp_19/3408", "Annotation": "plural NPs", "Notes": "includes plural nouns and nouns connected by conjunctions"}
+{"Name": "resid_19/2211", "Annotation": "boundaries of plural NPs", "Notes": ""}
+{"Name": "resid_20/301", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "mlp_21/23", "Annotation": "relative pronouns, \"it\", singular nouns", "Notes": ""}
+{"Name": "resid_21/1978", "Annotation": "plural pronouns, relative pronouns, NPs", "Notes": ""}
+{"Name": "resid_21/6162", "Annotation": "singular subjects", "Notes": "mostly starting with \"this\""}
+{"Name": "mlp_22/1915", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "resid_22/383", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "resid_22/4189", "Annotation": "singular subjects", "Notes": ""}
+{"Name": "resid_23/7507", "Annotation": "singular subjects", "Notes": ""}
+{"Name": "resid_23/10927", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "resid_24/3627", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_24/7780", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_24/13078", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "resid_25/980", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_25/9833", "Annotation": "", "Notes": ""}
+{"Name": "embed/881", "Annotation": "", "Notes": ""}
+{"Name": "embed/2134", "Annotation": "", "Notes": ""}
+{"Name": "embed/2430", "Annotation": "", "Notes": ""}
+{"Name": "embed/2764", "Annotation": "", "Notes": ""}
+{"Name": "resid_0/284", "Annotation": "plural profession names", "Notes": ""}
+{"Name": "resid_1/3555", "Annotation": "relative pronouns and prepositions", "Notes": ""}
+{"Name": "resid_1/15904", "Annotation": "singular gendered animate nouns", "Notes": "e.g., \"boy\", \"woman\""}
+{"Name": "resid_2/5012", "Annotation": "prepositions and relative pronouns", "Notes": ""}
+{"Name": "resid_2/9827", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_3/1588", "Annotation": "relative pronouns", "Notes": ""}
+{"Name": "resid_3/3427", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_4/3410", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_5/5798", "Annotation": "singular gendered animate nouns", "Notes": ""}
+{"Name": "resid_5/11613", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_5/13102", "Annotation": "plural profession names", "Notes": ""}
+{"Name": "resid_7/8426", "Annotation": "\"of\"", "Notes": ""}
+{"Name": "resid_7/11683", "Annotation": "VPs associated with plural nouns", "Notes": ""}
+{"Name": "resid_8/6332", "Annotation": "promotes singular nouns", "Notes": ""}
+{"Name": "resid_9/9617", "Annotation": "\"of\"", "Notes": ""}
+{"Name": "resid_10/492", "Annotation": "singular nouns and associated VPs", "Notes": ""}
+{"Name": "resid_10/4449", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_12/2355", "Annotation": "singular gendered animate nouns", "Notes": ""}
+{"Name": "resid_13/12849", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_15/10653", "Annotation": "plural gendered animate nouns and associated verbs", "Notes": ""}
+{"Name": "resid_16/500", "Annotation": "plural gendered animate nouns", "Notes": ""}
+{"Name": "resid_17/3852", "Annotation": "singular animate nouns", "Notes": ""}
+{"Name": "attn_19/10073", "Annotation": "start and end of plural NPs", "Notes": ""}
+{"Name": "mlp_19/1962", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_19/11625", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "attn_23/7168", "Annotation": "start and end of plural NPs", "Notes": ""}
+{"Name": "mlp_23/5118", "Annotation": "plural nouns and pronouns. promotes plural verbs", "Notes": ""}
+{"Name": "resid_24/2765", "Annotation": "promotes \"is\"", "Notes": ""}
+{"Name": "resid_24/5222", "Annotation": "promotes verbs", "Notes": "both singular and plural inflections of \"to be\""}
+{"Name": "resid_11/1570", "Annotation": "active throughout plural NPs", "Notes": ""}
+{"Name": "resid_25/11", "Annotation": "promotes infinitival and plural verbs", "Notes": ""}
+{"Name": "resid_25/11185", "Annotation": "promotes \"are\"", "Notes": ""}
+{"Name": "resid_25/15523", "Annotation": "promotes \"is\"", "Notes": ""}
+{"Name": "mlp_25/4673", "Annotation": "promotes \"are\"", "Notes": ""}
+{"Name": "mlp_25/12074", "Annotation": "promotes \"is\"", "Notes": ""}
+{"Name": "mlp_25/13136", "Annotation": "suppresses \"have\"", "Notes": ""}
+{"Name": "attn_25/14832", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "resid_24/454", "Annotation": "promotes \"are\"", "Notes": ""}
+{"Name": "attn_0/2115", "Annotation": "plural nouns and following token", "Notes": ""}
+{"Name": "attn_5/16029", "Annotation": "plural nouns and associated prepositions/conjunctions", "Notes": ""}
+{"Name": "mlp_6/8332", "Annotation": "RCs/PPs on plural nouns", "Notes": ""}
+{"Name": "mlp_6/12069", "Annotation": "final token in PP/RC", "Notes": ""}
+{"Name": "resid_14/90", "Annotation": "RCs on plural nouns", "Notes": ""}
+{"Name": "resid_15/2307", "Annotation": "all tokens within RC/PP on plural nouns", "Notes": ""}
+{"Name": "mlp_16/11999", "Annotation": "plural NPs", "Notes": "usually consisting of singular nouns joined by \"and\""}
+{"Name": "resid_16/15784", "Annotation": "clauses starting \"those who\"", "Notes": ""}
+{"Name": "resid_16/1096", "Annotation": "final token of RC/PP on plural noun", "Notes": ""}
+{"Name": "resid_16/14822", "Annotation": "promotes plural determiners", "Notes": ""}
+{"Name": "resid_16/15737", "Annotation": "all tokens from singular animate noun to following noun", "Notes": ""}
+{"Name": "mlp_17/11978", "Annotation": "suppresses plural pronouns", "Notes": ""}
+{"Name": "resid_17/12434", "Annotation": "end of PP on plural noun", "Notes": ""}
+{"Name": "resid_18/4442", "Annotation": "final token in PP", "Notes": ""}
+{"Name": "resid_18/8153", "Annotation": "singular NPs", "Notes": ""}
+{"Name": "resid_18/11484", "Annotation": "promotes plural verbs/pronouns", "Notes": ""}
+{"Name": "attn_19/10500", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "attn_19/10884", "Annotation": "promotes \"are\" and \"were\"", "Notes": ""}
+{"Name": "resid_19/425", "Annotation": "final token of RC/PP on plural noun", "Notes": ""}
+{"Name": "resid_19/1713", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_19/3254", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_19/7943", "Annotation": "final token in singular NPs", "Notes": ""}
+{"Name": "resid_19/10940", "Annotation": "plural nouns and subsequent verbs", "Notes": ""}
+{"Name": "resid_19/13352", "Annotation": "active following plural subjects", "Notes": ""}
+{"Name": "attn_20/16072", "Annotation": "promotes plural verbs/pronouns", "Notes": ""}
+{"Name": "resid_20/2699", "Annotation": "final token in singular NPs", "Notes": ""}
+{"Name": "resid_20/3339", "Annotation": "singular animate NPs", "Notes": ""}
+{"Name": "resid_20/5782", "Annotation": "complement to plural subject", "Notes": ""}
+{"Name": "resid_20/7610", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "mlp_21/14080", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "resid_22/11956", "Annotation": "promotes \"are\" and \"were\"", "Notes": ""}
+{"Name": "attn_23/14346", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "mlp_23/1138", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "mlp_23/7338", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "mlp_23/13281", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "resid_23/6763", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "mlp_24/852", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "mlp_24/2722", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "mlp_24/3034", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "mlp_24/10230", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_24/1877", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "embed/1425", "Annotation": "", "Notes": ""}
+{"Name": "embed/3734", "Annotation": "", "Notes": ""}
+{"Name": "resid_0/284", "Annotation": "plural profession names", "Notes": ""}
+{"Name": "resid_0/3974", "Annotation": "plural nouns", "Notes": "algebra contexts"}
+{"Name": "resid_1/134", "Annotation": "plural nouns", "Notes": "scientific contexts"}
+{"Name": "resid_2/13449", "Annotation": "plural nouns", "Notes": "scientific and coding contexts"}
+{"Name": "resid_3/12382", "Annotation": "participial modifier phrases", "Notes": ""}
+{"Name": "resid_3/15191", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_4/3410", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_4/6820", "Annotation": "plural nouns in PPs", "Notes": ""}
+{"Name": "resid_4/8420", "Annotation": "plural nouns in RCs", "Notes": ""}
+{"Name": "resid_4/13534", "Annotation": "prepositional phrase boundaries", "Notes": ""}
+{"Name": "resid_5/3069", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_5/8641", "Annotation": "participles and prepositions", "Notes": ""}
+{"Name": "resid_5/11613", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_6/428", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_6/11417", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_6/16050", "Annotation": "prepositions and relative pronouns on plural NPs", "Notes": ""}
+{"Name": "resid_7/1041", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "resid_7/5663", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_8/6332", "Annotation": "singular NPs", "Notes": ""}
+{"Name": "resid_8/9828", "Annotation": "plural nouns, numbers, and prepositions after plural nouns", "Notes": ""}
+{"Name": "resid_8/10678", "Annotation": "plural nouns, usually in PPs", "Notes": ""}
+{"Name": "resid_9/3552", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_9/8717", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_10/10757", "Annotation": "plural nouns, often in RCs/PPs", "Notes": ""}
+{"Name": "resid_11/1570", "Annotation": "plural nouns, often in PPs/RCs", "Notes": ""}
+{"Name": "resid_11/5663", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_12/2355", "Annotation": "singular gendered nouns and VPs", "Notes": ""}
+{"Name": "resid_12/10678", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_12/13561", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_13/10166", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_14/14070", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_15/8805", "Annotation": "verbs after pl. nouns that take PP/RC complements", "Notes": ""}
+{"Name": "resid_15/10653", "Annotation": "plural gendered nouns", "Notes": "predicts \"their\", \"themselves\""}
+{"Name": "resid_15/13449", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_16/500", "Annotation": "plural animate subjects", "Notes": ""}
+{"Name": "resid_16/5679", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_16/14177", "Annotation": "RCs and VPs after plural nouns", "Notes": ""}
+{"Name": "mlp_17/2535", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "resid_17/4938", "Annotation": "plural inanimate subjects", "Notes": ""}
+{"Name": "resid_17/12129", "Annotation": "plural inanimate subjects", "Notes": "can be subjects in main clause or within RCs"}
+{"Name": "resid_18/1506", "Annotation": "plural objects and nouns in PPs", "Notes": ""}
+{"Name": "resid_18/10665", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "attn_19/10073", "Annotation": "plural nouns", "Notes": "predicts \"are\", \"were\""}
+{"Name": "mlp_19/3408", "Annotation": "plural NPs", "Notes": "includes plural nouns and nouns connected by conjunctions"}
+{"Name": "resid_19/2211", "Annotation": "boundaries of plural NPs", "Notes": ""}
+{"Name": "resid_20/301", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "resid_21/1978", "Annotation": "plural pronouns, relative pronouns, NPs", "Notes": ""}
+{"Name": "resid_21/6162", "Annotation": "singular subjects", "Notes": "mostly starting with \"this\""}
+{"Name": "mlp_22/1915", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "resid_22/383", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "resid_22/4189", "Annotation": "singular subjects", "Notes": ""}
+{"Name": "resid_23/7507", "Annotation": "singular subjects", "Notes": ""}
+{"Name": "resid_23/10927", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "resid_24/3627", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_24/13078", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "resid_24/14406", "Annotation": "predicts plural verbs", "Notes": ""}
+{"Name": "resid_25/980", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_25/9833", "Annotation": "0", "Notes": ""}
+{"Name": "embed/881", "Annotation": "0", "Notes": ""}
+{"Name": "embed/2430", "Annotation": "0", "Notes": ""}
+{"Name": "embed/2764", "Annotation": "0", "Notes": ""}
+{"Name": "resid_1/2746", "Annotation": "", "Notes": ""}
+{"Name": "resid_1/15904", "Annotation": "singular gendered animate nouns", "Notes": ""}
+{"Name": "resid_2/9827", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_2/12311", "Annotation": "plural profession names", "Notes": ""}
+{"Name": "resid_3/3427", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_5/13102", "Annotation": "predicts plural verbs", "Notes": ""}
+{"Name": "resid_7/567", "Annotation": "singular gendered animate nouns", "Notes": ""}
+{"Name": "resid_7/11683", "Annotation": "VPs associated with plural nouns", "Notes": ""}
+{"Name": "resid_8/4012", "Annotation": "plural verbs and associated VPs", "Notes": ""}
+{"Name": "resid_8/4254", "Annotation": "tokens between plural nouns and next noun", "Notes": ""}
+{"Name": "resid_10/492", "Annotation": "predicts plural verbs", "Notes": ""}
+{"Name": "resid_10/4449", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_10/6875", "Annotation": "predicates, RCs, and PPs after plural nouns", "Notes": ""}
+{"Name": "resid_11/12614", "Annotation": "plural nouns and associated VPs", "Notes": ""}
+{"Name": "resid_12/8515", "Annotation": "plural nouns and associated VPs", "Notes": ""}
+{"Name": "resid_12/9723", "Annotation": "predicts plural verbs", "Notes": ""}
+{"Name": "resid_13/3606", "Annotation": "prepositions and conjunctions", "Notes": ""}
+{"Name": "resid_14/437", "Annotation": "verbs and RCs after plural NPs", "Notes": ""}
+{"Name": "resid_17/3852", "Annotation": "singular animate nouns", "Notes": ""}
+{"Name": "resid_17/16271", "Annotation": "prepositions", "Notes": ""}
+{"Name": "resid_18/1271", "Annotation": "predicts plural verbs", "Notes": ""}
+{"Name": "attn_19/3716", "Annotation": "start and end of plural NPs", "Notes": ""}
+{"Name": "mlp_19/1962", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "mlp_20/11675", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_22/14353", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "attn_23/7168", "Annotation": "predicts plural verbs", "Notes": ""}
+{"Name": "resid_25/14881", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "embed/881", "Annotation": "0", "Notes": ""}
+{"Name": "embed/1425", "Annotation": "", "Notes": ""}
+{"Name": "embed/1426", "Annotation": "", "Notes": ""}
+{"Name": "embed/2430", "Annotation": "0", "Notes": ""}
+{"Name": "embed/2764", "Annotation": "0", "Notes": ""}
+{"Name": "embed/3734", "Annotation": "", "Notes": ""}
+{"Name": "resid_0/284", "Annotation": "plural scientific profession names", "Notes": "engineers, researchers, biologists"}
+{"Name": "resid_0/3974", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_1/134", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_1/2746", "Annotation": "plural animate nouns", "Notes": "travelers, shoppers, learners"}
+{"Name": "resid_1/15904", "Annotation": "singular gendered nouns", "Notes": "woman, guy, boy, birl"}
+{"Name": "resid_2/9827", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_2/13449", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_3/3427", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_3/15191", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_4/3410", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_4/6820", "Annotation": "plural nouns in PPs", "Notes": ""}
+{"Name": "resid_4/8420", "Annotation": "plural nouns in RCs", "Notes": ""}
+{"Name": "resid_5/3069", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_5/11613", "Annotation": "plural definite nouns", "Notes": "\"definite\" as in accompanied by \"the\" or \"these\""}
+{"Name": "resid_5/13102", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_6/428", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_6/11417", "Annotation": "tokens ending in \"s\"", "Notes": "includes tokens in URLs, incomplete nouns like <brains>tem"}
+{"Name": "resid_7/1041", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_7/5663", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_8/6332", "Annotation": "all tokens from a singular noun to the next NP", "Notes": ""}
+{"Name": "resid_8/9828", "Annotation": "numbers, plural nouns", "Notes": ""}
+{"Name": "resid_8/10678", "Annotation": "plural nouns, usually in PPs", "Notes": ""}
+{"Name": "resid_9/3552", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_9/8717", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_10/10757", "Annotation": "plural nouns, often in RCs/PPs", "Notes": ""}
+{"Name": "resid_11/1570", "Annotation": "plural nouns, often in PPs/RCs", "Notes": ""}
+{"Name": "resid_11/5663", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_12/9723", "Annotation": "all tokens from a plural noun to the next NP", "Notes": ""}
+{"Name": "resid_12/10678", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_12/13561", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_13/10166", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_14/13652", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "resid_14/14070", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_15/10653", "Annotation": "plural animate nouns and accompanying VPs", "Notes": "predicts \"their\", \"themselves\""}
+{"Name": "resid_15/13449", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_16/500", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_16/2971", "Annotation": "plural animate nouns", "Notes": "primarily proper or capitalized nouns"}
+{"Name": "resid_16/5679", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_17/3852", "Annotation": "singular nouns", "Notes": "often includes adjacent relative pronouns, copulae"}
+{"Name": "resid_17/4938", "Annotation": "plural nouns", "Notes": "predicts \"are\", \"were\""}
+{"Name": "resid_17/5438", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "resid_17/12129", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_17/16100", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_18/1271", "Annotation": "singular nouns", "Notes": "predicts relative pronouns"}
+{"Name": "resid_18/1506", "Annotation": "plural objects and nouns in PPs", "Notes": ""}
+{"Name": "resid_18/10665", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "resid_18/15377", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_19/2211", "Annotation": "boundaries of plural NPs", "Notes": ""}
+{"Name": "resid_19/10531", "Annotation": "singular nouns", "Notes": ""}
+{"Name": "resid_19/11625", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_19/13298", "Annotation": "singular male NPs and VPs", "Notes": "mainly headed by \"He\", but sometimes male names or stereotypically male professions"}
+{"Name": "mlp_20/1764", "Annotation": "plural nouns and verbs ending in \"s\"", "Notes": "predicts \"are\"/\"were\". incorrectly considers verbs as nouns?"}
+{"Name": "resid_20/301", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "resid_20/3940", "Annotation": "singular animate nouns", "Notes": ""}
+{"Name": "resid_20/3985", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "mlp_21/23", "Annotation": "relative pronouns, \"it\", singular nouns", "Notes": ""}
+{"Name": "mlp_21/4343", "Annotation": "plural pronouns, relative pronouns", "Notes": ""}
+{"Name": "resid_21/1978", "Annotation": "plural pronouns, relative pronouns, NPs", "Notes": ""}
+{"Name": "resid_21/5720", "Annotation": "plural animate nouns in PPs and RCs", "Notes": ""}
+{"Name": "resid_21/6162", "Annotation": "singular subjects", "Notes": ""}
+{"Name": "mlp_22/1915", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "resid_22/383", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "resid_22/4189", "Annotation": "singular subjects", "Notes": ""}
+{"Name": "resid_22/8361", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_23/630", "Annotation": "plural nouns in PPs and RCs", "Notes": ""}
+{"Name": "resid_23/7507", "Annotation": "singular subjects", "Notes": ""}
+{"Name": "resid_23/10927", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "resid_24/3627", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_24/5893", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_24/13078", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "resid_24/14406", "Annotation": "predicts plural verbs", "Notes": ""}
+{"Name": "mlp_25/14737", "Annotation": "plural NPs and VPs", "Notes": "usually headed by pronouns, but sometimes plural nouns"}
+{"Name": "resid_25/980", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_25/3649", "Annotation": "tokens ending in \"s\"", "Notes": "includes some verbs like \"gives\""}
+{"Name": "resid_25/9833", "Annotation": "0", "Notes": ""}
+{"Name": "embed/2134", "Annotation": "0", "Notes": ""}
+{"Name": "embed/3953", "Annotation": "", "Notes": ""}
+{"Name": "resid_0/2434", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_0/6248", "Annotation": "\"women\"", "Notes": ""}
+{"Name": "resid_0/8815", "Annotation": "singular profession names", "Notes": ""}
+{"Name": "resid_0/15519", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_1/8815", "Annotation": "singular profession names", "Notes": ""}
+{"Name": "resid_1/12072", "Annotation": "plural gendered animate nouns", "Notes": ""}
+{"Name": "resid_2/12311", "Annotation": "plural profession names", "Notes": ""}
+{"Name": "resid_3/15706", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_4/14328", "Annotation": "singular inanimate nouns", "Notes": ""}
+{"Name": "resid_5/4139", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_5/5798", "Annotation": "singular gendered animate nouns", "Notes": ""}
+{"Name": "resid_5/9623", "Annotation": "singular inanimate nouns", "Notes": ""}
+{"Name": "resid_6/1406", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_7/567", "Annotation": "singular gendered animate nouns", "Notes": ""}
+{"Name": "resid_7/3231", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_8/4012", "Annotation": "plural verbs and associated VPs", "Notes": ""}
+{"Name": "resid_9/2726", "Annotation": "singular animate nouns", "Notes": ""}
+{"Name": "resid_9/10212", "Annotation": "singular inanimate nouns and associated VPs", "Notes": ""}
+{"Name": "resid_10/492", "Annotation": "singular nouns and associated VPs", "Notes": ""}
+{"Name": "resid_10/4449", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_10/4601", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_10/14760", "Annotation": "plural animate NPs", "Notes": ""}
+{"Name": "resid_12/2355", "Annotation": "singular gendered animate nouns", "Notes": ""}
+{"Name": "resid_13/12616", "Annotation": "singular gendered animate nouns", "Notes": ""}
+{"Name": "resid_14/11278", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_15/5292", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_15/6546", "Annotation": "", "Notes": ""}
+{"Name": "resid_15/11048", "Annotation": "", "Notes": ""}
+{"Name": "resid_16/10671", "Annotation": "", "Notes": ""}
+{"Name": "resid_16/13693", "Annotation": "singular animate nouns", "Notes": ""}
+{"Name": "mlp_17/2535", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "resid_17/12885", "Annotation": "", "Notes": ""}
+{"Name": "resid_17/14970", "Annotation": "", "Notes": ""}
+{"Name": "mlp_18/8691", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_18/4973", "Annotation": "", "Notes": ""}
+{"Name": "mlp_19/3408", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "resid_19/6365", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_19/13002", "Annotation": "", "Notes": ""}
+{"Name": "mlp_21/14080", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "resid_21/12588", "Annotation": "singular animate nouns", "Notes": ""}
+{"Name": "resid_22/301", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "resid_22/14353", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "mlp_23/4319", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "resid_23/13335", "Annotation": "promotes infinitival and plural verbs", "Notes": ""}
+{"Name": "resid_23/13842", "Annotation": "predicts singular verbs", "Notes": ""}
+{"Name": "mlp_24/11766", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "mlp_24/12567", "Annotation": "promotes infinitival and plural verbs", "Notes": ""}
+{"Name": "resid_25/13473", "Annotation": "singular pronouns and names", "Notes": ""}
+{"Name": "resid_25/14697", "Annotation": "singular subjects", "Notes": ""}
+{"Name": "resid_25/14881", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "attn_23/6359", "Annotation": "suppresses \"are\" and \"were\"", "Notes": "active on plural NPs! weird"}
+{"Name": "Name", "Annotation": "Annotation", "Notes": "Notes"}
+{"Name": "embed/881", "Annotation": "", "Notes": ""}
+{"Name": "embed/1425", "Annotation": "", "Notes": ""}
+{"Name": "embed/3734", "Annotation": "", "Notes": ""}
+{"Name": "resid_0/284", "Annotation": "plural profession names", "Notes": ""}
+{"Name": "resid_0/3974", "Annotation": "plural nouns", "Notes": "algebra contexts"}
+{"Name": "resid_1/134", "Annotation": "plural nouns", "Notes": "scientific contexts"}
+{"Name": "resid_1/2746", "Annotation": "", "Notes": ""}
+{"Name": "resid_2/12311", "Annotation": "plural animate nouns", "Notes": "professions"}
+{"Name": "resid_2/13449", "Annotation": "plural nouns", "Notes": "scientific and coding contexts"}
+{"Name": "resid_3/15191", "Annotation": "plural nouns", "Notes": "includes variable names in code"}
+{"Name": "resid_4/3410", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_4/6820", "Annotation": "plural nouns in PPs", "Notes": "mainly in PPs, but not always"}
+{"Name": "resid_4/8420", "Annotation": "plural nouns in RCs", "Notes": ""}
+{"Name": "resid_5/3069", "Annotation": "plural nouns", "Notes": "mainly in PPs, object position. not sure if spurious"}
+{"Name": "resid_5/11613", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_5/13102", "Annotation": "plural profession names", "Notes": ""}
+{"Name": "resid_6/428", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_6/11417", "Annotation": "plural nouns", "Notes": "multiple languages"}
+{"Name": "resid_7/1041", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "resid_7/5663", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_8/10678", "Annotation": "plural nouns, usually in PPs", "Notes": ""}
+{"Name": "resid_9/8717", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_10/10757", "Annotation": "plural nouns, often in RCs/PPs", "Notes": ""}
+{"Name": "resid_11/1570", "Annotation": "plural nouns, often in PPs/RCs", "Notes": ""}
+{"Name": "resid_11/5663", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_12/10678", "Annotation": "plural nouns, usually in PPs", "Notes": ""}
+{"Name": "resid_13/10166", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_14/14070", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_15/10653", "Annotation": "plural gendered animate nouns and associated verbs", "Notes": ""}
+{"Name": "resid_15/13449", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_16/500", "Annotation": "plural gendered animate nouns", "Notes": ""}
+{"Name": "resid_16/5679", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_17/3852", "Annotation": "singular animate nouns", "Notes": ""}
+{"Name": "resid_17/12129", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_17/16100", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_18/1271", "Annotation": "predicts plural verbs", "Notes": ""}
+{"Name": "resid_18/1506", "Annotation": "plural objects and nouns in PPs", "Notes": ""}
+{"Name": "resid_18/10665", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "resid_18/15377", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_19/2211", "Annotation": "boundaries of plural NPs", "Notes": ""}
+{"Name": "resid_19/10531", "Annotation": "singular nouns", "Notes": ""}
+{"Name": "resid_19/11625", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "mlp_20/1764", "Annotation": "plural nouns and verbs ending in \"s\"", "Notes": "predicts \"are\"/\"were\". incorrectly considers verbs as nouns?"}
+{"Name": "resid_20/301", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "resid_20/3985", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "mlp_21/23", "Annotation": "relative pronouns, \"it\", singular nouns", "Notes": ""}
+{"Name": "mlp_21/4343", "Annotation": "plural pronouns, relative pronouns", "Notes": ""}
+{"Name": "resid_21/1978", "Annotation": "plural pronouns, relative pronouns, NPs", "Notes": ""}
+{"Name": "resid_21/5720", "Annotation": "plural animate nouns in PPs and RCs", "Notes": ""}
+{"Name": "resid_21/6162", "Annotation": "singular subjects", "Notes": "mostly starting with \"this\""}
+{"Name": "mlp_22/1915", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "resid_22/383", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "resid_22/4189", "Annotation": "singular subjects", "Notes": ""}
+{"Name": "resid_22/14353", "Annotation": "predicts singular verbs", "Notes": ""}
+{"Name": "resid_23/3123", "Annotation": "predicts plural and infinitival verbs", "Notes": "incorrectly conflates the two"}
+{"Name": "resid_23/7507", "Annotation": "singular subjects", "Notes": ""}
+{"Name": "resid_23/10927", "Annotation": "plural subjects", "Notes": ""}
+{"Name": "resid_23/13842", "Annotation": "predicts singular verbs", "Notes": ""}
+{"Name": "resid_24/3627", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_24/13078", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "resid_24/14129", "Annotation": "predicts plural and infinitival verbs", "Notes": "incorrectly conflates the two. mostly second-person verbs"}
+{"Name": "resid_25/980", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_25/3649", "Annotation": "tokens ending in \"s\"", "Notes": "includes some verbs like \"gives\""}
+{"Name": "resid_25/5757", "Annotation": "predicts infinitival and plural verbs", "Notes": "mainly infinitival"}
+{"Name": "resid_25/9833", "Annotation": "", "Notes": ""}
+{"Name": "resid_25/14881", "Annotation": "predicts plural verbs", "Notes": ""}
+{"Name": "embed/2430", "Annotation": "", "Notes": ""}
+{"Name": "embed/3953", "Annotation": "", "Notes": ""}
+{"Name": "mlp_0/6809", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_0/2434", "Annotation": "plural animate nouns", "Notes": "animals, team names"}
+{"Name": "resid_2/9827", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_3/3427", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_3/15706", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_7/3231", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_8/6332", "Annotation": "promotes singular nouns", "Notes": ""}
+{"Name": "resid_8/9828", "Annotation": "plural nouns, numbers, and prepositions after plural nouns", "Notes": ""}
+{"Name": "resid_9/3552", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_10/4449", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_11/12614", "Annotation": "plural nouns and associated VPs", "Notes": ""}
+{"Name": "resid_12/13561", "Annotation": "plural nouns", "Notes": ""}
+{"Name": "resid_15/5292", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_16/2971", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_16/10025", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_16/13693", "Annotation": "singular animate nouns", "Notes": ""}
+{"Name": "mlp_17/2535", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "resid_17/5438", "Annotation": "plural NPs", "Notes": ""}
+{"Name": "mlp_18/8691", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_18/4045", "Annotation": "plural pronouns", "Notes": "mostly \"they\""}
+{"Name": "resid_19/6365", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_19/13298", "Annotation": "singular male NPs and VPs", "Notes": ""}
+{"Name": "resid_20/3940", "Annotation": "singular animate nouns", "Notes": ""}
+{"Name": "resid_21/12588", "Annotation": "singular animate nouns", "Notes": ""}
+{"Name": "resid_22/8361", "Annotation": "plural inanimate nouns", "Notes": ""}
+{"Name": "resid_22/12040", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "mlp_23/3646", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_23/630", "Annotation": "plural nouns in PPs and RCs", "Notes": ""}
+{"Name": "resid_24/5893", "Annotation": "plural animate nouns", "Notes": ""}
+{"Name": "resid_24/14406", "Annotation": "predicts plural verbs", "Notes": ""}
+{"Name": "resid_25/12110", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_25/13473", "Annotation": "singular pronouns and names", "Notes": ""}
+{"Name": "resid_24/8661", "Annotation": "singular NPs", "Notes": ""}
+{"Name": "mlp_22/8206", "Annotation": "promotes plural verbs", "Notes": ""}
+{"Name": "resid_0/5584", "Annotation": "\"after\" and \"before\"", "Notes": ""}
+{"Name": "resid_0/14324", "Annotation": "\"while\", \"during\", \"throughout\"", "Notes": ""}
+{"Name": "resid_1/1623", "Annotation": "\"while\"", "Notes": ""}
+{"Name": "resid_1/3813", "Annotation": "\"once\"", "Notes": ""}
+{"Name": "resid_3/10334", "Annotation": "\"while\", \"whereas\"", "Notes": ""}
+{"Name": "mlp_5/686", "Annotation": "starts of sentences", "Notes": ""}
+{"Name": "resid_5/3235", "Annotation": "", "Notes": ""}
+{"Name": "resid_9/381", "Annotation": "tokens after BOS token", "Notes": ""}
+{"Name": "resid_10/4392", "Annotation": "BOS and tokens afterward. promotes reflexive pronouns", "Notes": ""}
+{"Name": "resid_11/10772", "Annotation": "", "Notes": ""}
+{"Name": "resid_11/12945", "Annotation": "BOS and tokens afterward. promotes reflexive pronouns", "Notes": ""}
+{"Name": "resid_12/4667", "Annotation": "starts of subordinate clauses", "Notes": ""}
+{"Name": "resid_13/13423", "Annotation": "BOS and tokens afterward. promotes BOS", "Notes": ""}
+{"Name": "resid_15/8610", "Annotation": "clause boundary detector", "Notes": ""}
+{"Name": "resid_15/10716", "Annotation": "clause boundary detector", "Notes": ""}
+{"Name": "resid_18/3358", "Annotation": "", "Notes": ""}
+{"Name": "mlp_0/6433", "Annotation": "\" the\"", "Notes": ""}
+{"Name": "resid_0/4735", "Annotation": "\" the\" and \" THE\"", "Notes": ""}
+{"Name": "resid_1/6799", "Annotation": "tokens containing lowercase \"the\"", "Notes": ""}
+{"Name": "resid_2/2007", "Annotation": "the word \"the\", and rarely \"a\"", "Notes": ""}
+{"Name": "resid_0/8815", "Annotation": "singular profession names", "Notes": ""}
+{"Name": "resid_0/11654", "Annotation": "various inflections of \"manage\", incl. \"manager\"", "Notes": ""}
+{"Name": "resid_1/8815", "Annotation": "profession names", "Notes": ""}
+{"Name": "resid_2/8340", "Annotation": "", "Notes": ""}
+{"Name": "resid_0/1442", "Annotation": "tokens containing \"work\"", "Notes": ""}
+{"Name": "resid_0/3762", "Annotation": "?", "Notes": ""}
+{"Name": "resid_0/9352", "Annotation": "tokens relating to leaving, departing", "Notes": ""}
+{"Name": "resid_0/11493", "Annotation": "tokens relating to starting, beginning", "Notes": ""}
+{"Name": "resid_0/9352", "Annotation": "tokens relating to leaving, departing", "Notes": ""}
+{"Name": "resid_1/6448", "Annotation": "\" left\"", "Notes": ""}
+{"Name": "resid_1/12725", "Annotation": "past participles when used as adjectives", "Notes": ""}
+{"Name": "resid_2/5190", "Annotation": "tokens relating to leaving", "Notes": ""}
+{"Name": "resid_2/6927", "Annotation": "infinitival verbs", "Notes": ""}
+{"Name": "resid_2/12919", "Annotation": "past participles when used as adjectives", "Notes": ""}
+{"Name": "resid_3/8143", "Annotation": "past-tense verbs", "Notes": ""}
+{"Name": "resid_4/2093", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_4/3786", "Annotation": "final tokens in subordinate clauses", "Notes": ""}
+{"Name": "resid_4/11738", "Annotation": "present-tense verbs", "Notes": ""}
+{"Name": "resid_4/16173", "Annotation": "tokens containing \"work\"", "Notes": ""}
+{"Name": "resid_5/14076", "Annotation": "past tense verbs", "Notes": ""}
+{"Name": "resid_6/6043", "Annotation": "past tense verbs", "Notes": ""}
+{"Name": "resid_6/15254", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_7/3528", "Annotation": "all tokens in subordinate clauses from subject noun on", "Notes": ""}
+{"Name": "resid_7/5573", "Annotation": "verbs that can take clauses/infinitives as objects", "Notes": ""}
+{"Name": "resid_7/10055", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_8/5086", "Annotation": "all tokens in subordinate clauses from subject noun on", "Notes": ""}
+{"Name": "resid_8/5157", "Annotation": "verbs that can take NPs followed by PP complements", "Notes": ""}
+{"Name": "resid_8/15254", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_9/6043", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_9/10375", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_10/1117", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_10/1871", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_11/5179", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_11/12828", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_12/3967", "Annotation": "verbs that can take infinitival or RC complements", "Notes": ""}
+{"Name": "resid_12/16095", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_13/899", "Annotation": "verbs that can take infinitival or RC complements", "Notes": ""}
+{"Name": "resid_14/2852", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_14/7214", "Annotation": "?", "Notes": ""}
+{"Name": "resid_14/13601", "Annotation": "verbs that can take infinitival or RC complements", "Notes": ""}
+{"Name": "resid_15/1695", "Annotation": "everything except first token after BOS", "Notes": ""}
+{"Name": "resid_15/8331", "Annotation": "verbs that can take infinitival or RC complements", "Notes": ""}
+{"Name": "resid_15/13574", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_16/3847", "Annotation": "everything", "Notes": ""}
+{"Name": "resid_16/11232", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_16/14790", "Annotation": "verbs that take nouns, infinitives, or RCs as arguments", "Notes": ""}
+{"Name": "resid_17/1092", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_0/4735", "Annotation": "\" the\" and \" THE\"", "Notes": ""}
+{"Name": "resid_1/6799", "Annotation": "tokens containing lowercase \"the\"", "Notes": ""}
+{"Name": "resid_2/2007", "Annotation": "the word \"the\", and rarely \"a\"", "Notes": ""}
+{"Name": "resid_3/2007", "Annotation": "\" the\" and \"The\"", "Notes": ""}
+{"Name": "resid_4/15634", "Annotation": "\"the\" in objects/PPs", "Notes": ""}
+{"Name": "resid_5/7423", "Annotation": "\" The\"", "Notes": ""}
+{"Name": "resid_6/1584", "Annotation": "\" the\" after prepositions", "Notes": ""}
+{"Name": "resid_7/2390", "Annotation": "\" the\" after prepositions", "Notes": ""}
+{"Name": "resid_8/8153", "Annotation": "\"The\" at start of sentence and \" the\" in objects", "Notes": ""}
+{"Name": "resid_9/7951", "Annotation": "\" the\" in PPs", "Notes": ""}
+{"Name": "resid_10/15167", "Annotation": "\" the\" in PPs", "Notes": ""}
+{"Name": "resid_11/1349", "Annotation": "\" the\" in PPs", "Notes": ""}
+{"Name": "resid_12/5511", "Annotation": "\"The\" in subordinate clauses and PPs", "Notes": ""}
+{"Name": "resid_13/10831", "Annotation": "\" the\" in PPs", "Notes": ""}
+{"Name": "resid_14/11930", "Annotation": "\" the\" in PPs", "Notes": ""}
+{"Name": "resid_5/14043", "Annotation": "nouns after \"the\"", "Notes": ""}
+{"Name": "resid_12/7507", "Annotation": "clause boundary detector", "Notes": ""}
+{"Name": "resid_13/15319", "Annotation": "clause boundary detector", "Notes": ""}
+{"Name": "resid_14/7214", "Annotation": "?", "Notes": ""}
+{"Name": "resid_15/8610", "Annotation": "clause boundary detector", "Notes": ""}
+{"Name": "resid_16/10480", "Annotation": "activates more strongly in subordinate clauses", "Notes": ""}
+{"Name": "attn_17/12358", "Annotation": "verbs and their objects", "Notes": ""}
+{"Name": "resid_17/7921", "Annotation": "NP/clause boundaries", "Notes": ""}
+{"Name": "resid_18/16017", "Annotation": "subordinate clause boundary detector", "Notes": ""}
+{"Name": "resid_19/5825", "Annotation": "predicts commas", "Notes": ""}
+{"Name": "resid_19/16227", "Annotation": "PP boundary detector", "Notes": ""}
+{"Name": "attn_20/4118", "Annotation": "prepositions and directly preceding nouns", "Notes": ""}
+{"Name": "resid_20/3223", "Annotation": "subordinate clause/PP boundary detector", "Notes": ""}
+{"Name": "resid_20/6143", "Annotation": "predicts commas", "Notes": ""}
+{"Name": "resid_21/13686", "Annotation": "predicts commas", "Notes": ""}
+{"Name": "resid_22/8648", "Annotation": "PP boundary detector", "Notes": ""}
+{"Name": "resid_23/8813", "Annotation": "predicts past-tense verbs", "Notes": ""}
+{"Name": "resid_23/10307", "Annotation": "predicts commas", "Notes": ""}
+{"Name": "resid_23/14613", "Annotation": "predicts reflexive pronouns", "Notes": ""}
+{"Name": "resid_24/3848", "Annotation": "clause boundaries?", "Notes": ""}
+{"Name": "resid_24/12264", "Annotation": "predicts commas", "Notes": ""}
+{"Name": "resid_24/16128", "Annotation": "predicts past-tense verbs", "Notes": ""}
+{"Name": "resid_25/3420", "Annotation": "?", "Notes": ""}
+{"Name": "resid_25/10150", "Annotation": "?", "Notes": ""}
+{"Name": "resid_25/12264", "Annotation": "predicts commas", "Notes": ""}
+{"Name": "resid_25/14325", "Annotation": "clause boundaries, and many other things?", "Notes": ""}
+{"Name": "resid_25/15806", "Annotation": "predicts past-tense verbs", "Notes": ""}
+{"Name": "resid_9/381", "Annotation": "tokens after BOS token", "Notes": ""}
+{"Name": "resid_10/3736", "Annotation": "BOS and first token after BOS", "Notes": ""}
+{"Name": "resid_11/10772", "Annotation": "BOS and first token after BOS", "Notes": ""}
+{"Name": "resid_11/13423", "Annotation": "BOS and first token after BOS", "Notes": ""}
+{"Name": "mlp_12/2636", "Annotation": "tokens after BOS token", "Notes": ""}
+{"Name": "resid_12/11087", "Annotation": "BOS and first token after BOS", "Notes": ""}
+{"Name": "resid_13/4825", "Annotation": "tokens after BOS token", "Notes": ""}
+{"Name": "resid_14/16123", "Annotation": "BOS and first token after BOS", "Notes": ""}
+{"Name": "resid_3/2085", "Annotation": "inflections of \"show\" and \"demonstrate\"", "Notes": ""}
+{"Name": "resid_3/8143", "Annotation": "past tense verbs", "Notes": ""}
+{"Name": "resid_16/4801", "Annotation": "verbs that could be followed by RCs", "Notes": ""}
+{"Name": "resid_3/2007", "Annotation": "\" the\" and \"The\"", "Notes": ""}
+{"Name": "resid_4/15634", "Annotation": "\"the\" in objects/PPs", "Notes": ""}
+{"Name": "resid_5/7423", "Annotation": "\" The\"", "Notes": ""}
+{"Name": "resid_6/1584", "Annotation": "\" the\" after prepositions", "Notes": ""}
+{"Name": "resid_7/2390", "Annotation": "\" the\" after prepositions", "Notes": ""}
+{"Name": "resid_8/8153", "Annotation": "\"The\" at start of sentence and \" the\" in objects", "Notes": ""}
+{"Name": "resid_9/7951", "Annotation": "\" the\" in PPs", "Notes": ""}
+{"Name": "resid_10/15167", "Annotation": "\" the\" in PPs", "Notes": ""}
+{"Name": "resid_11/1349", "Annotation": "\" the\" in PPs", "Notes": ""}
+{"Name": "resid_12/5511", "Annotation": "\"The\" in subordinate clauses and PPs", "Notes": ""}
+{"Name": "resid_13/10831", "Annotation": "\" the\" in PPs", "Notes": ""}
+{"Name": "resid_14/11930", "Annotation": "\" the\" in PPs", "Notes": ""}
+{"Name": "resid_16/1888", "Annotation": "\" the\" in PPs and objects", "Notes": ""}
+{"Name": "resid_17/10830", "Annotation": "\" the\" in subjects", "Notes": ""}
+{"Name": "resid_10/1205", "Annotation": "nouns as objects or in PPs", "Notes": ""}
+{"Name": "resid_17/7921", "Annotation": "NP/clause boundaries", "Notes": ""}
+{"Name": "resid_17/14124", "Annotation": "nouns that could be subjects in RCs", "Notes": ""}
+{"Name": "attn_18/521", "Annotation": "verbs and subjects of their RC objects", "Notes": ""}
+{"Name": "attn_18/7563", "Annotation": "clause/VP/NP boundaries?", "Notes": ""}
+{"Name": "mlp_18/5170", "Annotation": "verbs that could be followed by RCs", "Notes": "predicts modal/aux verbs"}
+{"Name": "resid_18/8153", "Annotation": "singular NPs", "Notes": ""}
+{"Name": "resid_18/10213", "Annotation": "verbs that can be followed by aux verbs", "Notes": ""}
+{"Name": "resid_18/15275", "Annotation": "clause boundary detector", "Notes": "predicts punctuation"}
+{"Name": "resid_18/15612", "Annotation": "clause boundary detector", "Notes": "predicts conjunctions"}
+{"Name": "resid_19/3254", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_20/1548", "Annotation": "predicts past-tense verbs", "Notes": ""}
+{"Name": "resid_20/7182", "Annotation": "predicts singular verbs", "Notes": ""}
+{"Name": "resid_21/4435", "Annotation": "clause boundary detector", "Notes": "predicts punctuation"}
+{"Name": "resid_21/6162", "Annotation": "singular subjects", "Notes": ""}
+{"Name": "resid_21/15301", "Annotation": "predicts verbs in subordinate or relative clauses", "Notes": ""}
+{"Name": "resid_22/4189", "Annotation": "singular subjects", "Notes": ""}
+{"Name": "resid_22/5384", "Annotation": "clause boundary detector", "Notes": "predicts conjunctions"}
+{"Name": "resid_22/6359", "Annotation": "clause boundary detector", "Notes": "predicts EOS punctuation"}
+{"Name": "resid_23/7507", "Annotation": "singular subjects", "Notes": ""}
+{"Name": "resid_23/7655", "Annotation": "clause boundary detector", "Notes": "predicts periods"}
+{"Name": "resid_23/8813", "Annotation": "predicts past-tense verbs", "Notes": ""}
+{"Name": "mlp_24/282", "Annotation": "?", "Notes": ""}
+{"Name": "mlp_24/9329", "Annotation": "?", "Notes": ""}
+{"Name": "resid_24/3848", "Annotation": "clause boundaries?", "Notes": ""}
+{"Name": "resid_24/16128", "Annotation": "predicts past-tense verbs", "Notes": ""}
+{"Name": "resid_25/980", "Annotation": "promotes singular verbs", "Notes": ""}
+{"Name": "resid_25/13580", "Annotation": "clause boundaries", "Notes": "predicts periods"}
+{"Name": "resid_25/14325", "Annotation": "clause boundaries, and many other things?", "Notes": ""}
+{"Name": "resid_25/15806", "Annotation": "predicts past-tense verbs", "Notes": ""}
+{"Name": "resid_1/9394", "Annotation": "\"The\" at start of sentence", "Notes": ""}
+{"Name": "attn_0/2362", "Annotation": "starts and ends of identifiers (induction?)", "Notes": ""}
+{"Name": "attn_0/4208", "Annotation": "periods and preceding tokens", "Notes": ""}
+{"Name": "mlp_0/8959", "Annotation": "periods", "Notes": ""}
+{"Name": "mlp_0/9820", "Annotation": "periods", "Notes": ""}
+{"Name": "mlp_0/13955", "Annotation": "mathematical descriptions or equations", "Notes": ""}
+{"Name": "resid_0/2261", "Annotation": "periods", "Notes": ""}
+{"Name": "resid_0/7829", "Annotation": "periods and commas. predicts \"the\"", "Notes": ""}
+{"Name": "resid_0/8613", "Annotation": "periods", "Notes": ""}
+{"Name": "resid_1/2102", "Annotation": "punctuation", "Notes": ""}
+{"Name": "resid_1/6757", "Annotation": "periods", "Notes": ""}
+{"Name": "resid_2/3807", "Annotation": "periods", "Notes": ""}
+{"Name": "resid_3/10164", "Annotation": "periods", "Notes": ""}
+{"Name": "resid_5/3807", "Annotation": "all tokens in PPs/RCs", "Notes": ""}
+{"Name": "resid_6/10164", "Annotation": "\"else\" statements in code", "Notes": ""}
+{"Name": "resid_0/514", "Annotation": "\"does\" and \"do\"", "Notes": ""}
+{"Name": "resid_0/4396", "Annotation": "\"does\" and \"did\"", "Notes": ""}
+{"Name": "resid_0/11051", "Annotation": "\"did\" and \"ret\"", "Notes": ""}
+{"Name": "resid_1/9100", "Annotation": "\"did\" and \"does\"", "Notes": ""}
+{"Name": "resid_1/10536", "Annotation": "\"Did\", \"Thank\", \"apache\"", "Notes": ""}
+{"Name": "resid_3/9878", "Annotation": "capital words at starts of sentences", "Notes": ""}
+{"Name": "resid_3/11051", "Annotation": "\"does\" and \"did\"", "Notes": ""}
+{"Name": "resid_4/7527", "Annotation": "\"did\" and \"does\"", "Notes": ""}
+{"Name": "resid_5/10816", "Annotation": "capital words at starts of sentences", "Notes": ""}
+{"Name": "resid_5/15307", "Annotation": "question words (and directly following tokens)", "Notes": ""}
+{"Name": "resid_6/6862", "Annotation": "question words at starts of sentences", "Notes": ""}
+{"Name": "resid_7/10370", "Annotation": "question words at starts of clauses", "Notes": ""}
+{"Name": "resid_0/4735", "Annotation": "\"the\" in objects or PPs", "Notes": ""}
+{"Name": "resid_1/6799", "Annotation": "\"the\" in objects or PPs", "Notes": ""}
+{"Name": "resid_3/2007", "Annotation": "\"the\" in objects or PPs", "Notes": ""}
+{"Name": "resid_4/15634", "Annotation": "\"the\" in objects or PPs", "Notes": ""}
+{"Name": "resid_4/7303", "Annotation": "NPs in objects or PPs", "Notes": ""}
+{"Name": "resid_6/12143", "Annotation": "proper nouns", "Notes": ""}
+{"Name": "resid_4/3201", "Annotation": "main NPs and VPs (except objects) in questions", "Notes": ""}
+{"Name": "resid_5/11560", "Annotation": "main NPs and VPs (except objects) in questions", "Notes": ""}
+{"Name": "attn_6/10674", "Annotation": "induction in math contexts", "Notes": ""}
+{"Name": "resid_7/1869", "Annotation": "?", "Notes": ""}
+{"Name": "resid_0/4735", "Annotation": "\"the\" in objects or PPs", "Notes": ""}
+{"Name": "resid_1/6799", "Annotation": "\"the\" in objects or PPs", "Notes": ""}
+{"Name": "resid_2/2007", "Annotation": "\"the\" in objects or PPs", "Notes": ""}
+{"Name": "resid_3/2007", "Annotation": "\"the\" in objects or PPs", "Notes": ""}
+{"Name": "resid_5/10187", "Annotation": "\"the\" in objects or PPs", "Notes": ""}
+{"Name": "resid_6/1584", "Annotation": "\"the\" in objects or PPs", "Notes": ""}
+{"Name": "resid_16/1971", "Annotation": "words related to (dis)agreement", "Notes": ""}
+{"Name": "resid_18/7423", "Annotation": "negative words or disagreement", "Notes": ""}
+{"Name": "resid_19/8195", "Annotation": "suggestive of upcoming Yes/No answer", "Notes": "e.g., activates on \"A:\", or \"the answer is a definite\""}
+{"Name": "resid_20/6627", "Annotation": "related to agreement", "Notes": ""}
+{"Name": "resid_21/14256", "Annotation": "related to strong disagreement", "Notes": ""}
+{"Name": "resid_21/15710", "Annotation": "related to agreement", "Notes": ""}
+{"Name": "resid_22/15707", "Annotation": "related to agreement", "Notes": ""}
+{"Name": "mlp_23/1140", "Annotation": "predicts \"No\"", "Notes": ""}
+{"Name": "mlp_23/7277", "Annotation": "predicts \"Yes\" and \"No\"", "Notes": ""}
+{"Name": "resid_23/8812", "Annotation": "predicts \"Yes\"", "Notes": ""}
+{"Name": "resid_23/13166", "Annotation": "predicts \"no\"", "Notes": "not just when answering Qs. e.g., activates on \"he tried to (no avail)\""}
+{"Name": "resid_24/6144", "Annotation": "predicts \"no\", as in \"number\"", "Notes": ""}
+{"Name": "resid_24/10224", "Annotation": "predicts \"Yes\"", "Notes": ""}
+{"Name": "mlp_25/10873", "Annotation": "activates directly before \"yes\" and \"no\"", "Notes": ""}
+{"Name": "resid_25/7498", "Annotation": "predicts \"No\"", "Notes": ""}
+{"Name": "resid_25/13283", "Annotation": "predicts \"Yes\"", "Notes": ""}
+{"Name": "resid_1/1613", "Annotation": "\"was\" and \"were\"", "Notes": ""}
+{"Name": "resid_0/8920", "Annotation": "BOS and tokens around it", "Notes": ""}
+{"Name": "resid_5/15584", "Annotation": "periods", "Notes": ""}
+{"Name": "resid_6/7002", "Annotation": "periods", "Notes": ""}
+{"Name": "resid_6/10793", "Annotation": "NPs in objects or PPs", "Notes": ""}
+{"Name": "resid_0/2007", "Annotation": "\"The\", \" the\"", "Notes": ""}
+{"Name": "attn_3/3660", "Annotation": "first token of current and following clause", "Notes": ""}
+{"Name": "resid_3/2706", "Annotation": "\" the\" in subjects", "Notes": ""}
+{"Name": "resid_4/2138", "Annotation": "\" the\" in subjects", "Notes": ""}
+{"Name": "resid_5/1727", "Annotation": "\" the\"", "Notes": ""}
+{"Name": "resid_6/1872", "Annotation": "\" the\", \" my\"", "Notes": ""}
+{"Name": "resid_8/8646", "Annotation": "commas and conjunctions", "Notes": ""}
+{"Name": "resid_8/12281", "Annotation": "\" the\" and \" a\" in objects", "Notes": ""}
+{"Name": "resid_9/4653", "Annotation": "\" the\" in PPs", "Notes": ""}
+{"Name": "resid_9/12620", "Annotation": "determiners in objects", "Notes": ""}
+{"Name": "resid_10/5198", "Annotation": "\" the\" in objects", "Notes": ""}
+{"Name": "resid_10/8120", "Annotation": "tokens after prepositions", "Notes": ""}
+{"Name": "resid_10/9611", "Annotation": "\" the\" in subjects", "Notes": ""}
+{"Name": "resid_11/14303", "Annotation": "\" the\"", "Notes": ""}
+{"Name": "resid_12/2785", "Annotation": "first token in PPs, RCs, and punctuation", "Notes": ""}
+{"Name": "resid_12/15205", "Annotation": "\" the\" at start of RC", "Notes": ""}
+{"Name": "resid_13/9023", "Annotation": "prepositions and first tokens in RCs", "Notes": ""}
+{"Name": "resid_14/8909", "Annotation": "prepositions and first tokens in RCs", "Notes": ""}
+{"Name": "resid_15/11868", "Annotation": "\" the\" in PPs, RCs, and objects", "Notes": ""}
+{"Name": "resid_6/13795", "Annotation": "subject nouns and nouns in PPs", "Notes": ""}
+{"Name": "resid_7/4033", "Annotation": "noun detector", "Notes": ""}
+{"Name": "resid_7/7439", "Annotation": "?", "Notes": ""}
+{"Name": "resid_8/4740", "Annotation": "nouns in PPs", "Notes": ""}
+{"Name": "resid_9/2225", "Annotation": "nouns in PPs/objects", "Notes": ""}
+{"Name": "resid_9/14744", "Annotation": "nouns in subjects and start of RCs", "Notes": ""}
+{"Name": "resid_12/8100", "Annotation": "nouns in objects", "Notes": ""}
+{"Name": "resid_13/2755", "Annotation": "nouns at end of clauses", "Notes": ""}
+{"Name": "resid_13/3579", "Annotation": "nouns in objects", "Notes": ""}
+{"Name": "resid_14/12039", "Annotation": "nouns at end of clauses", "Notes": ""}
+{"Name": "resid_15/869", "Annotation": "nouns in objects", "Notes": ""}
+{"Name": "resid_15/13368", "Annotation": "nouns at end of clauses", "Notes": ""}
+{"Name": "resid_16/2907", "Annotation": "object nouns after verbs that can take PP complements", "Notes": ""}
+{"Name": "resid_16/3897", "Annotation": "object nouns", "Notes": ""}
+{"Name": "resid_16/4880", "Annotation": "end of clause detector", "Notes": ""}
+{"Name": "resid_16/14010", "Annotation": "sentences nearer beginning of context", "Notes": ""}
+{"Name": "resid_17/890", "Annotation": "predicts spaces and open parentheses", "Notes": "activates on almost everything"}
+{"Name": "resid_17/1386", "Annotation": "end of clause detector", "Notes": "promotes punctuation"}
+{"Name": "resid_17/2382", "Annotation": "object noun detector", "Notes": ""}
+{"Name": "resid_17/5183", "Annotation": "sentences nearer beginning of context", "Notes": ""}
+{"Name": "resid_17/11333", "Annotation": "end of subordinate clauses and PPs", "Notes": "predicts commas"}
+{"Name": "resid_17/13363", "Annotation": "last token in PPs/RCs", "Notes": ""}
+{"Name": "resid_17/15302", "Annotation": "object noun detector", "Notes": ""}
+{"Name": "resid_18/2856", "Annotation": "subject noun detector", "Notes": ""}
+{"Name": "resid_18/7481", "Annotation": "?", "Notes": ""}
+{"Name": "resid_18/15394", "Annotation": "?", "Notes": ""}
+{"Name": "attn_18/1901", "Annotation": "start and end of object NPs", "Notes": ""}
+{"Name": "attn_18/2200", "Annotation": "start and end of VPs (with objects)", "Notes": ""}
+{"Name": "attn_18/13565", "Annotation": "start and end of PPs", "Notes": ""}
+{"Name": "attn_18/15066", "Annotation": "start and end of subordinate clauses", "Notes": ""}
+{"Name": "mlp_19/8302", "Annotation": "predicts commas", "Notes": ""}
+{"Name": "resid_19/7247", "Annotation": "predicts commas after sentence-initial subordinate clauses", "Notes": ""}
+{"Name": "resid_19/8440", "Annotation": "final tokens in NPs", "Notes": ""}
+{"Name": "resid_19/9269", "Annotation": "nouns in objects and PPs", "Notes": ""}
+{"Name": "resid_19/12420", "Annotation": "subject nouns in RCs", "Notes": ""}
+{"Name": "attn_20/15335", "Annotation": "verbs and their objects", "Notes": ""}
+{"Name": "mlp_20/9030", "Annotation": "subject nouns in RCs", "Notes": ""}
+{"Name": "resid_20/7100", "Annotation": "final token in subordinate clauses", "Notes": ""}
+{"Name": "resid_20/9768", "Annotation": "?", "Notes": ""}
+{"Name": "resid_20/11864", "Annotation": "end of sentence detector", "Notes": "predicts question marks and exclamation marks"}
+{"Name": "resid_20/13800", "Annotation": "detects nouns, promotes verbs", "Notes": "even in inappropriate contexts"}
+{"Name": "attn_21/6448", "Annotation": "first and last tokens in NPs, promotes prepositions", "Notes": ""}
+{"Name": "resid_21/9478", "Annotation": "last token in PPs", "Notes": "promotes right parentheses"}
+{"Name": "resid_21/11640", "Annotation": "nouns in PPs and objects", "Notes": ""}
+{"Name": "resid_21/13520", "Annotation": "subject noun detector", "Notes": ""}
+{"Name": "resid_21/15612", "Annotation": "end of sentence detector", "Notes": "promotes exclamations, question marks, newlines"}
+{"Name": "resid_22/3895", "Annotation": "?", "Notes": ""}
+{"Name": "resid_22/4101", "Annotation": "activates on NPs, predicts verbs", "Notes": ""}
+{"Name": "resid_22/4120", "Annotation": "predicts punctuation", "Notes": ""}
+{"Name": "resid_22/12931", "Annotation": "predicts verbs in RCs", "Notes": ""}
+{"Name": "mlp_22/4457", "Annotation": "predicts commas", "Notes": ""}
+{"Name": "resid_23/7600", "Annotation": "predicts punctuation", "Notes": ""}
+{"Name": "mlp_24/2503", "Annotation": "predicts commas", "Notes": ""}
+{"Name": "resid_24/9371", "Annotation": "predicts subordinate conjunctions", "Notes": ""}
+{"Name": "resid_24/12608", "Annotation": "end of sentence detector", "Notes": "predicts question marks"}
+{"Name": "mlp_25/7684", "Annotation": "predicts commas", "Notes": ""}
+{"Name": "mlp_25/13264", "Annotation": "?", "Notes": ""}
+{"Name": "resid_25/1862", "Annotation": "nouns in objects and PPs", "Notes": "predicts subordinate conjunctions"}
+{"Name": "resid_25/6433", "Annotation": "predicts adverbs", "Notes": ""}
+{"Name": "resid_25/9054", "Annotation": "noun phrases in many syntactic contexts", "Notes": ""}
+{"Name": "resid_25/13446", "Annotation": "end of clause detector", "Notes": ""}
+{"Name": "resid_25/16042", "Annotation": "predicts \" he\"", "Notes": "often activates at what could be end of clause"}
+{"Name": "resid_25/16361", "Annotation": "?", "Notes": ""}
+{"Name": "resid_0/2044", "Annotation": "transitive verbs", "Notes": ""}
+{"Name": "resid_0/10983", "Annotation": "past tense verbs and past participles", "Notes": ""}
+{"Name": "resid_0/13999", "Annotation": "inflections of \"mention\"", "Notes": ""}
+{"Name": "resid_1/4485", "Annotation": "inflections of verb \"show\"", "Notes": ""}
+{"Name": "resid_2/4628", "Annotation": "\" know\"", "Notes": ""}
+{"Name": "resid_2/5354", "Annotation": "inflections of \"observe\"", "Notes": ""}
+{"Name": "resid_2/6335", "Annotation": "\" said\", \" added\", \" wrote\"", "Notes": ""}
+{"Name": "resid_2/10272", "Annotation": "inflections of verb \"show\"", "Notes": ""}
+{"Name": "resid_5/3128", "Annotation": "nouns in PPs and RCs", "Notes": ""}
+{"Name": "resid_5/7350", "Annotation": "verbs that can take RC complements", "Notes": ""}
+{"Name": "resid_5/14866", "Annotation": "inflections of verb \"show\"", "Notes": ""}
+{"Name": "resid_7/12267", "Annotation": "verbs that can take RC complements", "Notes": ""}
+{"Name": "resid_9/717", "Annotation": "verbs and their RC complements", "Notes": ""}
+{"Name": "resid_10/6887", "Annotation": "copulae and auxiliary verbs", "Notes": ""}
+{"Name": "resid_10/15678", "Annotation": "?", "Notes": ""}
+{"Name": "resid_11/13077", "Annotation": "proper nouns, often with \" said\"", "Notes": ""}
+{"Name": "resid_12/14668", "Annotation": "?", "Notes": ""}
+{"Name": "resid_13/8428", "Annotation": "proper nouns, often with \" said\"", "Notes": ""}
+{"Name": "resid_16/8317", "Annotation": "inflections of \"show\"", "Notes": ""}
+{"Name": "resid_18/14419", "Annotation": "verbs that can take RC complements", "Notes": ""}
+{"Name": "attn_3/5791", "Annotation": "verbs and directly following relative pronouns/first RC tokens", "Notes": ""}
+{"Name": "mlp_3/4513", "Annotation": "\" a\", \" the\", \" it\" in objects", "Notes": ""}
+{"Name": "resid_3/13331", "Annotation": "\" the\" in objects", "Notes": ""}
+{"Name": "resid_4/10751", "Annotation": "\" the\" and \" it\" in RC subjects", "Notes": ""}
+{"Name": "resid_9/717", "Annotation": "subject NPs", "Notes": ""}
+{"Name": "resid_15/11868", "Annotation": "\" the\" in PPs, RCs, and objects", "Notes": ""}
+{"Name": "resid_7/7439", "Annotation": "?", "Notes": ""}
+{"Name": "resid_7/9698", "Annotation": "nouns at end of clauses", "Notes": ""}
+{"Name": "resid_8/7357", "Annotation": "?", "Notes": ""}
+{"Name": "resid_9/717", "Annotation": "verbs and their RC complements", "Notes": ""}
+{"Name": "resid_9/2225", "Annotation": "nouns in PPs/objects", "Notes": ""}
+{"Name": "resid_9/5235", "Annotation": "subject nouns", "Notes": ""}
+{"Name": "resid_9/14744", "Annotation": "nouns in subjects and start of RCs", "Notes": ""}
+{"Name": "resid_9/15569", "Annotation": "nouns in PPs", "Notes": ""}
+{"Name": "resid_10/60", "Annotation": "?", "Notes": ""}
+{"Name": "resid_10/8229", "Annotation": "subject nouns", "Notes": ""}
+{"Name": "resid_10/15489", "Annotation": "subject nouns", "Notes": ""}
+{"Name": "resid_10/15678", "Annotation": "?", "Notes": ""}
+{"Name": "resid_12/2620", "Annotation": "everything", "Notes": ""}
+{"Name": "resid_13/2755", "Annotation": "nouns at end of clauses", "Notes": ""}
+{"Name": "resid_13/8768", "Annotation": "?", "Notes": ""}
+{"Name": "resid_13/12785", "Annotation": "subject nouns", "Notes": ""}
+{"Name": "resid_14/8417", "Annotation": "subject nouns/nouns in PPs on subjects", "Notes": ""}
+{"Name": "resid_14/12039", "Annotation": "nouns at end of clauses", "Notes": ""}
+{"Name": "resid_14/12319", "Annotation": "everything", "Notes": ""}
+{"Name": "resid_15/675", "Annotation": "?", "Notes": ""}
+{"Name": "resid_15/854", "Annotation": "last token in clause", "Notes": ""}
+{"Name": "resid_15/6562", "Annotation": "subject nouns", "Notes": ""}
+{"Name": "resid_16/2323", "Annotation": "subject nouns", "Notes": ""}
+{"Name": "resid_16/2907", "Annotation": "object nouns after verbs that can take PP complements", "Notes": ""}
+{"Name": "resid_16/8160", "Annotation": "nouns in many syntactic contexts", "Notes": ""}
+{"Name": "resid_16/14010", "Annotation": "sentences nearer beginning of context", "Notes": ""}
+{"Name": "attn_17/11292", "Annotation": "first and last tokens of RCs", "Notes": ""}
+{"Name": "attn_17/12033", "Annotation": "\"show\" and last token in object NP", "Notes": ""}
+{"Name": "attn_17/16130", "Annotation": "verbs that can take RC complements and directly following token", "Notes": ""}
+{"Name": "resid_17/1386", "Annotation": "end of clause detector", "Notes": ""}
+{"Name": "resid_17/3904", "Annotation": "subject nouns in RCs", "Notes": ""}
+{"Name": "resid_17/5183", "Annotation": "sentences nearer beginning of context", "Notes": ""}
+{"Name": "resid_17/9506", "Annotation": "end of clause detector", "Notes": ""}
+{"Name": "resid_17/11130", "Annotation": "subject nouns", "Notes": ""}
+{"Name": "resid_17/13167", "Annotation": "object nouns", "Notes": ""}
+{"Name": "resid_17/13409", "Annotation": "subject nouns", "Notes": ""}
+{"Name": "resid_17/15620", "Annotation": "everything", "Notes": ""}
+{"Name": "resid_17/16343", "Annotation": "nouns, mostly as subjects", "Notes": ""}
+{"Name": "attn_18/2200", "Annotation": "start and end of VPs (with objects)", "Notes": ""}
+{"Name": "attn_18/8610", "Annotation": "verb and associated object nouns", "Notes": ""}
+{"Name": "attn_18/15680", "Annotation": "nouns and last token in attached PPs", "Notes": ""}
+{"Name": "mlp_18/1810", "Annotation": "predicts punctuation", "Notes": ""}
+{"Name": "mlp_18/16355", "Annotation": "subjects in main and relative clauses", "Notes": ""}
+{"Name": "resid_18/2856", "Annotation": "subject noun detector", "Notes": ""}
+{"Name": "resid_18/9392", "Annotation": "everything", "Notes": ""}
+{"Name": "resid_18/12704", "Annotation": "inanimate nouns", "Notes": ""}
+{"Name": "resid_18/13852", "Annotation": "?", "Notes": ""}
+{"Name": "resid_18/15394", "Annotation": "?", "Notes": ""}
+{"Name": "resid_19/3019", "Annotation": "?", "Notes": ""}
+{"Name": "resid_19/4742", "Annotation": "predicts periods", "Notes": ""}
+{"Name": "resid_19/4823", "Annotation": "?", "Notes": ""}
+{"Name": "resid_19/10578", "Annotation": "subject nouns", "Notes": ""}
+{"Name": "resid_19/12420", "Annotation": "subject nouns in RCs", "Notes": ""}
+{"Name": "resid_20/9768", "Annotation": "?", "Notes": ""}
+{"Name": "resid_20/11864", "Annotation": "end of sentence detector", "Notes": ""}
+{"Name": "resid_20/13485", "Annotation": "subject nouns", "Notes": ""}
+{"Name": "resid_20/13800", "Annotation": "detects nouns, promotes verbs", "Notes": ""}
+{"Name": "resid_20/15509", "Annotation": "predicts periods", "Notes": ""}
+{"Name": "attn_21/6448", "Annotation": "nouns in PPs and objects", "Notes": ""}
+{"Name": "resid_21/11640", "Annotation": "object nouns", "Notes": ""}
+{"Name": "resid_21/12040", "Annotation": "subject nouns", "Notes": ""}
+{"Name": "resid_21/13174", "Annotation": "subject noun detector", "Notes": ""}
+{"Name": "resid_21/13520", "Annotation": "subject NPs", "Notes": ""}
+{"Name": "resid_21/14723", "Annotation": "end of sentence detector", "Notes": ""}
+{"Name": "resid_21/15612", "Annotation": "end of sentence detector", "Notes": "predicts newlines"}
+{"Name": "resid_22/1023", "Annotation": "middle of subject NPs", "Notes": "predicts profession names after NP has already started"}
+{"Name": "resid_22/2337", "Annotation": "activates on NPs, predicts verbs", "Notes": ""}
+{"Name": "resid_22/4101", "Annotation": "predicts punctuation", "Notes": ""}
+{"Name": "resid_22/4120", "Annotation": "end of clause detector", "Notes": "predicts question marks, exclamations, sometimes commas"}
+{"Name": "resid_22/4660", "Annotation": "predicts \" was\" and \" were\"", "Notes": ""}
+{"Name": "resid_22/5286", "Annotation": "predicts verbs in RCs", "Notes": ""}
+{"Name": "resid_22/12931", "Annotation": "subject NPs", "Notes": ""}
+{"Name": "resid_23/5286", "Annotation": "everything at start of context", "Notes": ""}
+{"Name": "resid_23/14112", "Annotation": "predicts \" was\" and \" were\"", "Notes": ""}
+{"Name": "resid_23/14300", "Annotation": "nouns in PPs and objects", "Notes": ""}
+{"Name": "resid_23/15250", "Annotation": "?", "Notes": ""}
+{"Name": "resid_24/157", "Annotation": "predicts \" was\"", "Notes": ""}
+{"Name": "resid_24/5845", "Annotation": "predicts subordinate conjunctions", "Notes": ""}
+{"Name": "resid_24/9371", "Annotation": "predicts subordinate conjunctions", "Notes": ""}
+{"Name": "resid_24/9589", "Annotation": "?", "Notes": ""}
+{"Name": "resid_24/14391", "Annotation": "medical and scientific contexts", "Notes": ""}
+{"Name": "resid_24/14629", "Annotation": "predicts adverbs after VPs", "Notes": ""}
+{"Name": "mlp_24/14778", "Annotation": "subject nouns", "Notes": ""}
+{"Name": "resid_25/2203", "Annotation": "?", "Notes": ""}
+{"Name": "resid_25/3627", "Annotation": "tokens in coding, technical, and healthcare contexts", "Notes": ""}
+{"Name": "resid_25/4695", "Annotation": "predicts \" was\"", "Notes": ""}
+{"Name": "resid_25/13442", "Annotation": "?", "Notes": ""}
+{"Name": "resid_25/16361", "Annotation": "activates more strongly directly before nouns", "Notes": ""}
+{"Name": "mlp_25/4589", "Annotation": "?", "Notes": ""}
